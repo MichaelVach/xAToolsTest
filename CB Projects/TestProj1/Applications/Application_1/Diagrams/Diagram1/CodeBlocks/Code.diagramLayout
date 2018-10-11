@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Pages>
+  <Layout FormatName="A4" Orientation="Landscape" Unit="0.01 mm" Width="21000" Height="29700" Top="1500" Bottom="1500" Left="1500" Right="1500" />
+  <Page PageNo="1">
+    <Blocks />
+  </Page>
+</Pages>

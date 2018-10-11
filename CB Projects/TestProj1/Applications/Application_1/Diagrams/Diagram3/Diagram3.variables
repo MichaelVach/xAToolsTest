@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Variables>
+  <Variable Name="DownLoadQuotaExc" Type="bool" />
+  <Variable Name="DurOfPFAtLastOcc" Type="time" />
+  <Variable Name="DurOfPFSinceRst" Type="time" />
+  <Variable Name="NoOfPFAtLastOcc" Type="dint" />
+  <Variable Name="NoOfPFSinceRst" Type="dint" />
+  <Variable Name="OccOfLastPF" Type="date_and_time" />
+  <Variable Name="OccOfRst" Type="date_and_time" />
+  <Variable Name="QuotaExc" Type="bool" />
+  <Variable Name="ApplicationName" Type="string[20]" />
+  <Variable Name="ApplicationState" Type="dint" />
+  <Variable Name="EvaluationMode" Type="bool" />
+  <Variable Name="TestMode" Type="bool" />
+  <Variable Name="ITSMode" Type="bool" />
+  <Variable Name="SimulatedHW" Type="bool" />
+  <Variable Name="RestartInhEvalMode" Type="bool" />
+  <Variable Name="AppInfoStatus" Type="dint" />
+</Variables>

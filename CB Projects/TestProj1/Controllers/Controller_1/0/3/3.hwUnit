@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HWUnit Path="Controller_1.0.3" TypeID="50331649" TypeDescription="Com" HWSimulationSupported="1">
+  <ParameterSettings>
+    <ParameterSetting Name="BAUDRATE" Value="9.6" Description="Baudrate" />
+    <ParameterSetting Name="PARITY" Value="none" Description="Parity" />
+    <ParameterSetting Name="DATABITS" Value="8" Description="Databits" />
+    <ParameterSetting Name="STOPBITS" Value="1" Description="Stopbits" />
+    <ParameterSetting Name="HANDSHAKE" Value="None" Description="Flow control" />
+    <ParameterSetting Name="RTSDELAY" Value="0" Description="Delay of the RTS-signal" />
+  </ParameterSettings>
+  <HWChannels />
+</HWUnit>

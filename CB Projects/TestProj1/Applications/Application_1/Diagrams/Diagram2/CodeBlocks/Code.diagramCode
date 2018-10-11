@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FDCodeBlock Name="Code">
+  <FunctionDiagram>
+    <Pages>
+      <Page PageNo="1">
+        <Blocks>
+          <Invocation Name="CTUD_1" DataFlowOrder="1" Id="af1e3722-bc98-4373-a9b5-ceb654377d5b">
+            <DataConnections>
+              <DataConnection Src="3" Dest="CTUD_1.PV" SrcDirect="true" Id="dda36a51-71e1-4ffa-b062-c3964041964e" />
+              <DataConnection Src="pulse" Dest="CTUD_1.CU" SrcDirect="true" Id="c496d68b-d483-498c-89e6-782969ebf2d1" />
+            </DataConnections>
+          </Invocation>
+          <DataRef Name="LimitReached(1)" Id="6ccb8efa-ccb8-4091-8264-2bc00031c324">
+            <DataConnections>
+              <DataConnection Src="CTUD_1.QU" Dest="LimitReached(1)" Id="ca139622-f90c-4aff-ace0-33664c52f02f" />
+            </DataConnections>
+          </DataRef>
+        </Blocks>
+      </Page>
+    </Pages>
+  </FunctionDiagram>
+</FDCodeBlock>

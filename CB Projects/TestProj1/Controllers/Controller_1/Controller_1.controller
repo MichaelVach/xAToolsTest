@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Controller Name="Controller_1" SystemIdentity="172.16.0.0" ControllerType="AC 800M" MajorVersion="1" MinorVersion="0" Revision="0">
+  <Tasks>
+    <Task Name="Fast" IntervalTime="50" Priority="2" LatencyPercentage="10" />
+    <Task Name="Normal" IntervalTime="250" Priority="3" Offset="15" LatencyPercentage="10" />
+    <Task Name="Slow" IntervalTime="1000" Priority="4" Offset="25" LatencyPercentage="10" />
+  </Tasks>
+  <ConnectedApplications>
+    <ConnectedApplication Name="Application_1" />
+  </ConnectedApplications>
+  <ConnectedHardwareLibraries>
+    <ConnectedHardwareLibrary Name="BasicHwLib" MajorVersion="6" MinorVersion="0" Revision="0" />
+  </ConnectedHardwareLibraries>
+</Controller>

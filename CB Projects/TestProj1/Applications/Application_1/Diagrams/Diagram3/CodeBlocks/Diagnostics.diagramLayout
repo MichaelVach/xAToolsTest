@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Pages>
+  <Layout FormatName="A4" Orientation="Landscape" Unit="0.01 mm" Width="21000" Height="29700" Top="1500" Bottom="1500" Left="1500" Right="1500" />
+  <Page PageNo="1">
+    <Blocks>
+      <Invocation Name="PowerFailureInfos">
+        <Layout X="847" Y="8297" Width="2201" Height="1185">
+          <Ports>
+            <Port Name="Reset" Visible="false" />
+            <Port Name="NoOfPFSinceRst" Visible="true" />
+            <Port Name="DurOfPFSinceRst" Visible="false" />
+            <Port Name="OccOfRst" Visible="false" />
+            <Port Name="NoOfPFAtLastOcc" Visible="true" />
+            <Port Name="DurOfPFAtLastOcc" Visible="false" />
+            <Port Name="OccOfLastPF" Visible="false" />
+          </Ports>
+        </Layout>
+        <DataConnections>
+          <DataConnection Src="PowerFailureInfos.OccOfLastPF" Dest="OccOfLastPF" />
+          <DataConnection Src="PowerFailureInfos.DurOfPFAtLastOcc" Dest="DurOfPFAtLastOcc" />
+          <DataConnection Src="PowerFailureInfos.OccOfRst" Dest="OccOfRst" />
+          <DataConnection Src="PowerFailureInfos.DurOfPFSinceRst" Dest="DurOfPFSinceRst" />
+        </DataConnections>
+      </Invocation>
+      <Invocation Name="SystemDiagnostics">
+        <Layout X="847" Y="2709" Width="2371" Height="1185">
+          <Ports>
+            <Port Name="CheckAtStart" Visible="false" />
+            <Port Name="QuotaExc" Visible="true" />
+            <Port Name="DownLoadQuotaExc" Visible="true" />
+            <Port Name="MemQuota" Visible="false" />
+            <Port Name="DownLoadMemQuota" Visible="false" />
+            <Port Name="UpdateInterval" Visible="false" />
+            <Port Name="CyclicUpdate" Visible="false" />
+            <Port Name="Update" Visible="false" />
+            <Port Name="CN1ResetCounters" Visible="false" />
+            <Port Name="CN2ResetCounters" Visible="false" />
+            <Port Name="System" Visible="false" />
+            <Port Name="CyclicLoadPerCent" Visible="false" />
+            <Port Name="TotalSystemLoadPerCent" Visible="false" />
+            <Port Name="LatestUpdate" Visible="false" />
+            <Port Name="MemorySizeBytes" Visible="false" />
+            <Port Name="UsedMemoryBytes" Visible="false" />
+            <Port Name="MaxUsedMemoryBytes" Visible="false" />
+            <Port Name="MemQuotaBytes" Visible="false" />
+            <Port Name="StopTime" Visible="false" />
+            <Port Name="InitPeakMemBytes" Visible="false" />
+            <Port Name="UsedMemAtStopBytes" Visible="false" />
+            <Port Name="MaxUsedMemAtStopBytes" Visible="false" />
+            <Port Name="DownLMemQuotaBytes" Visible="false" />
+            <Port Name="NoOfAlarms" Visible="false" />
+            <Port Name="NoOfSystemAlarms" Visible="false" />
+            <Port Name="NoOfCondNames" Visible="false" />
+            <Port Name="NoOfPrinterQueues" Visible="false" />
+            <Port Name="NoOfSubscriptions" Visible="false" />
+            <Port Name="NoOfUsedEvents" Visible="false" />
+            <Port Name="NoOfFreeEvents" Visible="false" />
+            <Port Name="MaxNoOfEvents" Visible="false" />
+            <Port Name="NoOfUnlinkedEvents" Visible="false" />
+            <Port Name="NoOfQueuedEvents" Visible="false" />
+            <Port Name="CN1SentPackages" Visible="false" />
+            <Port Name="CN1LostSentPackages" Visible="false" />
+            <Port Name="CN1ReceivedPackages" Visible="false" />
+            <Port Name="CN1LostReceivedPackages" Visible="false" />
+            <Port Name="CN2SentPackages" Visible="false" />
+            <Port Name="CN2LostSentPackages" Visible="false" />
+            <Port Name="CN2ReceivedPackages" Visible="false" />
+            <Port Name="CN2LostReceivedPackages" Visible="false" />
+          </Ports>
+        </Layout>
+      </Invocation>
+      <Invocation Name="SetTime">
+        <Layout X="1016" Y="10837" Width="1016" Height="508">
+          <Ports>
+            <Port Name="Request" Visible="false" />
+            <Port Name="Done" Visible="false" />
+            <Port Name="Error" Visible="false" />
+            <Port Name="Status" Visible="false" />
+            <Port Name="CmdPar" Visible="false" />
+          </Ports>
+        </Layout>
+      </Invocation>
+      <Invocation Name="SetTimeZone">
+        <Layout X="2709" Y="10837" Width="2201" Height="508">
+          <Ports>
+            <Port Name="Request" Visible="false" />
+            <Port Name="Done" Visible="false" />
+            <Port Name="Error" Visible="false" />
+            <Port Name="Status" Visible="false" />
+            <Port Name="CmdPar" Visible="false" />
+          </Ports>
+        </Layout>
+      </Invocation>
+      <Invocation Name="ApplicationInfo">
+        <Layout X="847" Y="5419" Width="2032" Height="1185">
+          <Ports>
+            <Port Name="ApplicationName" Visible="true" />
+            <Port Name="ApplicationState" Visible="false" />
+            <Port Name="EvaluationMode" Visible="false" />
+            <Port Name="TestMode" Visible="true" />
+            <Port Name="ITSMode" Visible="false" />
+            <Port Name="SimulatedHW" Visible="false" />
+            <Port Name="RestartInhEvalMode" Visible="false" />
+            <Port Name="Status" Visible="false" />
+          </Ports>
+        </Layout>
+        <DataConnections>
+          <DataConnection Src="ApplicationInfo.Status" Dest="AppInfoStatus" />
+          <DataConnection Src="ApplicationInfo.RestartInhEvalMode" Dest="RestartInhEvalMode" />
+          <DataConnection Src="ApplicationInfo.SimulatedHW" Dest="SimulatedHW" />
+          <DataConnection Src="ApplicationInfo.ITSMode" Dest="ITSMode" />
+          <DataConnection Src="ApplicationInfo.EvaluationMode" Dest="EvaluationMode" />
+          <DataConnection Src="ApplicationInfo.ApplicationState" Dest="ApplicationState" />
+        </DataConnections>
+      </Invocation>
+      <DataRef Name="ApplicationName(1)">
+        <Layout X="5249" Y="5249" Width="1355" Height="339" />
+        <DataConnections>
+          <DataConnection Src="ApplicationInfo.ApplicationName" Dest="ApplicationName(1)">
+            <Layout>
+              <SrcPos X="3090" Y="5927" />
+              <LinePos DX="1312" />
+              <LinePos DY="-508" />
+              <DestPos X="5038" Y="5419" />
+            </Layout>
+          </DataConnection>
+        </DataConnections>
+      </DataRef>
+      <DataRef Name="TestMode(1)">
+        <Layout X="5757" Y="6435" Width="847" Height="339" />
+        <DataConnections>
+          <DataConnection Src="ApplicationInfo.TestMode" Dest="TestMode(1)">
+            <Layout>
+              <SrcPos X="3090" Y="6265" />
+              <LinePos DX="1334" />
+              <LinePos DY="339" />
+              <DestPos X="5546" Y="6604" />
+            </Layout>
+          </DataConnection>
+        </DataConnections>
+      </DataRef>
+      <DataRef Name="QuotaExc(1)">
+        <Layout X="5757" Y="2540" Width="847" Height="339" />
+        <DataConnections>
+          <DataConnection Src="SystemDiagnostics.QuotaExc" Dest="QuotaExc(1)">
+            <Layout>
+              <SrcPos X="3429" Y="3217" />
+              <LinePos DX="995" />
+              <LinePos DY="-508" />
+              <DestPos X="5546" Y="2709" />
+            </Layout>
+          </DataConnection>
+        </DataConnections>
+      </DataRef>
+      <DataRef Name="DownLoadQuotaExc(1)">
+        <Layout X="5757" Y="3725" Width="847" Height="339" />
+        <DataConnections>
+          <DataConnection Src="SystemDiagnostics.DownLoadQuotaExc" Dest="DownLoadQuotaExc(1)">
+            <Layout>
+              <SrcPos X="3429" Y="3556" />
+              <LinePos DX="974" />
+              <LinePos DY="339" />
+              <DestPos X="5546" Y="3895" />
+            </Layout>
+          </DataConnection>
+        </DataConnections>
+      </DataRef>
+      <DataRef Name="NoOfPFSinceRst(1)">
+        <Layout X="5927" Y="7959" Width="677" Height="339" />
+        <DataConnections>
+          <DataConnection Src="PowerFailureInfos.NoOfPFSinceRst" Dest="NoOfPFSinceRst(1)">
+            <Layout>
+              <SrcPos X="3260" Y="8805" />
+              <LinePos DX="1164" />
+              <LinePos DY="-677" />
+              <DestPos X="5715" Y="8128" />
+            </Layout>
+          </DataConnection>
+        </DataConnections>
+      </DataRef>
+      <DataRef Name="NoOfPFAtLastOcc(1)">
+        <Layout X="5927" Y="9313" Width="677" Height="339" />
+        <DataConnections>
+          <DataConnection Src="PowerFailureInfos.NoOfPFAtLastOcc" Dest="NoOfPFAtLastOcc(1)">
+            <Layout>
+              <SrcPos X="3260" Y="9144" />
+              <LinePos DX="1164" />
+              <LinePos DY="339" />
+              <DestPos X="5715" Y="9483" />
+            </Layout>
+          </DataConnection>
+        </DataConnections>
+      </DataRef>
+    </Blocks>
+  </Page>
+</Pages>

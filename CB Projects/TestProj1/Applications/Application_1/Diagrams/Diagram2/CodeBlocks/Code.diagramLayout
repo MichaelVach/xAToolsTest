@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Pages>
+  <Layout FormatName="A4" Orientation="Landscape" Unit="0.01 mm" Width="21000" Height="29700" />
+  <Page PageNo="1">
+    <Blocks>
+      <Invocation Name="CTUD_1">
+        <Layout X="5080" Y="2371" Width="1355" Height="2201">
+          <Ports>
+            <Port Name="CU" Visible="true" />
+            <Port Name="CD" Visible="true" />
+            <Port Name="Reset" Visible="true" />
+            <Port Name="Load" Visible="true" />
+            <Port Name="PV" Visible="true" />
+            <Port Name="QU" Visible="true" />
+            <Port Name="QD" Visible="true" />
+            <Port Name="CV" Visible="true" />
+          </Ports>
+        </Layout>
+        <DataConnections>
+          <DataConnection Src="3" Dest="CTUD_1.PV" />
+          <DataConnection Src="pulse" Dest="CTUD_1.CU" />
+        </DataConnections>
+      </Invocation>
+      <DataRef Name="LimitReached(1)">
+        <Layout X="8975" Y="2709" Width="847" Height="339" />
+        <DataConnections>
+          <DataConnection Src="CTUD_1.QU" Dest="LimitReached(1)">
+            <Layout>
+              <SrcPos X="6646" Y="2879" />
+              <DestPos X="8763" Y="2879" />
+            </Layout>
+          </DataConnection>
+        </DataConnections>
+      </DataRef>
+    </Blocks>
+  </Page>
+</Pages>

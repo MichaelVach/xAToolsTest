@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FDCodeBlock Name="Code">
+  <FunctionDiagram>
+    <Pages>
+      <Page PageNo="1">
+        <Blocks />
+      </Page>
+    </Pages>
+  </FunctionDiagram>
+</FDCodeBlock>

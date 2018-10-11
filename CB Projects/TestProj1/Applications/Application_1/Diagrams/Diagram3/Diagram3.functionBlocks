@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FunctionBlocks>
+  <FunctionBlock Name="PowerFailureInfos" Type="PowerFailureInfos" AspectObject="0" />
+  <FunctionBlock Name="SystemDiagnostics" Type="SystemDiagnostics" />
+  <FunctionBlock Name="SetTime" Type="SetDT" AspectObject="0" />
+  <FunctionBlock Name="SetTimeZone" Type="SetTimeZoneInfo" AspectObject="0" />
+  <FunctionBlock Name="ApplicationInfo" Type="ApplicationInfo" AspectObject="0" />
+</FunctionBlocks>

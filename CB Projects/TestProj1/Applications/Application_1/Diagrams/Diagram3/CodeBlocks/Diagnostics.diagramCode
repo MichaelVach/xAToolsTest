@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FDCodeBlock Name="Diagnostics">
+  <FunctionDiagram>
+    <Pages>
+      <Page PageNo="1">
+        <Description>System support</Description>
+        <Blocks>
+          <Invocation Name="PowerFailureInfos" DataFlowOrder="3" Id="f3dc3be8-2116-4c29-9458-48a9732f83b7">
+            <DataConnections>
+              <DataConnection Src="PowerFailureInfos.OccOfLastPF" Dest="OccOfLastPF" DestDirect="true" Id="547ad900-d4eb-459a-a51d-4444118645a4" />
+              <DataConnection Src="PowerFailureInfos.DurOfPFAtLastOcc" Dest="DurOfPFAtLastOcc" DestDirect="true" Id="ea522cca-798a-4b23-811c-23a8c9dbbbf3" />
+              <DataConnection Src="PowerFailureInfos.OccOfRst" Dest="OccOfRst" DestDirect="true" Id="a83ccbc5-079d-4f78-b497-26a5b71131d9" />
+              <DataConnection Src="PowerFailureInfos.DurOfPFSinceRst" Dest="DurOfPFSinceRst" DestDirect="true" Id="33f8bc89-2d1a-4f3e-a1b3-4f223fae7ca3" />
+            </DataConnections>
+          </Invocation>
+          <Invocation Name="SystemDiagnostics" DataFlowOrder="1" Id="05d23698-dffa-46b1-94ed-6679d410c36d" />
+          <Invocation Name="SetTime" DataFlowOrder="4" Id="ba73f1a1-e887-43c9-8539-d34fdfd6e7c4" />
+          <Invocation Name="SetTimeZone" DataFlowOrder="5" Id="48f1b48a-8e3c-41a1-8cc6-ece018f5a2d7" />
+          <Invocation Name="ApplicationInfo" DataFlowOrder="2" Id="db05d577-f928-4f71-82c4-6eb7134c8b30">
+            <DataConnections>
+              <DataConnection Src="ApplicationInfo.Status" Dest="AppInfoStatus" DestDirect="true" Id="75ce5eee-b5d1-423d-ad40-2a2108a4faa7" />
+              <DataConnection Src="ApplicationInfo.RestartInhEvalMode" Dest="RestartInhEvalMode" DestDirect="true" Id="67a9e9b2-7b9e-4854-a2ae-959c51d0ae84" />
+              <DataConnection Src="ApplicationInfo.SimulatedHW" Dest="SimulatedHW" DestDirect="true" Id="c3d121b1-6332-47e7-a232-d0d4a1591321" />
+              <DataConnection Src="ApplicationInfo.ITSMode" Dest="ITSMode" DestDirect="true" Id="2ccd8e10-5eb1-496f-b150-f89a29f946b1" />
+              <DataConnection Src="ApplicationInfo.EvaluationMode" Dest="EvaluationMode" DestDirect="true" Id="a7641b92-c7e9-4752-b27a-f1a9eaefaad7" />
+              <DataConnection Src="ApplicationInfo.ApplicationState" Dest="ApplicationState" DestDirect="true" Id="6f8c2b4c-a2d8-4273-9c66-37943a40f82b" />
+            </DataConnections>
+          </Invocation>
+          <DataRef Name="ApplicationName(1)" Id="c5086ecb-a888-46d6-93e4-1f08615b0c5a">
+            <DataConnections>
+              <DataConnection Src="ApplicationInfo.ApplicationName" Dest="ApplicationName(1)" Id="cdf4327b-9f5d-4688-987c-a9b3f2667d25" />
+            </DataConnections>
+          </DataRef>
+          <DataRef Name="TestMode(1)" Id="06d8d160-d93e-4134-8bf2-3c3ccaaaa2a5">
+            <DataConnections>
+              <DataConnection Src="ApplicationInfo.TestMode" Dest="TestMode(1)" Id="64dd5f93-47a1-4883-8987-3b04c71b694f" />
+            </DataConnections>
+          </DataRef>
+          <DataRef Name="QuotaExc(1)" Id="638d629a-c40c-4448-a5eb-831bb1640177">
+            <DataConnections>
+              <DataConnection Src="SystemDiagnostics.QuotaExc" Dest="QuotaExc(1)" Id="2287242d-8088-4c10-b0b4-f26562c49b0a" />
+            </DataConnections>
+          </DataRef>
+          <DataRef Name="DownLoadQuotaExc(1)" Id="b437b2a6-0c2f-413a-bad3-69168e8ae40c">
+            <DataConnections>
+              <DataConnection Src="SystemDiagnostics.DownLoadQuotaExc" Dest="DownLoadQuotaExc(1)" Id="0c060ad5-b9b1-454f-8124-3741026b6151" />
+            </DataConnections>
+          </DataRef>
+          <DataRef Name="NoOfPFSinceRst(1)" Id="e8bab09d-57ca-4470-98c7-baf7ac542a24">
+            <DataConnections>
+              <DataConnection Src="PowerFailureInfos.NoOfPFSinceRst" Dest="NoOfPFSinceRst(1)" Id="1951cf30-d1d1-413a-9eaa-1bdc0c6a2f90" />
+            </DataConnections>
+          </DataRef>
+          <DataRef Name="NoOfPFAtLastOcc(1)" Id="36b0e51b-117d-400b-bccd-f6a73f763310">
+            <DataConnections>
+              <DataConnection Src="PowerFailureInfos.NoOfPFAtLastOcc" Dest="NoOfPFAtLastOcc(1)" Id="42efff4a-1aec-4cea-b39e-6bf855b833d0" />
+            </DataConnections>
+          </DataRef>
+        </Blocks>
+      </Page>
+    </Pages>
+  </FunctionDiagram>
+</FDCodeBlock>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HWUnit Path="Controller_1.0.1" TypeID="50331680" TypeDescription="Ethernet" HWSimulationSupported="1">
+  <ParameterSettings>
+    <ParameterSetting Name="IPADDRESS" Value="172.16.0.0" Description="IP address" />
+    <ParameterSetting Name="IPSUBNETMASK" Value="255.255.252.0" Description="IP subnet mask" />
+    <ParameterSetting Name="NETAREA" Value="0" Description="Network Area" />
+    <ParameterSetting Name="PATHNO" Value="0" Description="Path Number" />
+    <ParameterSetting Name="NODENO" Value="0" Description="Node Number" />
+    <ParameterSetting Name="LOCAL" Value="0" Description="Network Area Local" />
+    <ParameterSetting Name="SENDPERIOD" Value="1" Description="Send Period" />
+    <ParameterSetting Name="MAXLOSTMSG" Value="3" Description="Max Lost Messages" />
+    <ParameterSetting Name="PROXYROUTER" Value="0.0.0.0" Description="Proxy router" />
+    <ParameterSetting Name="TARGETADDRESS" Value="0.0.0.0" Description="Target address" />
+  </ParameterSettings>
+  <HWChannels>
+    <HWChannel Address="IW0.1.0" Name="UnitStatus" ChannelType="status_in" />
+  </HWChannels>
+</HWUnit>
