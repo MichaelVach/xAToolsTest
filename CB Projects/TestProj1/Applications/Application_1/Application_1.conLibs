@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ConnectedLibraries>
   <ConnectedLibrary Name="BasicLib" MajorVersion="1" MinorVersion="8" Revision="5" />
+  <ConnectedLibrary Name="MAPL_DataTypes" MajorVersion="1" MinorVersion="4" Revision="1" />
+  <ConnectedLibrary Name="MAPL_SignalLib" MajorVersion="1" MinorVersion="4" Revision="1" />
 </ConnectedLibraries>

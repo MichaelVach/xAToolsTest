@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ControlModule Name="AIn2" Type="MAPL_SignalLib.AIn" VisibilityInGraphics="invisible">
+  <CMConnections>
+    <CMConnection Name="LIO" ActualParameter="lio2" />
+  </CMConnections>
+</ControlModule>

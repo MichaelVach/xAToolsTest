@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Variables>
+  <Variable Name="lio1" Type="AIn_Data" />
+  <Variable Name="lio2" Type="AIn_Data" />
+</Variables>

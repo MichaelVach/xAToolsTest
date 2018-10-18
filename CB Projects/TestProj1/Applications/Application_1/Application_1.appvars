@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationVariables>
+  <GlobalVariables>
+    <GlobalVariable Name="g1" Type="real" />
+    <GlobalVariable Name="g2" Type="real" />
+    <GlobalVariable Name="g3" Type="real" />
+    <GlobalVariable Name="g4" Type="real" />
+  </GlobalVariables>
+</ApplicationVariables>

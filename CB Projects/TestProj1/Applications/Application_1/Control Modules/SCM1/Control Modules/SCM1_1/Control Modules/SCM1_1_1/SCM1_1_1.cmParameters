@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CMParameters>
+  <CMParameter Name="r111" Type="real" Direction="in" />
+  <CMParameter Name="r211" Type="real" Direction="in" />
+  <CMParameter Name="r311" Type="real" Direction="in" />
+</CMParameters>
