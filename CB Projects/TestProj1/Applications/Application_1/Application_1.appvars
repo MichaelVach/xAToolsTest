@@ -6,5 +6,6 @@
     <GlobalVariable Name="g3" Type="real" />
     <GlobalVariable Name="g4" Type="real" />
     <GlobalVariable Name="g5" Type="real" />
+    <GlobalVariable Name="g6" Type="real" />
   </GlobalVariables>
 </ApplicationVariables>
