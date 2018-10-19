@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{e4905187-0935-4fb3-88e8-85a7cb8f7fc4}:{c1688996-c05e-4874-b87a-7c9bde713ee9}</ElementId>
+  <ElementName>DoubleDIn:fpeMain</ElementName>
+  <ElementTypeId>{9b12a235-c19a-4ca3-a38f-eb1fdf913445}</ElementTypeId>
+  <ElementTypeName>MAPL Faceplate Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>1000</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties />
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evFeedbackTextArray</Name>
+        <TypeName>StringArray</TypeName>
+        <ExpressionText>{"", $'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_Active', $'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_Inactive', $'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_Activated', $'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_Deactivated', $'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_On', $'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_Off', $'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_Open', $'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_Closed', $'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_Running', $'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_Stopped'}</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evFB0_Text</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'ev::evFeedbackTextArray'[$'pr::DoubleDIn:Control Module:FPIntPar.FB0Type']</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evFB1_Text</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'ev::evFeedbackTextArray'[$'pr::DoubleDIn:Control Module:FPIntPar.FB1Type']</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent</BackColor>
+        <DefaultSize>
+          <Width>300</Width>
+          <Height>100</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>_BackgroundColor</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;_BackgroundColor&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="$'lv::_Extent'#X" />
+              <PropertyDescription Name="YPos" Value="$'lv::_Extent'#Y" />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="7" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_ContentBox1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_ContentBox1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="5." />
+              <PropertyDescription Name="Width" Value="290." />
+              <PropertyDescription Name="Height" Value="90." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Description1Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description1Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description1Visibility" Value="True" />
+              <PropertyDescription Name="Description2Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description2Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description2Visibility" Value="True" />
+              <PropertyDescription Name="HeaderBlinking" Value="False" />
+              <PropertyDescription Name="HeaderFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="HeaderHighlight" Value="False" />
+              <PropertyDescription Name="HeaderText" Value="$'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_Feedback'" />
+              <PropertyDescription Name="HeaderVisibility" Value="True" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InteractionVisibility" Value="False" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="ParentObjectName" Value="&quot;xyz#123&quot;" />
+              <PropertyDescription Name="StaticContent" Value="False" />
+              <PropertyDescription Name="UnitFont" Value="$'ft::ABB Marine Customization:Arial_16pt_Regular'" />
+              <PropertyDescription Name="UnitText" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitVisibility" Value="True" />
+              <PropertyDescription Name="ValueFont" Value="$'ft::ABB Marine Customization:Arial_24pt_Bold'" />
+              <PropertyDescription Name="ValueText" Value="&quot;&quot;" />
+              <PropertyDescription Name="ValueVisibility" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_BooleanIndicator1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_BooleanIndicator1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="30." />
+              <PropertyDescription Name="Width" Value="270." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="Forced" Value="$'pr::DoubleDIn:Control Module:FPIntPar.FB0.Forced'" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InputText" Value="$'ev::evFB0_Text' + &quot; &quot; + $'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_Feedback'" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::DoubleDIn:Control Module:FPIntPar.FB0.Value' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_BooleanIndicator2</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_BooleanIndicator2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="60." />
+              <PropertyDescription Name="Width" Value="270." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="Forced" Value="$'pr::DoubleDIn:Control Module:FPIntPar.FB1.Forced'" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InputText" Value="$'ev::evFB1_Text' + &quot; &quot; + $'nt::DoubleDIn_NLS:NLSID_ProcessLib_DoubleDIn_Feedback'" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::DoubleDIn:Control Module:FPIntPar.FB1.Value' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

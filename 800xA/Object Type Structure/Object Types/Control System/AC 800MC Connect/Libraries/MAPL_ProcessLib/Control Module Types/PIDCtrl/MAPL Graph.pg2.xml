@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{7622fdb2-ff96-42b9-8949-4a636a3a9d25}:{430e7fb1-b03d-4d58-b6db-a2d68cba38d2}</ElementId>
+  <ElementName>PIDCtrl:MAPL Graph</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>None</InhibitInput>
+    <SubscriptionRate>ip::SubscriptionRate</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>ColorControlByFaceplate</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"Chooses the origin of color control. \n TRUE: Color scheme is selected with faceplate variables\n FALSE: Color scheme is selected with workplace variables."</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>ColorSchemeSelection</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"ColorSchemeSelection"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SubscriptionRate</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"The update rate for all aspect object properties subscribed for"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evGridColor</Name>
+        <TypeName>Color</TypeName>
+        <ExpressionText>if $'ip::ColorSchemeSelection' = 0 then LogicalColorFromName("TrendGrid", $'ev::Active_ColorSchemeName', Transparent) else if $'ip::ColorSchemeSelection' = 1 then LogicalColorFromName("TrendGrid", "ABBMarine_UI_MidnightGrey", Transparent) else if $'ip::ColorSchemeSelection' = 2 then LogicalColorFromName("TrendGrid", "ABBMarine_UI_GraphiteWhite", Transparent) else if $'ip::ColorSchemeSelection' = 3 then LogicalColorFromName("TrendGrid", "ABBMarine_UI_HighContrast", Transparent) else Black</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>FaceplateColorSchemeName</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>"ABBMarine_UI_GraphiteWhite"</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>FaceplateColorSchemeIsHigh</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>FaceplateColorSchemeIsLight</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>FaceplateColorSchemeNumber</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>-1</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evRulerColor</Name>
+        <TypeName>Color</TypeName>
+        <ExpressionText>if $'ip::ColorSchemeSelection' = 0 then LogicalColorFromName("Highlight", $'ev::Active_ColorSchemeName', Transparent) else if $'ip::ColorSchemeSelection' = 1 then LogicalColorFromName("Highlight", "ABBMarine_UI_MidnightGrey", Transparent) else if $'ip::ColorSchemeSelection' = 2 then LogicalColorFromName("Highlight", "ABBMarine_UI_GraphiteWhite", Transparent) else if $'ip::ColorSchemeSelection' = 3 then LogicalColorFromName("Highlight", "ABBMarine_UI_HighContrast", Transparent) else Black</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evBackgroundColor</Name>
+        <TypeName>Color</TypeName>
+        <ExpressionText>if $'ip::ColorSchemeSelection' = 0 then LogicalColorFromName("ContentActive", $'ev::Active_ColorSchemeName', Transparent) else if $'ip::ColorSchemeSelection' = 1 then LogicalColorFromName("ContentActive", "ABBMarine_UI_MidnightGrey", Transparent) else if $'ip::ColorSchemeSelection' = 2 then LogicalColorFromName("ContentActive", "ABBMarine_UI_GraphiteWhite", Transparent) else if $'ip::ColorSchemeSelection' = 3 then LogicalColorFromName("ContentActive", "ABBMarine_UI_HighContrast", Transparent) else Black</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>ColorSchemeIsHigh</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>ColorSchemeIsLight</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>ColorSchemeNumber</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>-1</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>ColorSchemeName</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>"ABBMarine_UI_GraphiteWhite"</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Active_ColorSchemeIsHigh</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>if $'ip::ColorControlByFaceplate' then $'ev::FaceplateColorSchemeIsHigh' else $'ev::ColorSchemeIsHigh'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Active_ColorSchemeIsLight</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>if $'ip::ColorControlByFaceplate' then $'ev::FaceplateColorSchemeIsLight' else $'ev::ColorSchemeIsLight'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Active_ColorSchemeName</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'ip::ColorControlByFaceplate' then $'ev::FaceplateColorSchemeName' else $'ev::ColorSchemeName'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Active_ColorSchemeNumber</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'ip::ColorControlByFaceplate' then $'ev::FaceplateColorSchemeNumber' else $'ev::ColorSchemeNumber'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evTrend1Color</Name>
+        <TypeName>Color</TypeName>
+        <ExpressionText>LogicalColorFromName("TrendT01", $'ev::Active_ColorSchemeName', Transparent)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evTrend2Color</Name>
+        <TypeName>Color</TypeName>
+        <ExpressionText>LogicalColorFromName("TrendT02", $'ev::Active_ColorSchemeName', Transparent)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evTrend3Color</Name>
+        <TypeName>Color</TypeName>
+        <ExpressionText>LogicalColorFromName("TrendT03", $'ev::Active_ColorSchemeName', Transparent)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evOperatingAreaColor</Name>
+        <TypeName>Color</TypeName>
+        <ExpressionText>if $'ip::ColorSchemeSelection' = 0 then LogicalColorFromName("Highlight", $'ev::Active_ColorSchemeName', Transparent) else if $'ip::ColorSchemeSelection' = 1 then LogicalColorFromName("Highlight", "ABBMarine_UI_MidnightGrey", Transparent) else if $'ip::ColorSchemeSelection' = 2 then LogicalColorFromName("Highlight", "ABBMarine_UI_GraphiteWhite", Transparent) else if $'ip::ColorSchemeSelection' = 3 then LogicalColorFromName("Highlight", "ABBMarine_UI_HighContrast", Transparent) else Black</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evTextColor</Name>
+        <TypeName>Color</TypeName>
+        <ExpressionText>if $'ip::ColorSchemeSelection' = 0 then LogicalColorFromName("Header", $'ev::Active_ColorSchemeName', Transparent) else if $'ip::ColorSchemeSelection' = 1 then LogicalColorFromName("Header", "ABBMarine_UI_MidnightGrey", Transparent) else if $'ip::ColorSchemeSelection' = 2 then LogicalColorFromName("Header", "ABBMarine_UI_GraphiteWhite", Transparent) else if $'ip::ColorSchemeSelection' = 3 then LogicalColorFromName("Header", "ABBMarine_UI_HighContrast", Transparent) else Black</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>ev::evBackgroundColor</BackColor>
+        <DefaultSize>
+          <Width>320</Width>
+          <Height>240</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>MAPL_Rectangle1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_Rectangle1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="320." />
+              <PropertyDescription Name="Height" Value="240." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::Active_ColorSchemeNumber'" />
+              <PropertyDescription Name="FillStatus_Color" Value="9" />
+              <PropertyDescription Name="FillStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="FillStatus_Transparency" Value="0" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="OutlineStatus_Color" Value="9" />
+              <PropertyDescription Name="OutlineStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenStyle" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenThickness" Value="0" />
+              <PropertyDescription Name="OutlineStatus_Transparency" Value="0" />
+              <PropertyDescription Name="Roundness" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>High Performance Trend</Name>
+            <TypeName>GraphicPrimitives:HighPerformanceTrend4</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;High Performance Trend&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="320." />
+              <PropertyDescription Name="Height" Value="240." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="BackgroundColor" Value="ARGB(80, $'ev::evOperatingAreaColor'#R, $'ev::evOperatingAreaColor'#G, $'ev::evOperatingAreaColor'#B)" />
+              <PropertyDescription Name="GridPen" Value="Pen($'ev::evGridColor', 0.5)" />
+              <PropertyDescription Name="BadPen" Value="DashDotPen(Red, 1., Dot, Flat, Miter)" />
+              <PropertyDescription Name="UncertainPen" Value="DashDotPen(Yellow, 1., Dot, Flat, Miter)" />
+              <PropertyDescription Name="TimeSpan" Value="60." />
+              <PropertyDescription Name="TimeAxisGridSpan" Value="15." />
+              <PropertyDescription Name="NoOfHorizGridLines" Value="6" />
+              <PropertyDescription Name="TimePresentation" Value="Relative" />
+              <PropertyDescription Name="Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="RulerPen" Value="Pen($'ev::evRulerColor', 2.)" />
+              <PropertyDescription Name="NumberOfTraces" Value="4" />
+              <PropertyDescription Name="CurrentValueAreaPercentage" Value="0" />
+              <PropertyDescription Name="BinaryMode" Value="StackedOverlapping" />
+              <PropertyDescription Name="BinaryYMargin" Value="0" />
+              <PropertyDescription Name="UpdateRate" Value="500" />
+              <PropertyDescription Name="FramePen" Value="Pen(RGB(108, 125, 135), 1.)" />
+              <PropertyDescription Name="FrameRadius" Value="0" />
+              <PropertyDescription Name="Trace01CurrentValue" Value="$'hl::PIDCtrl:Control Module:LIO.OUT.ActSP'" />
+              <PropertyDescription Name="Trace01Pen" Value="Pen($'ev::evTrend2Color', 2.)" />
+              <PropertyDescription Name="Trace01EngineeringUnit" Value="&quot;&quot;" />
+              <PropertyDescription Name="Trace01ScaleType" Value="Linear" />
+              <PropertyDescription Name="Trace01DrawMode" Value="Line" />
+              <PropertyDescription Name="Trace01MaxValue" Value="$'pr::PIDCtrl:Control Module:PV.Parameters.Max'" />
+              <PropertyDescription Name="Trace01MinValue" Value="$'pr::PIDCtrl:Control Module:PV.Parameters.Min'" />
+              <PropertyDescription Name="Trace01NormValue" Value="0." />
+              <PropertyDescription Name="Trace01HorizontalGridTextMode" Value="None" />
+              <PropertyDescription Name="Trace01NumberOfDecimals" Value="$'pr::PIDCtrl:Control Module:PV.Parameters.Fraction'" />
+              <PropertyDescription Name="Trace01ExtrapolationMode" Value="Value" />
+              <PropertyDescription Name="Trace01SourceType" Value="HistoryLog" />
+              <PropertyDescription Name="Trace01UseBufferedData" Value="False" />
+              <PropertyDescription Name="Trace01Limits" Value="Empty" />
+              <PropertyDescription Name="Trace02CurrentValue" Value="$'hl::PIDCtrl:Control Module:PV.Value'" />
+              <PropertyDescription Name="Trace02Pen" Value="Pen($'ev::evTrend1Color', 2.)" />
+              <PropertyDescription Name="Trace02EngineeringUnit" Value="$'pr::PIDCtrl:Control Module:PV.Parameters.Unit'" />
+              <PropertyDescription Name="Trace02ScaleType" Value="Linear" />
+              <PropertyDescription Name="Trace02DrawMode" Value="Line" />
+              <PropertyDescription Name="Trace02MaxValue" Value="$'pr::PIDCtrl:Control Module:PV.Parameters.Max'" />
+              <PropertyDescription Name="Trace02MinValue" Value="$'pr::PIDCtrl:Control Module:PV.Parameters.Min'" />
+              <PropertyDescription Name="Trace02NormValue" Value="0." />
+              <PropertyDescription Name="Trace02HorizontalGridTextMode" Value="None" />
+              <PropertyDescription Name="Trace02NumberOfDecimals" Value="$'pr::PIDCtrl:Control Module:PV.Parameters.Fraction'" />
+              <PropertyDescription Name="Trace02ExtrapolationMode" Value="Value" />
+              <PropertyDescription Name="Trace02SourceType" Value="HistoryLog" />
+              <PropertyDescription Name="Trace02UseBufferedData" Value="False" />
+              <PropertyDescription Name="Trace02Limits" Value="Empty" />
+              <PropertyDescription Name="Trace03CurrentValue" Value="$'hl::PIDCtrl:Control Module:LIO.OUT.Value'" />
+              <PropertyDescription Name="Trace03Pen" Value="Pen($'ev::evTrend3Color', 2.)" />
+              <PropertyDescription Name="Trace03EngineeringUnit" Value="$'pr::PIDCtrl:Control Module:OutUnit'" />
+              <PropertyDescription Name="Trace03ScaleType" Value="Linear" />
+              <PropertyDescription Name="Trace03DrawMode" Value="Line" />
+              <PropertyDescription Name="Trace03MaxValue" Value="$'pr::PIDCtrl:Control Module:OutMax'" />
+              <PropertyDescription Name="Trace03MinValue" Value="$'pr::PIDCtrl:Control Module:OutMin'" />
+              <PropertyDescription Name="Trace03NormValue" Value="0." />
+              <PropertyDescription Name="Trace03HorizontalGridTextMode" Value="None" />
+              <PropertyDescription Name="Trace03NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="Trace03ExtrapolationMode" Value="Value" />
+              <PropertyDescription Name="Trace03SourceType" Value="HistoryLog" />
+              <PropertyDescription Name="Trace03UseBufferedData" Value="False" />
+              <PropertyDescription Name="Trace03Limits" Value="Empty" />
+              <PropertyDescription Name="Trace04CurrentValue" Value="$'null'" />
+              <PropertyDescription Name="Trace04Pen" Value="Pen(RGB(162, 113, 83), 2.)" />
+              <PropertyDescription Name="Trace04EngineeringUnit" Value="&quot;&quot;" />
+              <PropertyDescription Name="Trace04ScaleType" Value="Linear" />
+              <PropertyDescription Name="Trace04DrawMode" Value="Line" />
+              <PropertyDescription Name="Trace04MaxValue" Value="$'pr::PIDCtrl:Control Module:PV.Parameters.Max'" />
+              <PropertyDescription Name="Trace04MinValue" Value="$'pr::PIDCtrl:Control Module:PV.Parameters.Min'" />
+              <PropertyDescription Name="Trace04NormValue" Value="0." />
+              <PropertyDescription Name="Trace04HorizontalGridTextMode" Value="None" />
+              <PropertyDescription Name="Trace04NumberOfDecimals" Value="2" />
+              <PropertyDescription Name="Trace04ExtrapolationMode" Value="Value" />
+              <PropertyDescription Name="Trace04SourceType" Value="HistoryLog" />
+              <PropertyDescription Name="Trace04UseBufferedData" Value="False" />
+              <PropertyDescription Name="Trace04Limits" Value="LimitArray(Limit(20., LowerLimit, Pen($'ev::evBackgroundColor', 1.), $'ev::evBackgroundColor'), Limit(30., UpperLimit, Pen($'ev::evBackgroundColor', 1.), $'ev::evBackgroundColor'))" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

@@ -1,0 +1,645 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{e61bce15-f4ae-4907-8b2b-f76f927bbd0f}:{d9aed787-2ecd-4fce-b93d-23d2b4fb463a}</ElementId>
+  <ElementName>OnOffCtrl_VSD:MAPL Faceplate Base Element</ElementName>
+  <ElementTypeId>{1c0fedcf-764b-42e0-8ffd-76cff2a6285b}</ElementTypeId>
+  <ElementTypeName>MAPL Faceplate Base Element</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>1000</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties />
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evModeText</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_OutOfService' else ReplaceRE(Trim(Format("{0} {1} {2} {3} {4}", $'ev::evModeText1', $'ev::evModeText2', $'ev::evModeText3', $'ev::evModeText4', $'ev::evModeText5')), "\\s+", " ")</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evModeText1</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Seq' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_SEQ' else if $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Cen' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_CEN' else if $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Loc' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_LOC' else ""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evModeText2</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Loc' then Format("[ {0} ]", if $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Auto' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_AUTO' else $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_MAN') else if $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Seq' then Format("{0}", if $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Auto' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_AUTO' else Variant("")) else Format("{0}", if $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Auto' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_AUTO' else $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_MAN')</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evModeText3</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Forced' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_FORCED' else ""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evModeText5</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::OnOffCtrl_VSD:Control Module:LIO.IN.DutyAccepted' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Status_Duty' else if $'pr::OnOffCtrl_VSD:Control Module:LIO.IN.Standby' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Status_Standby' else ""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evStatusText</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' then "" else ReplaceRE(Trim(Format("{0} {1} {2}", $'ev::evStatusText1', $'ev::evStatusText2', $'ev::evStatusText3')), "\\s+", " ")</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evStatusText1</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Run' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_RunState' else $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Stopped'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evStatusText2</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::OnOffCtrl_VSD:Control Module:TwoDirMot' then if $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_DirAct' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_CCW' else $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_CW' else ""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evStatusText3</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Blackout' then Format("* {0} *", $'nt::MAPL_AE_NLS:IL_NLS_Blackout') else ""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evModeText4</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Sim' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_SIM' else ""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>lc::ABBMarine_UI_MidnightGrey:Background</BackColor>
+        <DefaultSize>
+          <Width>300</Width>
+          <Height>545</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>_Configuration</Name>
+            <TypeName> Configuration</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;_Configuration&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="BottomButtonRows" Value="1" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DescriptionText" Value="$'pr::OnOffCtrl_VSD:Name:Description'" />
+              <PropertyDescription Name="ModeText" Value="$'ev::evModeText'" />
+              <PropertyDescription Name="StatusModeFieldVisible" Value="True" />
+              <PropertyDescription Name="StatusText" Value="$'ev::evStatusText'" />
+              <PropertyDescription Name="SwitchTagAndDescription" Value="False" />
+              <PropertyDescription Name="Tab1" Value="$'vw::OnOffCtrl_VSD:fpe Control:Main View'" />
+              <PropertyDescription Name="Tab1 Enabled" Value="True" />
+              <PropertyDescription Name="Tab1 Text" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Tab1'" />
+              <PropertyDescription Name="Tab1_1" Value="$'null'" />
+              <PropertyDescription Name="Tab1_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_1_Text" Value="&quot;TAB1-1&quot;" />
+              <PropertyDescription Name="Tab1_2" Value="$'null'" />
+              <PropertyDescription Name="Tab1_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_2_Text" Value="&quot;TAB1-2&quot;" />
+              <PropertyDescription Name="Tab1_3" Value="$'null'" />
+              <PropertyDescription Name="Tab1_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_3_Text" Value="&quot;TAB1-3&quot;" />
+              <PropertyDescription Name="Tab1_4" Value="$'null'" />
+              <PropertyDescription Name="Tab1_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_4_Text" Value="&quot;TAB1-4&quot;" />
+              <PropertyDescription Name="Tab1_5" Value="$'null'" />
+              <PropertyDescription Name="Tab1_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_5_Text" Value="&quot;TAB1-5&quot;" />
+              <PropertyDescription Name="Tab2" Value="$'vw::OnOffCtrl_VSD:fpe Interlocks:Main View'" />
+              <PropertyDescription Name="Tab2 Enabled" Value="$'pr::OnOffCtrl_VSD:Control Module:InterlocksEnabled'" />
+              <PropertyDescription Name="Tab2 Text" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Tab2'" />
+              <PropertyDescription Name="Tab2_1" Value="$'null'" />
+              <PropertyDescription Name="Tab2_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_1_Text" Value="&quot;TAB2-1&quot;" />
+              <PropertyDescription Name="Tab2_2" Value="$'null'" />
+              <PropertyDescription Name="Tab2_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_2_Text" Value="&quot;TAB2-2&quot;" />
+              <PropertyDescription Name="Tab2_3" Value="$'null'" />
+              <PropertyDescription Name="Tab2_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_3_Text" Value="&quot;TAB2-3&quot;" />
+              <PropertyDescription Name="Tab2_4" Value="$'null'" />
+              <PropertyDescription Name="Tab2_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_4_Text" Value="&quot;TAB2-4&quot;" />
+              <PropertyDescription Name="Tab2_5" Value="$'null'" />
+              <PropertyDescription Name="Tab2_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_5_Text" Value="&quot;TAB2-5&quot;" />
+              <PropertyDescription Name="Tab3" Value="$'vw::OnOffCtrl_VSD:fpe Setup:Main View'" />
+              <PropertyDescription Name="Tab3 Enabled" Value="True" />
+              <PropertyDescription Name="Tab3 Text" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Tab3'" />
+              <PropertyDescription Name="Tab3_1" Value="$'null'" />
+              <PropertyDescription Name="Tab3_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_1_Text" Value="&quot;TAB3-1&quot;" />
+              <PropertyDescription Name="Tab3_2" Value="$'null'" />
+              <PropertyDescription Name="Tab3_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_2_Text" Value="&quot;TAB3-2&quot;" />
+              <PropertyDescription Name="Tab3_3" Value="$'null'" />
+              <PropertyDescription Name="Tab3_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_3_Text" Value="&quot;TAB3-3&quot;" />
+              <PropertyDescription Name="Tab3_4" Value="$'null'" />
+              <PropertyDescription Name="Tab3_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_4_Text" Value="&quot;TAB3-4&quot;" />
+              <PropertyDescription Name="Tab3_5" Value="$'null'" />
+              <PropertyDescription Name="Tab3_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_5_Text" Value="&quot;TAB3-5&quot;" />
+              <PropertyDescription Name="Tab4" Value="$'vw::GrpCtrl:fpe Main:Main View'" />
+              <PropertyDescription Name="Tab4 Enabled" Value="$'pr::OnOffCtrl_VSD:Control Module:Group.Connected'" />
+              <PropertyDescription Name="Tab4 Text" Value="$'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_Group'" />
+              <PropertyDescription Name="Tab4_1" Value="$'null'" />
+              <PropertyDescription Name="Tab4_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_1_Text" Value="&quot;TAB4-1&quot;" />
+              <PropertyDescription Name="Tab4_2" Value="$'null'" />
+              <PropertyDescription Name="Tab4_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_2_Text" Value="&quot;TAB4-2&quot;" />
+              <PropertyDescription Name="Tab4_3" Value="$'null'" />
+              <PropertyDescription Name="Tab4_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_3_Text" Value="&quot;TAB4-3&quot;" />
+              <PropertyDescription Name="Tab4_4" Value="$'null'" />
+              <PropertyDescription Name="Tab4_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_4_Text" Value="&quot;TAB4-4&quot;" />
+              <PropertyDescription Name="Tab4_5" Value="$'null'" />
+              <PropertyDescription Name="Tab4_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_5_Text" Value="&quot;TAB4-5&quot;" />
+              <PropertyDescription Name="Tab5" Value="$'vw::HourCounter1:fpeMain:Main View'" />
+              <PropertyDescription Name="Tab5 Enabled" Value="$'pr::OnOffCtrl_VSD:Control Module:HourCounterEnabled'" />
+              <PropertyDescription Name="Tab5 Text" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Tab5'" />
+              <PropertyDescription Name="Tab5_1" Value="$'null'" />
+              <PropertyDescription Name="Tab5_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_1_Text" Value="&quot;TAB5-1&quot;" />
+              <PropertyDescription Name="Tab5_2" Value="$'null'" />
+              <PropertyDescription Name="Tab5_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_2_Text" Value="&quot;TAB5-2&quot;" />
+              <PropertyDescription Name="Tab5_3" Value="$'null'" />
+              <PropertyDescription Name="Tab5_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_3_Text" Value="&quot;TAB5-3&quot;" />
+              <PropertyDescription Name="Tab5_4" Value="$'null'" />
+              <PropertyDescription Name="Tab5_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_4_Text" Value="&quot;TAB5-4&quot;" />
+              <PropertyDescription Name="Tab5_5" Value="$'null'" />
+              <PropertyDescription Name="Tab5_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_5_Text" Value="&quot;TAB5-5&quot;" />
+              <PropertyDescription Name="TabColumns" Value="3" />
+              <PropertyDescription Name="TagText" Value="$'pr::OnOffCtrl_VSD:Name:Name'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="TopButtonRows" Value="1" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AlarmAndLockControl_MAPL:AlarmControl1</Name>
+            <TypeName>b2b649a9-8ecd-49c4-8da4-4f23d853d9a7:5c0cae39-ab75-4a51-a429-14569d250aae</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AlarmAndLockControl_MAPL:AlarmControl1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopRight" />
+              <PropertyDescription Name="XPos" Value="250." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::OnOffCtrl_VSD:AlarmControl'" />
+              <PropertyDescription Name="EnableInput" Value="True" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Button Alarm List</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Button Alarm List&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopRight" />
+              <PropertyDescription Name="XPos" Value="200." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AspectInvokeReference" Value="$'vw::OnOffCtrl_VSD:Alarm List:Main View'" />
+              <PropertyDescription Name="ButtonActive" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="PathInformation#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_AlarmList'))" />
+              <PropertyDescription Name="PresentationMode" Value="Overlap_Preserve" />
+              <PropertyDescription Name="Roundness" Value="0" />
+              <PropertyDescription Name="ScreenID" Value="Tuple(0, 0)" />
+              <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_AlarmList_Tooltip'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Button Event List</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Button Event List&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopRight" />
+              <PropertyDescription Name="XPos" Value="150." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AspectInvokeReference" Value="$'vw::OnOffCtrl_VSD:Event List:Main View'" />
+              <PropertyDescription Name="ButtonActive" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="PathInformation#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_EventList'))" />
+              <PropertyDescription Name="PresentationMode" Value="Overlap_Preserve" />
+              <PropertyDescription Name="Roundness" Value="0" />
+              <PropertyDescription Name="ScreenID" Value="Tuple(0, 0)" />
+              <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_EventList_Tooltip'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AlarmAndLockControl_MAPL:LockControl1</Name>
+            <TypeName>b2b649a9-8ecd-49c4-8da4-4f23d853d9a7:3b53c2ce-16fd-492d-9ed8-03cb86899d66</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AlarmAndLockControl_MAPL:LockControl1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopLeft" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::OnOffCtrl_VSD:LockControl'" />
+              <PropertyDescription Name="EnableInput" Value="True" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Button Trend</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Button Trend&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopLeft" />
+              <PropertyDescription Name="XPos" Value="100." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AspectInvokeReference" Value="$'vw::OnOffCtrl_VSD:Trend Display:Main View'" />
+              <PropertyDescription Name="ButtonActive" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="PathInformation#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_Trend'))" />
+              <PropertyDescription Name="PresentationMode" Value="Overlap_Preserve" />
+              <PropertyDescription Name="Roundness" Value="0" />
+              <PropertyDescription Name="ScreenID" Value="Tuple(0, 0)" />
+              <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_Trend_Tooltip'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>DropDown_OpNote_PCC_Group</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;DropDown_OpNote_PCC_Group&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopLeft" />
+              <PropertyDescription Name="XPos" Value="50." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Enabled" Value="True" />
+              <PropertyDescription Name="Entry Alignment" Value="$'Align entries to left'" />
+              <PropertyDescription Name="Entry00Enable" Value="True" />
+              <PropertyDescription Name="Entry00Text" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Header_OperatorNote_Tooltip'" />
+              <PropertyDescription Name="Entry00ViewReference" Value="$'vw::OnOffCtrl_VSD:Operator Note:Config View'" />
+              <PropertyDescription Name="Entry01Enable" Value="$'pr::PCCLink:Function Block:PCC_Child.Connected'" />
+              <PropertyDescription Name="Entry01Text" Value="$'nt::PCCLink_NLS:NLSID_SupportLib_PCCLink_ChildLink'" />
+              <PropertyDescription Name="Entry01ViewReference" Value="$'vw::PCCLink:Connection List:Main View'" />
+              <PropertyDescription Name="Entry02Enable" Value="$'pr::OnOffCtrl_VSD:Control Module:Group.Connected'" />
+              <PropertyDescription Name="Entry02Text" Value="$'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_GroupLink'" />
+              <PropertyDescription Name="Entry02ViewReference" Value="LateBoundViewRef(&quot;[Control Structure]&quot; + $'pr::OnOffCtrl_VSD:Control Module:Group.GroupName', &quot;MAPL Faceplate&quot;, &quot;Faceplate&quot;, True)" />
+              <PropertyDescription Name="Entry03Enable" Value="True" />
+              <PropertyDescription Name="Entry03Text" Value="&quot;TEXT&quot;" />
+              <PropertyDescription Name="Entry03ViewReference" Value="$'null'" />
+              <PropertyDescription Name="Entry04Enable" Value="True" />
+              <PropertyDescription Name="Entry04Text" Value="&quot;TEXT&quot;" />
+              <PropertyDescription Name="Entry04ViewReference" Value="$'null'" />
+              <PropertyDescription Name="Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="ForceHeight" Value="25" />
+              <PropertyDescription Name="ForceWidth" Value="120" />
+              <PropertyDescription Name="Icon" Value="&quot;&quot;" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="OpeningDirection" Value="Down" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>ButtonReset</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;ButtonReset&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="BottomLeft" />
+              <PropertyDescription Name="XPos" Value="250." />
+              <PropertyDescription Name="YPos" Value="495." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Action" Value="Direct" />
+              <PropertyDescription Name="ButtonActive" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Reset'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Cen' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Auto'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="CommandFeedback" Value="False" />
+              <PropertyDescription Name="CommandTarget" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Reset'" />
+              <PropertyDescription Name="CommandValue" Value="True" />
+              <PropertyDescription Name="CommandValueTransient" Value="False" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Reset'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelFunction" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="Path#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_Reset'))" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Button_Reset_Tooltip'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>ButtonAutoMan</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;ButtonAutoMan&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::OnOffCtrl_VSD:Control Module:EnAutoMan'" />
+              <PropertyDescription Name="AnchorStyle" Value="BottomLeft" />
+              <PropertyDescription Name="XPos" Value="50." />
+              <PropertyDescription Name="YPos" Value="495." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Action" Value="SystemDefault" />
+              <PropertyDescription Name="ButtonActive" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_ManSel'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_AutoSel'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Cen' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:LIO.IN.SetAuto' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:LIO.IN.SetMan' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:AutoEnabled'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="if $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_ManSel'#IsGood &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_AutoSel'#IsGood then Good else Bad" />
+              <PropertyDescription Name="EnableApplyCancelFunction" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_ManSel'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_AutoSel'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Cen' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:LIO.IN.SetAuto' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:LIO.IN.SetMan' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:AutoEnabled'" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="OFFCommandFeedback" Value="!$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Auto'" />
+              <PropertyDescription Name="OFFCommandTransient" Value="False" />
+              <PropertyDescription Name="OFFTarget" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_ManSel'" />
+              <PropertyDescription Name="ONCommandFeedback" Value="$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Auto'" />
+              <PropertyDescription Name="ONCommandTransient" Value="False" />
+              <PropertyDescription Name="ONTarget" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_AutoSel'" />
+              <PropertyDescription Name="Path#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_AutoMode'))" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Button_AutoMan_Tooltip'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>ButtonRunCmd</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;ButtonRunCmd&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="BottomLeft" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="495." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Action" Value="SystemDefault" />
+              <PropertyDescription Name="ButtonActive" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Stop'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Start'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Cen' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Auto' &amp;&amp; ($'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Run' || !$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Run' &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Rfs' &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:vInterlock')" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableApplyCancelFunction" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Stop'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Start'#IsWritable" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="OFFCommandFeedback" Value="!$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Run'" />
+              <PropertyDescription Name="OFFCommandTransient" Value="False" />
+              <PropertyDescription Name="OFFTarget" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Stop'" />
+              <PropertyDescription Name="ONCommandFeedback" Value="$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Run'" />
+              <PropertyDescription Name="ONCommandTransient" Value="False" />
+              <PropertyDescription Name="ONTarget" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Start'" />
+              <PropertyDescription Name="Path#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_Start'))" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Button_Start_Tooltip'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>ButtonExtSP</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;ButtonExtSP&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="BottomLeft" />
+              <PropertyDescription Name="XPos" Value="100." />
+              <PropertyDescription Name="YPos" Value="495." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Action" Value="SystemDefault" />
+              <PropertyDescription Name="ButtonActive" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_SetSpExt'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_SetSpInt'#IsWritable &amp;&amp; ($'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Cen' || $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Seq') &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:LIO.IN.SetSpExt'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableApplyCancelFunction" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="OFFCommandFeedback" Value="!$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.SpExt'" />
+              <PropertyDescription Name="OFFCommandTransient" Value="False" />
+              <PropertyDescription Name="OFFTarget" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_SetSpInt'" />
+              <PropertyDescription Name="ONCommandFeedback" Value="$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.SpExt'" />
+              <PropertyDescription Name="ONCommandTransient" Value="False" />
+              <PropertyDescription Name="ONTarget" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_SetSpExt'" />
+              <PropertyDescription Name="Path#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_Ext_Setpoint'))" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Button_ExtSP_Tooltip'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>ButtonCenLoc</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;ButtonCenLoc&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::OnOffCtrl_VSD:Control Module:EnCen' || $'pr::OnOffCtrl_VSD:Control Module:EnLoc'" />
+              <PropertyDescription Name="AnchorStyle" Value="BottomLeft" />
+              <PropertyDescription Name="XPos" Value="200." />
+              <PropertyDescription Name="YPos" Value="495." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Action" Value="SystemDefault" />
+              <PropertyDescription Name="ButtonActive" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_CenSel'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_LocSel'#IsWritable &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:LIO.IN.SetSeq' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:LIO.IN.SetCen' &amp;&amp; ( if $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Cen' then $'pr::OnOffCtrl_VSD:Control Module:EnLoc' &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LcbType' = 1 else $'pr::OnOffCtrl_VSD:Control Module:EnCen' &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:DriveRemote' &amp;&amp; !($'pr::OnOffCtrl_VSD:Control Module:LcbType' = 3 &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Loc'))" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableApplyCancelFunction" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="OFFCommandFeedback" Value="!$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Cen'" />
+              <PropertyDescription Name="OFFCommandTransient" Value="False" />
+              <PropertyDescription Name="OFFTarget" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_LocSel'" />
+              <PropertyDescription Name="ONCommandFeedback" Value="$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Cen'" />
+              <PropertyDescription Name="ONCommandTransient" Value="False" />
+              <PropertyDescription Name="ONTarget" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_CenSel'" />
+              <PropertyDescription Name="Path#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_CEN'))" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Button_CenLoc_Tooltip'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>ButtonCCWMonostable</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;ButtonCCWMonostable&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::OnOffCtrl_VSD:Control Module:TwoDirMot'" />
+              <PropertyDescription Name="AnchorStyle" Value="BottomLeft" />
+              <PropertyDescription Name="XPos" Value="150." />
+              <PropertyDescription Name="YPos" Value="495." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Action" Value="Direct" />
+              <PropertyDescription Name="ButtonActive" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Dir'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Cen' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Auto'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="CommandFeedback" Value="!$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_DirAct'" />
+              <PropertyDescription Name="CommandTarget" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Dir'" />
+              <PropertyDescription Name="CommandValue" Value="!$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_DirAct'" />
+              <PropertyDescription Name="CommandValueTransient" Value="False" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Dir'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelFunction" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::OnOffCtrl_VSD:Control Module:TwoDirMot' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_Dir'#IsWritable" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="Path#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_CW_Direction'))" />
+              <PropertyDescription Name="Tooltip" Value="if $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_DirAct' then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Button_DirectionCW_Tooltip' else $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_Button_DirectionCCW_Tooltip'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>ButtonDtyCmd</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;ButtonDtyCmd&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::OnOffCtrl_VSD:Control Module:LIO.IN.DutyConnected' &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Auto'" />
+              <PropertyDescription Name="AnchorStyle" Value="BottomLeft" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="495." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Action" Value="SystemDefault" />
+              <PropertyDescription Name="ButtonActive" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_DutySelOn'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Auto' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' &amp;&amp; ($'pr::OnOffCtrl_VSD:Control Module:DriveOn' || !$'pr::OnOffCtrl_VSD:Control Module:DriveOn' &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:vInterlock') &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Loc'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="if $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_DutySelOn'#IsGood &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_DutySelOff'#IsGood then Good else Bad" />
+              <PropertyDescription Name="EnableApplyCancelFunction" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_DutySelOn'#IsWritable &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.Auto'" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="OFFCommandFeedback" Value="!$'pr::OnOffCtrl_VSD:Control Module:LIO.IN.DutyAccepted'" />
+              <PropertyDescription Name="OFFCommandTransient" Value="$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.DisableDuty' &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LIO.IN.DutyAccepted'" />
+              <PropertyDescription Name="OFFTarget" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_DutySelOff'" />
+              <PropertyDescription Name="ONCommandFeedback" Value="$'pr::OnOffCtrl_VSD:Control Module:LIO.IN.DutyAccepted'" />
+              <PropertyDescription Name="ONCommandTransient" Value="$'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.EnableDuty' &amp;&amp; !$'pr::OnOffCtrl_VSD:Control Module:LIO.IN.DutyAccepted'" />
+              <PropertyDescription Name="ONTarget" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_DutySelOn'" />
+              <PropertyDescription Name="Path#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_Duty'))" />
+              <PropertyDescription Name="Tooltip" Value="&quot;Duty mode&quot;" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

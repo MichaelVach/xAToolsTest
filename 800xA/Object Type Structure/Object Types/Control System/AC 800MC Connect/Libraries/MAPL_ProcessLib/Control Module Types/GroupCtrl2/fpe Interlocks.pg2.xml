@@ -1,0 +1,443 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{4939f33b-9d78-4315-8d21-691f4a6c2695}:{2b4bc83b-0567-4ca9-b39b-84c3f439904e}</ElementId>
+  <ElementName>GroupCtrl2:fpe Interlocks</ElementName>
+  <ElementTypeId>{9b12a235-c19a-4ca3-a38f-eb1fdf913445}</ElementTypeId>
+  <ElementTypeName>MAPL Faceplate Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>1000</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties />
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables />
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent</BackColor>
+        <DefaultSize>
+          <Width>300</Width>
+          <Height>175</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>_BackgroundColor</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;_BackgroundColor&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="175." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="7" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_ContentBox1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_ContentBox1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopLeftRight" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="5." />
+              <PropertyDescription Name="Width" Value="290." />
+              <PropertyDescription Name="Height" Value="165." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Description1Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description1Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description1Visibility" Value="False" />
+              <PropertyDescription Name="Description2Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description2Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description2Visibility" Value="False" />
+              <PropertyDescription Name="HeaderBlinking" Value="False" />
+              <PropertyDescription Name="HeaderFont" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="HeaderHighlight" Value="False" />
+              <PropertyDescription Name="HeaderText" Value="&quot;&quot;" />
+              <PropertyDescription Name="HeaderVisibility" Value="True" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InteractionVisibility" Value="False" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="ParentObjectName" Value="&quot;xyz#123&quot;" />
+              <PropertyDescription Name="StaticContent" Value="False" />
+              <PropertyDescription Name="UnitFont" Value="$'ft::ABB Marine Customization:Arial_16pt_Regular'" />
+              <PropertyDescription Name="UnitText" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitVisibility" Value="False" />
+              <PropertyDescription Name="ValueFont" Value="$'ft::ABB Marine Customization:Arial_24pt_Bold'" />
+              <PropertyDescription Name="ValueText" Value="&quot;&quot;" />
+              <PropertyDescription Name="ValueVisibility" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_BooleanIndicator1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_BooleanIndicator1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1Config' != 0" />
+              <PropertyDescription Name="AnchorStyle" Value="TopLeftRight" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="15." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1Msg', &quot;Proj_GroupCtrl2&quot;, $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1Msg')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1Config'[0]" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="15." />
+              <PropertyDescription Name="Width" Value="25." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1Block'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1Block'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1Block'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::GroupControl_NLS:NLSID_ProcessLib_GroupControl_Tab3_Override'" />
+              <PropertyDescription Name="Target" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1Block'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::GroupControl_NLS:NLSID_ProcessLib_GroupControl_Tab3_Override_Tooltip'" />
+              <PropertyDescription Name="Value" Value="!$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1Block'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton2</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2Config'[0]" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="45." />
+              <PropertyDescription Name="Width" Value="25." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2Block'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2Block'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2Block'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::GroupControl_NLS:NLSID_ProcessLib_GroupControl_Tab3_Override'" />
+              <PropertyDescription Name="Target" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2Block'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::GroupControl_NLS:NLSID_ProcessLib_GroupControl_Tab3_Override_Tooltip'" />
+              <PropertyDescription Name="Value" Value="!$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2Block'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton3</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton3&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3Config'[0]" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="75." />
+              <PropertyDescription Name="Width" Value="25." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3Block'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3Block'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3Block'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::GroupControl_NLS:NLSID_ProcessLib_GroupControl_Tab3_Override'" />
+              <PropertyDescription Name="Target" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3Block'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::GroupControl_NLS:NLSID_ProcessLib_GroupControl_Tab3_Override_Tooltip'" />
+              <PropertyDescription Name="Value" Value="!$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3Block'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton4</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton4&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4Config'[0]" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="105." />
+              <PropertyDescription Name="Width" Value="25." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4Block'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4Block'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4Block'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::GroupControl_NLS:NLSID_ProcessLib_GroupControl_Tab3_Override'" />
+              <PropertyDescription Name="Target" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4Block'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::GroupControl_NLS:NLSID_ProcessLib_GroupControl_Tab3_Override_Tooltip'" />
+              <PropertyDescription Name="Value" Value="!$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4Block'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton5</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton5&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5Config'[0]" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="135." />
+              <PropertyDescription Name="Width" Value="25." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5Block'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5Block'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5Block'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::GroupControl_NLS:NLSID_ProcessLib_GroupControl_Tab3_Override'" />
+              <PropertyDescription Name="Target" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4Block'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::GroupControl_NLS:NLSID_ProcessLib_GroupControl_Tab3_Override_Tooltip'" />
+              <PropertyDescription Name="Value" Value="!$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5Block'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_BooleanIndicator2</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_BooleanIndicator2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2Config' != 0" />
+              <PropertyDescription Name="AnchorStyle" Value="TopLeftRight" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="45." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2Msg', &quot;Proj_GroupCtrl2&quot;, $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2Msg')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_BooleanIndicator3</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_BooleanIndicator3&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3Config' != 0" />
+              <PropertyDescription Name="AnchorStyle" Value="TopLeftRight" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="75." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3Msg', &quot;Proj_GroupCtrl2&quot;, $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3Msg')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_BooleanIndicator4</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_BooleanIndicator4&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4Config' != 0" />
+              <PropertyDescription Name="AnchorStyle" Value="TopLeftRight" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="105." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4Msg', &quot;Proj_GroupCtrl2&quot;, $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4Msg')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_BooleanIndicator5</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_BooleanIndicator5&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5Config' != 0" />
+              <PropertyDescription Name="AnchorStyle" Value="TopLeftRight" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="135." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5Msg', &quot;Proj_GroupCtrl2&quot;, $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5Msg')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{a3451c9b-8eba-4bc3-90d1-03522e1d5a35}:{594a96bc-1388-4c94-8d25-a17c23caecd8}</ElementId>
+  <ElementName>AInWeight:LockControl</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>0</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>All</InhibitInput>
+    <SubscriptionRate>ip::SubscriptionRate</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>SubscriptionRate</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"The update rate for all aspect object properties subscribed for"</Description>
+        <Category>Behaviour</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems>
+      <InputItem>
+        <Name>PropertyWriter1</Name>
+        <TypeName>InputItems:PropertyWriter1</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;PropertyWriter1&quot;" />
+          <PropertyDescription Name="Enabled" Value="if $'pr::AC 800M Lock Control:Global Properties Definition:ControlUseLock' &gt; 0 &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(3) &amp;&amp; (!$'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(0) || $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(0) &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(1)) &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'#IsWritable then True else False" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="Action" Value="SystemDefault" />
+          <PropertyDescription Name="Event" Value="OnMouseUp" />
+          <PropertyDescription Name="Trigger" Value="False" />
+          <PropertyDescription Name="GroupIndex" Value="-1" />
+          <PropertyDescription Name="Target" Value="$'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'" />
+          <PropertyDescription Name="Value" Value="if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(0) &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(1) then Variant(0) else Variant(1)" />
+          <PropertyDescription Name="NoOfTargets" Value="1" />
+          <PropertyDescription Name="WriteSequence" Value="Async" />
+          <PropertyDescription Name="WriteDelay" Value="0" />
+        </PropertyDescriptions>
+      </InputItem>
+      <InputItem>
+        <Name>PopupMenu1</Name>
+        <TypeName>InputItems:PopupMenu3</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;PopupMenu1&quot;" />
+          <PropertyDescription Name="Enabled" Value="$'pr::AC 800M Lock Control:Global Properties Definition:ControlUseLock' &gt; 0 &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'#IsWritable" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Right" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="NoOfEntries" Value="3" />
+          <PropertyDescription Name="Font" Value="Font(&quot;Tahoma&quot;, 8, Regular, Normal)" />
+          <PropertyDescription Name="Style" Value="Classic" />
+          <PropertyDescription Name="NoOfVisibleEntries" Value="50" />
+          <PropertyDescription Name="Entry1Name" Value="ItemEntry(&quot;breakLockComand&quot;, $'nt::Process Graphics:NLSID_BREAKLOCK')" />
+          <PropertyDescription Name="Entry2Name" Value="ItemEntry(&quot;lockComand&quot;, $'nt::Process Graphics:NLSID_LOCK')" />
+          <PropertyDescription Name="Entry3Name" Value="ItemEntry(&quot;unlockComand&quot;, $'nt::Process Graphics:NLSID_RELEASELOCK')" />
+        </PropertyDescriptions>
+      </InputItem>
+      <InputItem>
+        <Name>breakLockComand</Name>
+        <TypeName>InputItems:PropertyWriter2</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;breakLockComand&quot;" />
+          <PropertyDescription Name="Enabled" Value="if $'pr::AC 800M Lock Control:Global Properties Definition:ControlUseLock' &gt; 0 &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(4) &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(0) &amp;&amp; !$'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(1) &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'#IsWritable then True else False" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="Action" Value="SystemDefault" />
+          <PropertyDescription Name="Event" Value="OnDemand" />
+          <PropertyDescription Name="Trigger" Value="False" />
+          <PropertyDescription Name="GroupIndex" Value="-1" />
+          <PropertyDescription Name="Target" Value="$'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'" />
+          <PropertyDescription Name="Value" Value="2" />
+          <PropertyDescription Name="NoOfTargets" Value="2" />
+          <PropertyDescription Name="WriteSequence" Value="Sync" />
+          <PropertyDescription Name="WriteDelay" Value="0" />
+          <PropertyDescription Name="Target2" Value="$'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'" />
+          <PropertyDescription Name="Value2" Value="1" />
+        </PropertyDescriptions>
+      </InputItem>
+      <InputItem>
+        <Name>lockComand</Name>
+        <TypeName>InputItems:PropertyWriter1</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;lockComand&quot;" />
+          <PropertyDescription Name="Enabled" Value="if $'pr::AC 800M Lock Control:Global Properties Definition:ControlUseLock' &gt; 0 &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(3) &amp;&amp; (!$'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(0) || $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(0) &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(1)) &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'#IsWritable then True else False" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="Action" Value="SystemDefault" />
+          <PropertyDescription Name="Event" Value="OnDemand" />
+          <PropertyDescription Name="Trigger" Value="False" />
+          <PropertyDescription Name="GroupIndex" Value="-1" />
+          <PropertyDescription Name="Target" Value="$'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'" />
+          <PropertyDescription Name="Value" Value="1" />
+          <PropertyDescription Name="NoOfTargets" Value="1" />
+          <PropertyDescription Name="WriteSequence" Value="Async" />
+          <PropertyDescription Name="WriteDelay" Value="0" />
+        </PropertyDescriptions>
+      </InputItem>
+      <InputItem>
+        <Name>unlockComand</Name>
+        <TypeName>InputItems:PropertyWriter1</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;unlockComand&quot;" />
+          <PropertyDescription Name="Enabled" Value="if $'pr::AC 800M Lock Control:Global Properties Definition:ControlUseLock' &gt; 0 &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(3) &amp;&amp; (!$'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(0) || $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(0) &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(1)) &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'#IsWritable then True else False" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="Action" Value="SystemDefault" />
+          <PropertyDescription Name="Event" Value="OnDemand" />
+          <PropertyDescription Name="Trigger" Value="False" />
+          <PropertyDescription Name="GroupIndex" Value="-1" />
+          <PropertyDescription Name="Target" Value="$'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'" />
+          <PropertyDescription Name="Value" Value="0" />
+          <PropertyDescription Name="NoOfTargets" Value="1" />
+          <PropertyDescription Name="WriteSequence" Value="Async" />
+          <PropertyDescription Name="WriteDelay" Value="0" />
+        </PropertyDescriptions>
+      </InputItem>
+      <InputItem>
+        <Name>Tooltip1</Name>
+        <TypeName>InputItems:TooltipItem</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;Tooltip1&quot;" />
+          <PropertyDescription Name="Enabled" Value="$'pr::AC 800M Lock Control:Global Properties Definition:ControlUseLock' &gt; 0" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="Text" Value="if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(0) &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(1) then $'nt::Process Graphics:NLSID_LOCKEDBYME' else if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(0) then $'nt::Process Graphics:NLSID_LOCKEDBYOTHER' + $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockOwner' else if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(2) then $'nt::Process Graphics:NLSID_LOCKEDBYME' else if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(3) then $'nt::Process Graphics:NLSID_UNLOCKED' else if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(4) then $'nt::Process Graphics:NLSID_WAITING' else $'nt::Process Graphics:NLSID_LOCKEDBYME'" />
+        </PropertyDescriptions>
+      </InputItem>
+    </ElementHostedInputItems>
+    <UserEnumerations />
+    <ExpressionVariables />
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>$'lc::Process Graphics Colors:FaceplateBg'</BackColor>
+        <DefaultSize>
+          <Width>38</Width>
+          <Height>38</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>Image</Name>
+            <TypeName>GraphicPrimitives:Image</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Image&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::AC 800M Lock Control:Global Properties Definition:ControlUseLock' &gt; 0" />
+              <PropertyDescription Name="XPos" Value="3." />
+              <PropertyDescription Name="YPos" Value="3." />
+              <PropertyDescription Name="Width" Value="32." />
+              <PropertyDescription Name="Height" Value="32." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Image" Value="if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(0) &amp;&amp; $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(1) then $'im::Standard Symbols:LockedByMe' else if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(0) then $'im::Standard Symbols:LockedByOther' else if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(2) then $'im::Standard Symbols:LockedByMe' else if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(3) then $'im::Standard Symbols:LockingEnabled' else if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockStatus'#Bit(4) then $'im::Standard Symbols:LockPending' else $'im::Standard Symbols:LockedByMe'" />
+              <PropertyDescription Name="ImageStretch" Value="Stretch" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Rectangle</Name>
+            <TypeName>GraphicPrimitives:Rectangle</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Rectangle&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::AC 800M Lock Control:Global Properties Definition:ControlUseLock' &gt; 0" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="38." />
+              <PropertyDescription Name="Height" Value="38." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Line" Value="if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'#IsWritable then Pen(DarkGray, 1.) else Empty" />
+              <PropertyDescription Name="FillColor" Value="Transparent" />
+              <PropertyDescription Name="FrameColor" Value="RGB(200, 200, 200)" />
+              <PropertyDescription Name="FrameWidth" Value="if $'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'#IsWritable then 2. else 0." />
+              <PropertyDescription Name="Frame3dEffect" Value="if !$'pr::AC 800M Lock Control:Global Properties Definition:ControlLockCommand'#IsWritable then Flat else if $'lv::_ButtonState' = Left then Sunken else Raised" />
+              <PropertyDescription Name="SelectFrameLine" Value="Pen(White, 1.)" />
+              <PropertyDescription Name="SelectFrameVisible" Value="False" />
+              <PropertyDescription Name="Round" Value="0" />
+              <PropertyDescription Name="Content" Value="Empty" />
+              <PropertyDescription Name="SnapsToDevicePixels" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

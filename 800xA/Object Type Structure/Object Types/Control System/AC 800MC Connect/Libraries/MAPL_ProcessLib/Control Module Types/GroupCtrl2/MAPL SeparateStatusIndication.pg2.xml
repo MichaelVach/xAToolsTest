@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{4939f33b-9d78-4315-8d21-691f4a6c2695}:{e27f8cf6-f998-4f93-818f-412477254bf9}</ElementId>
+  <ElementName>GroupCtrl2:MAPL SeparateStatusIndication</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>None</InhibitInput>
+    <SubscriptionRate>0</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>ColorSchemeSelection</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"Selection between dynamic or static color library. \n0: Dynamic color library based on workspace selection \n1: Midnight Grey \n2: Graphite White \n3: High Contrast"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>IndicationVisibility</PropertyName>
+        <DataType>BooleanArray</DataType>
+        <DefaultValue>{True, True, True, True}</DefaultValue>
+        <Description>"Selection for indication visibility: {LetterIndicationsVisible, LockControlVisible, OperatorNoteVisible, AlarmsVisible}"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SignalSelection</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>-1</DefaultValue>
+        <Description>"Select the monitored signal:\n\n-1 = Floating group state text \n0 = Idle \n1 = Quick stop \n2 = Feedback Fault\n3 = Hold\n4 = Stopping\n5 = Starting\n6 = Stopped\n7 = Started"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations>
+      <UserEnumeration>
+        <Name>InformationSource</Name>
+        <Values>
+          <string>GroupStarted</string>
+          <string>GroupOnHold</string>
+          <string>GroupReadyForStart</string>
+          <string>GroupStarting</string>
+          <string>GroupStopped</string>
+          <string>GroupStopping</string>
+          <string>State</string>
+        </Values>
+        <IsSet>false</IsSet>
+        <DefaultValue>GroupStarted</DefaultValue>
+      </UserEnumeration>
+    </UserEnumerations>
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evStates</Name>
+        <TypeName>StringArray</TypeName>
+        <ExpressionText>{$'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeIdle', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeQStop', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeFBFault', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeHold', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeStopping', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeStarting', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeStopped', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeStarted', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeLocal'}</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evHoveringMouse</Name>
+        <TypeName>Transform</TypeName>
+        <ExpressionText>if IsInputEnabled() then if $'lv::_MouseOver' then ScaleAt(1. + 2. / $'lv::_Width', 1. + 2. / $'lv::_Height', $'lv::_Width' / 2., $'lv::_Height' / 2.) else Empty else Empty</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent()</BackColor>
+        <DefaultSize>
+          <Width>100</Width>
+          <Height>25</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>SignalStateIndicator</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;SignalStateIndicator&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="100." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="if $'ip::IndicationVisibility'[3] then $'pr::GroupCtrl2:Alarm Global Properties:AlarmConditionState_Descendants' else 0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="if $'ip::IndicationVisibility'[3] then $'pr::GroupCtrl2:Alarm Global Properties:AlarmPriorityLevel_Descendants' else 0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ip::ColorSchemeSelection'" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.GroupState'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InputText" Value="if $'ip::SignalSelection' = -1 then $'ev::evStates'[$'pr::GroupCtrl2:Control Module:FPIntPar.GroupState'] else $'ev::evStates'[$'ip::SignalSelection']" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'ip::SignalSelection' = -1 then 2 else if $'ip::SignalSelection' = $'pr::GroupCtrl2:Control Module:FPIntPar.GroupState' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>GroupCtrl:MAPL Status Information Frame1</Name>
+            <TypeName>4939f33b-9d78-4315-8d21-691f4a6c2695:a1f01a1c-1351-4909-b54a-84e0f29a631a</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;GroupCtrl:MAPL Status Information Frame1&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="100." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::GroupCtrl2:MAPL Status Information Frame'" />
+              <PropertyDescription Name="EnableInput" Value="True" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ip::ColorSchemeSelection'" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="InteractionIndicatorVisible" Value="IsInputEnabled()" />
+              <PropertyDescription Name="ItemInRectangle" Value="True" />
+              <PropertyDescription Name="LetterIndicationsVisible" Value="$'ip::IndicationVisibility'[0]" />
+              <PropertyDescription Name="LockControlVisible" Value="$'ip::IndicationVisibility'[1]" />
+              <PropertyDescription Name="OperatorNoteVisible" Value="$'ip::IndicationVisibility'[2]" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

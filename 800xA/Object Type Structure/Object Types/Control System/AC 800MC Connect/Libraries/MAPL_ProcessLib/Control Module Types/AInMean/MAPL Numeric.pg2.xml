@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{65ff0f52-7bff-4fea-9749-96ed22f99962}:{8f6097e4-62d9-4197-b4f1-fd33482a57e8}</ElementId>
+  <ElementName>AInMean:MAPL Numeric</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>None</InhibitInput>
+    <SubscriptionRate>ip::SubscriptionRate</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>SubscriptionRate</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"The update rate for all aspect object properties subscribed for"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables />
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent()</BackColor>
+        <DefaultSize>
+          <Width>250</Width>
+          <Height>25</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericFieldText1</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericFieldText1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="150." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="100." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableInteraction" Value="False" />
+              <PropertyDescription Name="HeadingText" Value="$'pr::AInMean:Name:Description'" />
+              <PropertyDescription Name="HeadingText Distance" Value="$'lv::_Extent'#Width - 10. - $'is::MAPL_AlphaNumericFieldText1.Extent'#Width" />
+              <PropertyDescription Name="ItemActive" Value="True" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OpenFaceplate" Value="True" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInMean:Control Module:FPIntpar.Mean'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextFontHeader" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="TimeFormat" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlignment" Value="Bottom" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

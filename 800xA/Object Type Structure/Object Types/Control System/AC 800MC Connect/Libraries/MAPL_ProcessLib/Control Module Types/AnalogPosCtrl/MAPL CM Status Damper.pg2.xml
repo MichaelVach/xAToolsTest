@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{9d7409f5-ae3c-4a2b-a9e9-1468088ff6b5}:{51c6d8f4-fb9c-4db6-84b4-0fa4f24e7b18}</ElementId>
+  <ElementName>AnalogPosCtrl:MAPL CM Status Damper</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>0</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>None</InhibitInput>
+    <SubscriptionRate>ip::SubscriptionRate</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>BaseIcon_0</PropertyName>
+        <DataType>String</DataType>
+        <DefaultValue>""</DefaultValue>
+        <Description>"Static line #1 for icon base"</Description>
+        <Category>Icon Information</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>BaseIcon_1</PropertyName>
+        <DataType>String</DataType>
+        <DefaultValue>""</DefaultValue>
+        <Description>"Static line #2 for icon base"</Description>
+        <Category>Icon Information</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>BaseIcon_2</PropertyName>
+        <DataType>String</DataType>
+        <DefaultValue>""</DefaultValue>
+        <Description>"Static Line #3 for icon base"</Description>
+        <Category>Icon Information</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>ColorSchemeSelection</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"Selection between dynamic or static color library. \n0: Dynamic color library based on workspace selection \n1: Midnight Grey \n2: Graphite White \n3: High Contrast"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>IconClickDown</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>False</DefaultValue>
+        <Description>"TRUE signals icon that it is pressed down"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>IconRotation</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"Degrees to rotate icon"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>ItemActive</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE represents an active status"</Description>
+        <Category>Status Indications</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>MouseOverIN</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>False</DefaultValue>
+        <Description>"MouseOver information from upper level"</Description>
+        <Category>Misc</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>ReverseStateFlow</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>False</DefaultValue>
+        <Description>"Reverse State Machine Flow"</Description>
+        <Category>Status Indications</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>StateMachine0Path</PropertyName>
+        <DataType>String</DataType>
+        <DefaultValue>""</DefaultValue>
+        <Description>"Icon for StateMachine = 0"</Description>
+        <Category>Icon Information</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>StateMachine1Path</PropertyName>
+        <DataType>String</DataType>
+        <DefaultValue>""</DefaultValue>
+        <Description>"Icon for StateMachine = 1"</Description>
+        <Category>Icon Information</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>StateMachine2Path</PropertyName>
+        <DataType>String</DataType>
+        <DefaultValue>""</DefaultValue>
+        <Description>"Icon for StateMachine = 2"</Description>
+        <Category>Icon Information</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>StaticIconFill</PropertyName>
+        <DataType>String</DataType>
+        <DefaultValue>""</DefaultValue>
+        <Description>"'StaticIconFill' is always highlighted and visible"</Description>
+        <Category>Icon Information</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SubscriptionRate</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"The update rate for all aspect object properties subscribed for"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SwitchP0andP1</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>False</DefaultValue>
+        <Description>"TRUE swaps 'State Machine 0 Path' with 'State Machine 1 Path'.\nThis is executed before reversing state machine flow with 'ReverseStateFlow'."</Description>
+        <Category>Status Indications</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evAlarmConditionState</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>$'pr::AnalogPosCtrl:Alarm Global Properties:AlarmConditionState'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evAlarmInhibition</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evAlarmPriorityLevel</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>$'pr::AnalogPosCtrl:Alarm Global Properties:AlarmPriorityLevel'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evIconBaseStatusMachine</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'ip::ReverseStateFlow' &amp;&amp; !$'ip::SwitchP0andP1' then if $'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated1' then 2 else if !$'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated1' &amp;&amp; !$'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated2' then 1 else if $'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated2' then 0 else 0 else if $'ip::SwitchP0andP1' then if $'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated1' then 2 else if !$'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated1' &amp;&amp; !$'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated2' then 0 else if $'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated2' then 1 else 0 else if $'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated1' then 0 else if !$'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated1' &amp;&amp; !$'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated2' then 1 else if $'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated2' then 2 else 0</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evStateMachine</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated1' then 0 else if !$'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated1' &amp;&amp; !$'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated2' then 1 else if $'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated2' then 2 else 0</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evTransient</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evItemActive</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>!$'pr::AnalogPosCtrl:Control Module:FPIntPar.FP_OOS'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent()</BackColor>
+        <DefaultSize>
+          <Width>50</Width>
+          <Height>50</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>MAPL_Icon_Template</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_Icon_Template&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="$'ev::evAlarmConditionState'" />
+              <PropertyDescription Name="AlarmInhibition" Value="$'ev::evAlarmInhibition'" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="$'ev::evAlarmPriorityLevel'" />
+              <PropertyDescription Name="BaseIconStateMachine" Value="$'ev::evIconBaseStatusMachine'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ip::ColorSchemeSelection'" />
+              <PropertyDescription Name="HoveringMouse" Value="$'ip::MouseOverIN'" />
+              <PropertyDescription Name="Icon Base 0 Path" Value="$'ip::BaseIcon_0'" />
+              <PropertyDescription Name="Icon Base 1 Path" Value="$'ip::BaseIcon_1'" />
+              <PropertyDescription Name="Icon Base 2 Path" Value="$'ip::BaseIcon_2'" />
+              <PropertyDescription Name="IconClickDown" Value="$'ip::IconClickDown'" />
+              <PropertyDescription Name="IconRotation" Value="$'ip::IconRotation'" />
+              <PropertyDescription Name="ItemActive" Value="$'ip::ItemActive' || $'ev::evItemActive'" />
+              <PropertyDescription Name="ReverseStateFlow" Value="$'ip::ReverseStateFlow'" />
+              <PropertyDescription Name="SimpleIconStateMachine" Value="$'ev::evStateMachine'" />
+              <PropertyDescription Name="State Machine 0 Path" Value="$'ip::StateMachine0Path'" />
+              <PropertyDescription Name="State Machine 1 Path" Value="$'ip::StateMachine1Path'" />
+              <PropertyDescription Name="State Machine 2 Path" Value="$'ip::StateMachine2Path'" />
+              <PropertyDescription Name="Static Fill" Value="$'ip::StaticIconFill'" />
+              <PropertyDescription Name="SwitchP0andP1" Value="$'ip::SwitchP0andP1'" />
+              <PropertyDescription Name="Transient" Value="$'ev::evTransient'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Error Indicator1</Name>
+            <TypeName>GraphicPrimitives:ErrorIndicator</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Error Indicator1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::AnalogPosCtrl:Control Module:LIO.OUT.Activated1'#DataQuality" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{a3451c9b-8eba-4bc3-90d1-03522e1d5a35}:{ba766f77-4339-4446-b1e9-47095c5aa2a8}</ElementId>
+  <ElementName>AInWeight:MAPL Numeric</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>None</InhibitInput>
+    <SubscriptionRate>ip::SubscriptionRate</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>ColorSchemeSelection</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"Selection between dynamic or static color. \n0: Dynamic color library based on workspace selection \n1: Midnight Grey \n2: Graphite White \n3:High Contrast"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>HorizontalAlignment</PropertyName>
+        <DataType>HorizontalAlignment</DataType>
+        <DefaultValue>Far</DefaultValue>
+        <Description>"HorizontalAlignment"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SubscriptionRate</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"The update rate for all aspect object properties subscribed for"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>UnitFont</PropertyName>
+        <DataType>Font</DataType>
+        <DefaultValue>$'ABB Marine Customization:Arial_11pt_Regular'</DefaultValue>
+        <Description>"Font for unit"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>ValueFont</PropertyName>
+        <DataType>Font</DataType>
+        <DefaultValue>$'ABB Marine Customization:Arial_16pt_Bold'</DefaultValue>
+        <Description>"Font for value"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>ValueWidth</PropertyName>
+        <DataType>Real</DataType>
+        <DefaultValue>50.</DefaultValue>
+        <Description>"Width of the value field"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evOutlineStatus_PenStyle</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:Out.In.InhAl' then 2 else 0</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evOutlineStatus_Transparency</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Alarm Global Properties:IsAlarmActive_Descendants' then 0 else if !$'pr::AInWeight:Alarm Global Properties:IsAlarmActive_Descendants' &amp;&amp; $'pr::AInWeight:Alarm Global Properties:IsAlarmUnack_Descendants' then 2 else if $'pr::AInWeight:Function Block:Out.In.InhAl' then 0 else 4</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>iActive</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>if $'ev::ActivePlate' = $'pr::AInWeight:Name:Name' then True else False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>ActivePlate</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evHoveringMouse</Name>
+        <TypeName>Transform</TypeName>
+        <ExpressionText>if $'lv::_MouseOver' then ScaleAt(1.08, 1.08, $'lv::_Width' / 2., $'lv::_Height' / 2.) else Empty</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>ColorSchemeIsLight</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evDataQuality</Name>
+        <TypeName>DataQuality</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:Out.Out.PV.Value'#IsGood &amp;&amp; $'pr::AInWeight:Function Block:Out.Hw.Status'#Bit(2) &amp;&amp; $'pr::AInWeight:Function Block:Out.Hw.Status'#Bit(3) then Uncertain else $'pr::AInWeight:Function Block:Out.Out.PV.Value'#DataQuality</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent()</BackColor>
+        <DefaultSize>
+          <Width>80</Width>
+          <Height>25</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>ValueField</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;ValueField&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="10." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'ip::ValueWidth'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="$'ip::HorizontalAlignment'" />
+              <PropertyDescription Name="InputText" Value="FormatReal($'pr::AInWeight:Function Block:Out.Out.PV.Value', $'pr::AInWeight:Function Block:Out.Out.PV.Parameters.Fraction')" />
+              <PropertyDescription Name="TextColor" Value="10" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ip::ValueFont'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Bottom" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Alarm Indication</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Alarm Indication&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'ip::ValueWidth' + 13." />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="$'pr::AInWeight:Alarm Global Properties:AlarmConditionState'" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="$'pr::AInWeight:Alarm Global Properties:AlarmPriorityLevel'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="FillStatus_Color" Value="0" />
+              <PropertyDescription Name="FillStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="FillStatus_Transparency" Value="4" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="OutlineStatus_Color" Value="15" />
+              <PropertyDescription Name="OutlineStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenStyle" Value="$'ev::evOutlineStatus_PenStyle'" />
+              <PropertyDescription Name="OutlineStatus_PenThickness" Value="0" />
+              <PropertyDescription Name="OutlineStatus_Transparency" Value="$'ev::evOutlineStatus_Transparency'" />
+              <PropertyDescription Name="Roundness" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Unit Field</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Unit Field&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="$'is::ValueField.Extent'#Width + 13." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width' - $'is::ValueField.Extent'#Width - 20." />
+              <PropertyDescription Name="Height" Value="$'lv::_Height' - 2." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'pr::AInWeight:Function Block:Out.Out.PV.Parameters.Unit'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ip::UnitFont'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Bottom" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AInWeight:MAPL Status Information Frame1</Name>
+            <TypeName>a3451c9b-8eba-4bc3-90d1-03522e1d5a35:ba216711-3613-4345-accb-b4739b167da6</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AInWeight:MAPL Status Information Frame1&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::AInWeight:MAPL Status Information Frame'" />
+              <PropertyDescription Name="EnableInput" Value="True" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="InteractionIndicatorVisible" Value="True" />
+              <PropertyDescription Name="ItemInRectangle" Value="True" />
+              <PropertyDescription Name="LetterIndicationsVisible" Value="True" />
+              <PropertyDescription Name="LockControlVisible" Value="True" />
+              <PropertyDescription Name="LowerRightCornerVisible" Value="True" />
+              <PropertyDescription Name="MouseOverIN" Value="False" />
+              <PropertyDescription Name="OperatorNoteVisible" Value="True" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+              <PropertyDescription Name="UpperLeftCornerVisible" Value="True" />
+              <PropertyDescription Name="UpperRightCornerVisible" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Error Indicator1</Name>
+            <TypeName>GraphicPrimitives:ErrorIndicator</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Error Indicator1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'ev::evDataQuality'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

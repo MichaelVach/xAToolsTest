@@ -1,0 +1,1507 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{2149e9e7-c8b7-4294-86c7-dd993abfad58}:{2176b0c8-2112-4ae5-8d63-c169b2acb10c}</ElementId>
+  <ElementName>OnOffCtrl:MAPL PCC List</ElementName>
+  <ElementTypeId>{0c2fcb4b-3343-4427-915e-ac2cc0e9b77e}</ElementTypeId>
+  <ElementTypeName>Graphic Display PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>0</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>0</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties />
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>FaceplateColorSchemeNumber</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>-1</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_10_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String10', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_10_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String10', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_11_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String11', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_11_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String11', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_12_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String12', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_12_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String12', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_13_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String13', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_13_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String13', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_14_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String14', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_14_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String14', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_15_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String15', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_15_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String15', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_16_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String16', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_16_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String16', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_17_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String17', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_17_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String17', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_18_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String18', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_18_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String18', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_19_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String19', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_19_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String19', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_01_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String1', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_01_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String1', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_20_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String20', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_20_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String20', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_02_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String2', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_02_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String2', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_03_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String3', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_03_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String3', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_04_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String4', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_04_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String4', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_05_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String5', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_05_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String5', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_06_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String6', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_06_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String6', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_07_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String7', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_07_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String7', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_08_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String8', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_08_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String8', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_09_AlarmPriority</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String9', "Alarm Global Properties", "AlarmPriorityLevel", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_09_AlarmStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>Integer(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String9', "Alarm Global Properties", "AlarmConditionState", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_01_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String1', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String1', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String1', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String1', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_02_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String2', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String2', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String2', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String2', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_03_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String3', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String3', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String3', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String3', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_04_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String4', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String4', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String4', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String4', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_05_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String5', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String5', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String5', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String5', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_06_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String6', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String6', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String6', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String6', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_07_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String7', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String7', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String7', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String7', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_08_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String8', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String8', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String8', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String8', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_09_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String9', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String9', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String9', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String9', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_10_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String10', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String10', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String10', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String10', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_11_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String11', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String11', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String11', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String11', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_12_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String12', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String12', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String12', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String12', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_13_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String13', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String13', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String13', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String13', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_14_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String14', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String14', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String14', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String14', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_15_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String15', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String15', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String15', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String15', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_16_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String16', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String16', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String16', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String16', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_17_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String17', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String17', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String17', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String17', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_18_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String18', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String18', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String18', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String18', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_19_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String19', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String19', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String19', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String19', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_20_Value</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String20', "Control Module", "FP_IntPar.Fraction", True, 1000)#IsGood then FormatReal(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String20', "Control Module", "FP_IntPar.Value", True, 1000)#RealVal, LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String20', "Control Module", "FP_IntPar.Fraction", True, 1000)#IntVal) else LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String20', "Control Module", "FP_IntPar.Value", True, 1000)#StringVal</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_01_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String1', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_02_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String2', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_03_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String3', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_04_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String4', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_05_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String5', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_06_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String6', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_07_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String7', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_08_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String8', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_09_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String9', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_10_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String10', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_11_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String11', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_12_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String12', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_13_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String13', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_14_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String14', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_15_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String15', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_16_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String16', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_17_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String17', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_18_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String18', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_19_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String19', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_20_Unit</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>String(LateBoundPropertyRef($'pr::OnOffCtrl:Control Module:PCCChildNames.String20', "Control Module", "FP_IntPar.Unit", True, 1000)#Value)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_01_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String1'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_02_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String2'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_03_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String3'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_04_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String4'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_05_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String5'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_06_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String6'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_07_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String7'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_08_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String8'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_09_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String9'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_10_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String10'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_11_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String11'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_12_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String12'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_13_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String13'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_14_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String14'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_15_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String15'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_16_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String16'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_17_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String17'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_18_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String18'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_19_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String19'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_20_Name</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl:Control Module:PCCChildNames.String20'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_01_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String1', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_02_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String2', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_03_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String3', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_04_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String4', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_05_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String5', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_06_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String6', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_07_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String7', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_08_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String8', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_09_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String9', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_10_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String10', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_11_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String11', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_12_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String12', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_13_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String13', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_14_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String14', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_15_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String15', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_16_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String16', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_17_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String17', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_18_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String18', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_19_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String19', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Child_20_ViewReference</Name>
+        <TypeName>ViewReference</TypeName>
+        <ExpressionText>LateBoundViewRef("[Control Structure]" + $'pr::OnOffCtrl:Control Module:PCCChildNames.String20', "MAPL Faceplate", "Faceplate", True)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>$'lc::Process Graphics 2 Colors:DisplayBackgroundColor'</BackColor>
+        <DefaultSize>
+          <Width>310</Width>
+          <Height>510</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>Background</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Background&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="310." />
+              <PropertyDescription Name="Height" Value="510." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+              <PropertyDescription Name="Guidelines" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation01</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation01&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="5." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_01_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_01_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_01_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_01_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_01_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_01_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation02</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation02&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="30." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_02_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_02_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_02_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_02_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_02_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_02_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation03</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation03&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="55." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_03_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_03_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_03_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_03_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_03_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_03_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation04</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation04&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="80." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_04_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_04_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_04_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_04_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_04_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_04_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation05</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation05&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="105." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_05_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_05_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_05_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_05_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_05_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_05_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation06</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation06&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="130." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_06_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_06_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_06_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_06_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_06_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_06_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation07</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation07&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="155." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_07_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_07_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_07_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_07_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_07_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_07_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation08</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation08&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="180." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_08_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_08_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_08_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_08_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_08_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_08_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation09</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation09&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="205." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_09_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_09_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_09_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_09_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_09_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_09_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation10</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation10&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="230." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_10_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_10_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_10_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_10_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_10_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_10_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation11</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation11&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="255." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_11_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_11_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_11_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_11_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_11_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_11_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation12</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation12&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="280." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_12_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_12_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_12_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_12_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_12_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_12_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation13</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation13&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="305." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_13_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_13_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_13_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_13_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_13_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_13_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation14</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation14&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="330." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_14_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_14_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_14_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_14_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_14_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_14_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation15</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation15&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="355." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_15_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_15_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_15_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_15_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_15_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_15_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation16</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation16&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="380." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_16_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_16_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_16_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_16_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_16_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_16_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation17</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation17&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="405." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_17_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_17_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_17_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_17_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_17_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_17_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation18</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation18&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="430." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_18_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_18_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_18_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_18_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_18_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_18_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation19</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation19&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="455." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_19_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_19_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_19_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_19_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_19_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_19_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_PCCLinkChildInformation20</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_PCCLinkChildInformation20&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="480." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Child_AlarmConditionState" Value="$'ev::Child_20_AlarmStatus'" />
+              <PropertyDescription Name="Child_AlarmPriorityLevel" Value="$'ev::Child_20_AlarmPriority'" />
+              <PropertyDescription Name="Child_Name" Value="$'ev::Child_20_Name'" />
+              <PropertyDescription Name="Child_Unit" Value="$'ev::Child_20_Unit'" />
+              <PropertyDescription Name="Child_Value" Value="$'ev::Child_20_Value'" />
+              <PropertyDescription Name="Child_ViewReference" Value="$'ev::Child_20_ViewReference'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ev::FaceplateColorSchemeNumber'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

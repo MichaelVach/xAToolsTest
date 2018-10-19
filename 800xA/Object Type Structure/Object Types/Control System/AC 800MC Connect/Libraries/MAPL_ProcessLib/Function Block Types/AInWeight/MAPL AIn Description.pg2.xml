@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{a3451c9b-8eba-4bc3-90d1-03522e1d5a35}:{91ea72ab-c9e5-4a0b-ad26-9c04012f8e88}</ElementId>
+  <ElementName>AInWeight:MAPL AIn Description</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>None</InhibitInput>
+    <SubscriptionRate>ip::SubscriptionRate</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>SigName</PropertyName>
+        <DataType>String</DataType>
+        <DefaultValue>"AIn1.Out.SigName"</DefaultValue>
+        <Description>"CM AIn parameter LIO.Out.SigName"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SubscriptionRate</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"The update rate for all aspect object properties subscribed for"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evMouseOver</Name>
+        <TypeName>Transform</TypeName>
+        <ExpressionText>if $'lv::_MouseOver' then ScaleAt(1. + 2. / $'lv::_Width', 1. + 2. / $'lv::_Height', $'lv::_Width' / 2., $'lv::_Height' / 2.) else Empty</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent()</BackColor>
+        <DefaultSize>
+          <Width>120</Width>
+          <Height>25</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>MAPL_TextField1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField1&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evMouseOver'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="8." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="110." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'ip::SigName'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems>
+              <InputItem>
+                <Name>Aspect View Invoker1</Name>
+                <TypeName>InputItems:ViewInvoker0</TypeName>
+                <ElementInstanceIndex>0</ElementInstanceIndex>
+                <PropertyDescriptions>
+                  <PropertyDescription Name="Name" Value="&quot;Aspect View Invoker1&quot;" />
+                  <PropertyDescription Name="Enabled" Value="True" />
+                  <PropertyDescription Name="EnableApply" Value="False" />
+                  <PropertyDescription Name="MouseButton" Value="Left" />
+                  <PropertyDescription Name="ModifierKeys" Value="None" />
+                  <PropertyDescription Name="ViewReference" Value="LateBoundViewRef(&quot;[Control Structure]&quot; + $'ip::SigName', &quot;MAPL Faceplate&quot;, &quot;Faceplate&quot;, True)" />
+                  <PropertyDescription Name="PresentationMode" Value="Overlap_Preserve" />
+                  <PropertyDescription Name="Trigger" Value="False" />
+                  <PropertyDescription Name="Event" Value="OnMouseUp" />
+                  <PropertyDescription Name="NumberOfNamedValues" Value="0" />
+                  <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+                  <PropertyDescription Name="ScreenID" Value="Tuple(0,0)" />
+                </PropertyDescriptions>
+              </InputItem>
+            </InputItems>
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_InteractionIndicator1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_InteractionIndicator1&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evMouseOver'" />
+              <PropertyDescription Name="Visible" Value="if $'ip::SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="12." />
+              <PropertyDescription Name="Width" Value="10." />
+              <PropertyDescription Name="Height" Value="10." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="IndicatorTypes" Value="1" />
+              <PropertyDescription Name="ItemActive" Value="True" />
+              <PropertyDescription Name="ParentObjectName" Value="$'ip::SigName'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{1c91d042-bb1a-4e05-9462-1239cbf8f3a5}:{42afe6c2-5470-42ad-9ab3-b00c407ba431}</ElementId>
+  <ElementName>SplitCtrl:MAPL Faceplate Base Element</ElementName>
+  <ElementTypeId>{1c0fedcf-764b-42e0-8ffd-76cff2a6285b}</ElementTypeId>
+  <ElementTypeName>MAPL Faceplate Base Element</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>1000</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties />
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables />
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>lc::ABBMarine_UI_MidnightGrey:Background</BackColor>
+        <DefaultSize>
+          <Width>567</Width>
+          <Height>585</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>_Configuration</Name>
+            <TypeName> Configuration</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;_Configuration&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="567." />
+              <PropertyDescription Name="Height" Value="585." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="BottomButtonRows" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DescriptionText" Value="$'pr::SplitCtrl:Name:Description'" />
+              <PropertyDescription Name="ModeText" Value="&quot;&quot;" />
+              <PropertyDescription Name="StatusModeFieldVisible" Value="False" />
+              <PropertyDescription Name="StatusText" Value="&quot;&quot;" />
+              <PropertyDescription Name="SwitchTagAndDescription" Value="False" />
+              <PropertyDescription Name="Tab1" Value="$'vw::SplitCtrl:fpe Main:Main View'" />
+              <PropertyDescription Name="Tab1 Enabled" Value="True" />
+              <PropertyDescription Name="Tab1 Text" Value="$'nt::SplitCtrl_NLS:NLSID_ProcessLib_SplitCtrl_Tab1_Main'" />
+              <PropertyDescription Name="Tab1_1" Value="$'null'" />
+              <PropertyDescription Name="Tab1_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_1_Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tab1_2" Value="$'null'" />
+              <PropertyDescription Name="Tab1_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_2_Text" Value="&quot;Tab1_2&quot;" />
+              <PropertyDescription Name="Tab1_3" Value="$'null'" />
+              <PropertyDescription Name="Tab1_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_3_Text" Value="&quot;Tab1_3&quot;" />
+              <PropertyDescription Name="Tab1_4" Value="$'null'" />
+              <PropertyDescription Name="Tab1_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_4_Text" Value="&quot;Tab1_4&quot;" />
+              <PropertyDescription Name="Tab1_5" Value="$'null'" />
+              <PropertyDescription Name="Tab1_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_5_Text" Value="&quot;Tab1_5&quot;" />
+              <PropertyDescription Name="Tab2" Value="$'vw::SplitCtrl:fpe Out1:Main View'" />
+              <PropertyDescription Name="Tab2 Enabled" Value="if $'pr::SplitCtrl:Control Module:ACTOut1_Desc' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="Tab2 Text" Value="$'pr::SplitCtrl:Control Module:ACTOut1_Desc'" />
+              <PropertyDescription Name="Tab2_1" Value="$'null'" />
+              <PropertyDescription Name="Tab2_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_1_Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tab2_2" Value="$'null'" />
+              <PropertyDescription Name="Tab2_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_2_Text" Value="&quot;Tab2_2&quot;" />
+              <PropertyDescription Name="Tab2_3" Value="$'null'" />
+              <PropertyDescription Name="Tab2_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_3_Text" Value="&quot;Tab2_3&quot;" />
+              <PropertyDescription Name="Tab2_4" Value="$'null'" />
+              <PropertyDescription Name="Tab2_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_4_Text" Value="&quot;Tab2_4&quot;" />
+              <PropertyDescription Name="Tab2_5" Value="$'null'" />
+              <PropertyDescription Name="Tab2_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_5_Text" Value="&quot;Tab2_5&quot;" />
+              <PropertyDescription Name="Tab3" Value="$'vw::SplitCtrl:fpe Out2:Main View'" />
+              <PropertyDescription Name="Tab3 Enabled" Value="if $'pr::SplitCtrl:Control Module:ACTOut2_Desc' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="Tab3 Text" Value="$'pr::SplitCtrl:Control Module:ACTOut2_Desc'" />
+              <PropertyDescription Name="Tab3_1" Value="$'null'" />
+              <PropertyDescription Name="Tab3_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_1_Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tab3_2" Value="$'null'" />
+              <PropertyDescription Name="Tab3_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_2_Text" Value="&quot;Tab3_2&quot;" />
+              <PropertyDescription Name="Tab3_3" Value="$'null'" />
+              <PropertyDescription Name="Tab3_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_3_Text" Value="&quot;Tab3_3&quot;" />
+              <PropertyDescription Name="Tab3_4" Value="$'null'" />
+              <PropertyDescription Name="Tab3_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_4_Text" Value="&quot;Tab3_4&quot;" />
+              <PropertyDescription Name="Tab3_5" Value="$'null'" />
+              <PropertyDescription Name="Tab3_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_5_Text" Value="&quot;Tab3_5&quot;" />
+              <PropertyDescription Name="Tab4" Value="$'vw::SplitCtrl:fpe Out3:Main View'" />
+              <PropertyDescription Name="Tab4 Enabled" Value="if $'pr::SplitCtrl:Control Module:ACTOut3_Desc' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="Tab4 Text" Value="$'pr::SplitCtrl:Control Module:ACTOut3_Desc'" />
+              <PropertyDescription Name="Tab4_1" Value="$'null'" />
+              <PropertyDescription Name="Tab4_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_1_Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tab4_2" Value="$'null'" />
+              <PropertyDescription Name="Tab4_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_2_Text" Value="&quot;Tab4_2&quot;" />
+              <PropertyDescription Name="Tab4_3" Value="$'null'" />
+              <PropertyDescription Name="Tab4_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_3_Text" Value="&quot;Tab4_3&quot;" />
+              <PropertyDescription Name="Tab4_4" Value="$'null'" />
+              <PropertyDescription Name="Tab4_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_4_Text" Value="&quot;Tab4_4&quot;" />
+              <PropertyDescription Name="Tab4_5" Value="$'null'" />
+              <PropertyDescription Name="Tab4_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_5_Text" Value="&quot;Tab4_5&quot;" />
+              <PropertyDescription Name="Tab5" Value="$'vw::SplitCtrl:fpe Out4:Main View'" />
+              <PropertyDescription Name="Tab5 Enabled" Value="if $'pr::SplitCtrl:Control Module:ACTOut4_Desc' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="Tab5 Text" Value="$'pr::SplitCtrl:Control Module:ACTOut4_Desc'" />
+              <PropertyDescription Name="Tab5_1" Value="$'null'" />
+              <PropertyDescription Name="Tab5_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_1_Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tab5_2" Value="$'null'" />
+              <PropertyDescription Name="Tab5_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_2_Text" Value="&quot;Tab5_2&quot;" />
+              <PropertyDescription Name="Tab5_3" Value="$'null'" />
+              <PropertyDescription Name="Tab5_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_3_Text" Value="&quot;Tab5_3&quot;" />
+              <PropertyDescription Name="Tab5_4" Value="$'null'" />
+              <PropertyDescription Name="Tab5_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_4_Text" Value="&quot;Tab5_4&quot;" />
+              <PropertyDescription Name="Tab5_5" Value="$'null'" />
+              <PropertyDescription Name="Tab5_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_5_Text" Value="&quot;Tab5_5&quot;" />
+              <PropertyDescription Name="TabColumns" Value="5" />
+              <PropertyDescription Name="TagText" Value="$'pr::SplitCtrl:Name:Name'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="TopButtonRows" Value="1" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Button Operator Note</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Button Operator Note&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="50." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AspectInvokeReference" Value="$'vw::SplitCtrl:Operator Note:Config View'" />
+              <PropertyDescription Name="ButtonActive" Value="$'pr::SplitCtrl:Operator Note:HoldsData'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="PathInformation#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_OperatorNote'))" />
+              <PropertyDescription Name="PresentationMode" Value="Overlap_Preserve" />
+              <PropertyDescription Name="Roundness" Value="0" />
+              <PropertyDescription Name="ScreenID" Value="Tuple(0, 0)" />
+              <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::SplitCtrl_NLS:NLSID_ProcessLib_SplitCtrl_OperatorNote_Tooltip'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

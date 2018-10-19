@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{2149e9e7-c8b7-4294-86c7-dd993abfad58}:{d3a73ebf-fd35-4baf-a2f4-62d5f882aa14}</ElementId>
+  <ElementName>OnOffCtrl:fpe Setup</ElementName>
+  <ElementTypeId>{9b12a235-c19a-4ca3-a38f-eb1fdf913445}</ElementTypeId>
+  <ElementTypeName>MAPL Faceplate Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>1000</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties />
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables />
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent</BackColor>
+        <DefaultSize>
+          <Width>300</Width>
+          <Height>150</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>_BackgroundColor</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;_BackgroundColor&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="150." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="7" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_ContentBox1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_ContentBox1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="5." />
+              <PropertyDescription Name="Width" Value="290." />
+              <PropertyDescription Name="Height" Value="90." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Description1Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description1Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description1Visibility" Value="False" />
+              <PropertyDescription Name="Description2Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description2Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description2Visibility" Value="False" />
+              <PropertyDescription Name="HeaderBlinking" Value="False" />
+              <PropertyDescription Name="HeaderFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="HeaderHighlight" Value="False" />
+              <PropertyDescription Name="HeaderText" Value="&quot;&quot;" />
+              <PropertyDescription Name="HeaderVisibility" Value="True" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InteractionVisibility" Value="False" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="ParentObjectName" Value="&quot;xyz#123&quot;" />
+              <PropertyDescription Name="StaticContent" Value="False" />
+              <PropertyDescription Name="UnitFont" Value="$'ft::ABB Marine Customization:Arial_16pt_Regular'" />
+              <PropertyDescription Name="UnitText" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitVisibility" Value="False" />
+              <PropertyDescription Name="ValueFont" Value="$'ft::ABB Marine Customization:Arial_24pt_Bold'" />
+              <PropertyDescription Name="ValueText" Value="&quot;&quot;" />
+              <PropertyDescription Name="ValueVisibility" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Sel_Out_of_Service</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Sel_Out_of_Service&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="60." />
+              <PropertyDescription Name="Width" Value="220." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_OOS'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_OOS'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_OOS'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="401" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Tab3_OOS'" />
+              <PropertyDescription Name="Target" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_OOS'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Value" Value="!$'pr::OnOffCtrl:Control Module:FPIntPar.FP_OOS'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField4</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField4&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="175." />
+              <PropertyDescription Name="YPos" Value="15." />
+              <PropertyDescription Name="Width" Value="100." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_FBTime'#DataQuality" />
+              <PropertyDescription Name="DataType" Value="Time" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_FBTime'#IsWritable &amp;&amp; ($'pr::OnOffCtrl:Control Module:Sel_FBDelayTime' = 0 || $'pr::OnOffCtrl:Control Module:Sel_FBDelayTime' = 1)" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="52." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="0" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_FBTime'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="False" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_TextField5</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField5&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="15." />
+              <PropertyDescription Name="Width" Value="100." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Tab3_Feedback_Time'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_Fill1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_Fill1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="50." />
+              <PropertyDescription Name="Width" Value="270." />
+              <PropertyDescription Name="Height" Value="1." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="15" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_ContentBox2</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_ContentBox2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_Sim'#IsWritable" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="100." />
+              <PropertyDescription Name="Width" Value="290." />
+              <PropertyDescription Name="Height" Value="45." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Description1Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description1Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description1Visibility" Value="False" />
+              <PropertyDescription Name="Description2Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description2Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description2Visibility" Value="False" />
+              <PropertyDescription Name="HeaderBlinking" Value="False" />
+              <PropertyDescription Name="HeaderFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="HeaderHighlight" Value="False" />
+              <PropertyDescription Name="HeaderText" Value="&quot;&quot;" />
+              <PropertyDescription Name="HeaderVisibility" Value="True" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InteractionVisibility" Value="False" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="ParentObjectName" Value="&quot;xyz#123&quot;" />
+              <PropertyDescription Name="StaticContent" Value="False" />
+              <PropertyDescription Name="UnitFont" Value="$'ft::ABB Marine Customization:Arial_16pt_Regular'" />
+              <PropertyDescription Name="UnitText" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitVisibility" Value="False" />
+              <PropertyDescription Name="ValueFont" Value="$'ft::ABB Marine Customization:Arial_24pt_Bold'" />
+              <PropertyDescription Name="ValueText" Value="&quot;&quot;" />
+              <PropertyDescription Name="ValueVisibility" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_Sim'#IsWritable" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="110." />
+              <PropertyDescription Name="Width" Value="220." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_Sim'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_Sim'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_Sim'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="401" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Tab2_Simulation'" />
+              <PropertyDescription Name="Target" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_Sim'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Value" Value="!$'pr::OnOffCtrl:Control Module:FPIntPar.FP_Sim'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

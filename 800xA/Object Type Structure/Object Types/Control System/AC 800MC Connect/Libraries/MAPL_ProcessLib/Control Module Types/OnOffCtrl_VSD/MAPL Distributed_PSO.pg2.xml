@@ -1,0 +1,353 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{e61bce15-f4ae-4907-8b2b-f76f927bbd0f}:{410e670e-9fa1-41eb-b224-9a7ff4435726}</ElementId>
+  <ElementName>OnOffCtrl_VSD:MAPL Distributed_PSO</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>None</InhibitInput>
+    <SubscriptionRate>ip::SubscriptionRate</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>DescriptionFont</PropertyName>
+        <DataType>Font</DataType>
+        <DefaultValue>$'ABB Marine Customization:Arial_11pt_Regular'</DefaultValue>
+        <Description>"Font for description"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>EntryWindowOnTop</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>False</DefaultValue>
+        <Description>"Determines if the Entry window is positioned on top or to the right of the input field element"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>Fraction</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>1</DefaultValue>
+        <Description>"Number of decimals:\nfor all values, if fieldbus interface is used,\nfor CV if I/O interface is used"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>IndicationVisibility</PropertyName>
+        <DataType>BooleanArray</DataType>
+        <DefaultValue>{True, True, True, True}</DefaultValue>
+        <Description>"Selection for indication visibility: {LetterIndicationsVisible, LockControlVisible, OperatorNoteVisible, AlarmsVisible}"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>NameVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>False</DefaultValue>
+        <Description>"TRUE: Name is visible"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>NameWidth</PropertyName>
+        <DataType>Real</DataType>
+        <DefaultValue>100.</DefaultValue>
+        <Description>"Width of the name field"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SubscriptionRate</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"The update rate for all aspect object properties subscribed for"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>Type</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>1</DefaultValue>
+        <Description>"Type of the field: 1= Process value (PV), 2= Setpoint (SP), 3= Output (CV)"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>UnitFont</PropertyName>
+        <DataType>Font</DataType>
+        <DefaultValue>$'ABB Marine Customization:Arial_11pt_Regular'</DefaultValue>
+        <Description>"Font for unit"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>ValueFont</PropertyName>
+        <DataType>Font</DataType>
+        <DefaultValue>$'ABB Marine Customization:Arial_16pt_Bold'</DefaultValue>
+        <Description>"Font for value"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>ValueWidth</PropertyName>
+        <DataType>Real</DataType>
+        <DefaultValue>50.</DefaultValue>
+        <Description>"Width of the value field"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems>
+      <InputItem>
+        <Name>Element Action Propagator1</Name>
+        <TypeName>InputItems:ElementActionPropagator</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;Element Action Propagator1&quot;" />
+          <PropertyDescription Name="Enabled" Value="True" />
+          <PropertyDescription Name="EnableApply" Value="False" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="PropagateLeftClick" Value="True" />
+          <PropertyDescription Name="PropagateRightClick" Value="False" />
+          <PropertyDescription Name="PropagateStartDrag" Value="False" />
+          <PropertyDescription Name="ProgagateSetCursorShape" Value="False" />
+          <PropertyDescription Name="PropagateShowTooltip" Value="False" />
+          <PropertyDescription Name="PropagateToggleObjectSelection" Value="False" />
+        </PropertyDescriptions>
+      </InputItem>
+    </ElementHostedInputItems>
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>ActivePlate</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evHoveringMouse</Name>
+        <TypeName>Transform</TypeName>
+        <ExpressionText>if IsInputEnabled() then if $'lv::_MouseOver' then ScaleAt(1. + 2. / $'lv::_Width', 1. + 2. / $'lv::_Height', $'lv::_Width' / 2., $'lv::_Height' / 2.) else Empty else Empty</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evCurrentValue</Name>
+        <TypeName>Real</TypeName>
+        <ExpressionText>$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_SpeedRef' * 100. / $'pr::OnOffCtrl_VSD:Control Module:DrvMaxSpeed'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evFractionPV</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'pr::OnOffCtrl_VSD:Control Module:InterfaceType' = 1 then if $'pr::OnOffCtrl_VSD:Control Module:SpeedActConf' then $'pr::OnOffCtrl_VSD:Control Module:SpeedAct.Parameters.Fraction' else $'pr::OnOffCtrl_VSD:Control Module:SpeedRef.Parameters.Fraction' else $'ip::Fraction'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evFractionSP</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'pr::OnOffCtrl_VSD:Control Module:InterfaceType' = 1 then $'pr::OnOffCtrl_VSD:Control Module:SpeedRef.Parameters.Fraction' else $'ip::Fraction'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evFraction</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'ip::Type' = 1 then $'ev::evFractionPV' else if $'ip::Type' = 2 then $'ev::evFractionSP' else $'ip::Fraction'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent()</BackColor>
+        <DefaultSize>
+          <Width>100</Width>
+          <Height>25</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField1</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField1&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="if $'ip::NameVisible' then $'ip::NameWidth' + 30. else 30." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="if $'ip::NameVisible' then $'lv::_Width' - $'ip::NameWidth' - 30. else $'lv::_Width' - 30." />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="if $'ip::IndicationVisibility'[3] then $'pr::OnOffCtrl_VSD:Alarm Global Properties:AlarmConditionState_Descendants' else 0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="if $'ip::IndicationVisibility'[3] then $'pr::OnOffCtrl_VSD:Alarm Global Properties:AlarmPriorityLevel_Descendants' else 0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="$'ip::IndicationVisibility'[3] &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:LIO.IN.InhAl'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="$'ip::Type' = 2 &amp;&amp; !($'pr::OnOffCtrl_VSD:Control Module:LIO.OUT.SpExt' || $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS') &amp;&amp; $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_SpeedRef'#IsWritable" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="$'ip::EntryWindowOnTop'" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InputWidth" Value="$'ip::ValueWidth'" />
+              <PropertyDescription Name="ItemInactive" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS'" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="$'ev::evFraction'" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="if $'ip::Type' = 1 then $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_ActualSpeed' else if $'ip::Type' = 2 then $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_SpeedRef' else $'ev::evCurrentValue'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ip::UnitFont'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ip::ValueFont'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="if $'ip::Type' = 1 || $'ip::Type' = 2 then $'pr::OnOffCtrl_VSD:Control Module:DrvSPUnits' else &quot;%&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Label Name</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Label Name&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="$'ip::NameVisible'" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="11." />
+              <PropertyDescription Name="YPos" Value="2." />
+              <PropertyDescription Name="Width" Value="$'ip::NameWidth'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height' - 4." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'pr::OnOffCtrl_VSD:Name:Name'" />
+              <PropertyDescription Name="TextColor" Value="if $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' then 12 else 11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ip::DescriptionFont'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Bottom" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Label Type</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Label Type&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="if $'ip::NameVisible' then $'ip::NameWidth' + 10. else 11." />
+              <PropertyDescription Name="YPos" Value="2." />
+              <PropertyDescription Name="Width" Value="20." />
+              <PropertyDescription Name="Height" Value="$'lv::_Height' - 4." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="if $'ip::Type' = 1 then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProdessLib_OnOffCtrl_VSD_PV' else if $'ip::Type' = 2 then $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_SP' else $'nt::OnOffCtrl_VSD_NLS:NLSID_ProcessLib_OnOffCtrl_VSD_CV'" />
+              <PropertyDescription Name="TextColor" Value="if $'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_OOS' then 12 else 11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ip::DescriptionFont'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Bottom" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>OnOffCtrl_VSD:MAPL Status Information Frame1</Name>
+            <TypeName>e61bce15-f4ae-4907-8b2b-f76f927bbd0f:5c19e415-b0ac-4083-a164-1ef3fc932b28</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;OnOffCtrl_VSD:MAPL Status Information Frame1&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::OnOffCtrl_VSD:MAPL Status Information Frame'" />
+              <PropertyDescription Name="EnableInput" Value="True" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="InteractionIndicatorVisible" Value="IsInputEnabled()" />
+              <PropertyDescription Name="ItemInRectangle" Value="True" />
+              <PropertyDescription Name="LetterIndicationsVisible" Value="$'ip::IndicationVisibility'[0]" />
+              <PropertyDescription Name="LockControlVisible" Value="$'ip::IndicationVisibility'[1]" />
+              <PropertyDescription Name="LowerRightCornerVisible" Value="True" />
+              <PropertyDescription Name="MouseOverIN" Value="False" />
+              <PropertyDescription Name="OperatorNoteVisible" Value="$'ip::IndicationVisibility'[2]" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+              <PropertyDescription Name="UpperLeftCornerVisible" Value="True" />
+              <PropertyDescription Name="UpperRightCornerVisible" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Error Indicator1</Name>
+            <TypeName>GraphicPrimitives:ErrorIndicator</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Error Indicator1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl_VSD:Control Module:FPIntPar.FP_ActualSpeed'#DataQuality" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

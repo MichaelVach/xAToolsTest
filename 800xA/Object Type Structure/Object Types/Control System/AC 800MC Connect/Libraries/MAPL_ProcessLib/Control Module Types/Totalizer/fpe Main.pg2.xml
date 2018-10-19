@@ -1,0 +1,611 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{d3b523f8-1aa2-421b-8e21-e38c6a3815eb}:{4b59e7a8-b9d6-453e-ae7e-579d5a9c471f}</ElementId>
+  <ElementName>Totalizer:fpe Main</ElementName>
+  <ElementTypeId>{9b12a235-c19a-4ca3-a38f-eb1fdf913445}</ElementTypeId>
+  <ElementTypeName>MAPL Faceplate Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>1000</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties />
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables />
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent</BackColor>
+        <DefaultSize>
+          <Width>300</Width>
+          <Height>340</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>_BackgroundColor</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;_BackgroundColor&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="$'lv::_Extent'#X" />
+              <PropertyDescription Name="YPos" Value="$'lv::_Extent'#Y" />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="7" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_ContentBox1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_ContentBox1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="5." />
+              <PropertyDescription Name="Width" Value="290." />
+              <PropertyDescription Name="Height" Value="330." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Description1Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description1Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description1Visibility" Value="False" />
+              <PropertyDescription Name="Description2Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description2Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description2Visibility" Value="False" />
+              <PropertyDescription Name="HeaderBlinking" Value="False" />
+              <PropertyDescription Name="HeaderFont" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="HeaderHighlight" Value="False" />
+              <PropertyDescription Name="HeaderText" Value="&quot;&quot;" />
+              <PropertyDescription Name="HeaderVisibility" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InteractionVisibility" Value="False" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="ParentObjectName" Value="&quot;xyz#123&quot;" />
+              <PropertyDescription Name="StaticContent" Value="False" />
+              <PropertyDescription Name="UnitFont" Value="$'ft::ABB Marine Customization:Arial_16pt_Regular'" />
+              <PropertyDescription Name="UnitText" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitVisibility" Value="False" />
+              <PropertyDescription Name="ValueFont" Value="$'ft::ABB Marine Customization:Arial_24pt_Bold'" />
+              <PropertyDescription Name="ValueText" Value="&quot;&quot;" />
+              <PropertyDescription Name="ValueVisibility" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField 21</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField 21&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="155." />
+              <PropertyDescription Name="YPos" Value="50." />
+              <PropertyDescription Name="Width" Value="90." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="$'pr::Totalizer:Alarm Global Properties:AlarmConditionState_Descendants'" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="$'pr::Totalizer:Alarm Global Properties:AlarmPriorityLevel_Descendants'" />
+              <PropertyDescription Name="AlarmsInhibited" Value="$'pr::Totalizer:Control Module:FPIntPar.AlmInh'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableInteraction" Value="False" />
+              <PropertyDescription Name="HeadingText" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_TotalAmount'" />
+              <PropertyDescription Name="HeadingText Distance" Value="85." />
+              <PropertyDescription Name="ItemActive" Value="True" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="$'pr::Totalizer:Control Module:FPIntPar.Fraction'" />
+              <PropertyDescription Name="OpenFaceplate" Value="False" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::Totalizer:Control Module:FPIntPar.Total'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextFontHeader" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="TimeFormat" Value="&quot;s&quot;" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::Totalizer:Control Module:FPIntPar.Unit'" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlignment" Value="Bottom" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_BarGraph1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_BarGraph1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopBottomLeft" />
+              <PropertyDescription Name="XPos" Value="20." />
+              <PropertyDescription Name="YPos" Value="15." />
+              <PropertyDescription Name="Width" Value="10." />
+              <PropertyDescription Name="Height" Value="310." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="$'pr::Totalizer:Alarm Global Properties:AlarmConditionState_Descendants'" />
+              <PropertyDescription Name="AlarmHHHLevel" Value="$'pr::Totalizer:Control Module:FPIntPar.LimHHH'" />
+              <PropertyDescription Name="AlarmHHHVisible" Value="$'pr::Totalizer:Control Module:FPIntPar.AEConfigHHH' &gt; 0" />
+              <PropertyDescription Name="AlarmHHLevel" Value="$'pr::Totalizer:Control Module:FPIntPar.LimHH'" />
+              <PropertyDescription Name="AlarmHHVisible" Value="$'pr::Totalizer:Control Module:FPIntPar.AEConfigHH' &gt; 0" />
+              <PropertyDescription Name="AlarmHLevel" Value="$'pr::Totalizer:Control Module:FPIntPar.LimH'" />
+              <PropertyDescription Name="AlarmHVisible" Value="$'pr::Totalizer:Control Module:FPIntPar.AEConfigH' &gt; 0" />
+              <PropertyDescription Name="AlarmLLevel" Value="0." />
+              <PropertyDescription Name="AlarmLLLevel" Value="0." />
+              <PropertyDescription Name="AlarmLLLLevel" Value="0." />
+              <PropertyDescription Name="AlarmLLLVisible" Value="False" />
+              <PropertyDescription Name="AlarmLLVisible" Value="False" />
+              <PropertyDescription Name="AlarmLVisible" Value="False" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="$'pr::Totalizer:Alarm Global Properties:AlarmPriorityLevel_Descendants'" />
+              <PropertyDescription Name="AlarmsInhibited" Value="$'pr::Totalizer:Control Module:FPIntPar.AlmInh'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::Totalizer:Control Module:FPIntPar.Total'#DataQuality" />
+              <PropertyDescription Name="HorizontalBar" Value="False" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MinMaxVisible" Value="True" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="NormalAreaMax" Value="60." />
+              <PropertyDescription Name="NormalAreaMin" Value="40." />
+              <PropertyDescription Name="NormalAreaVisible" Value="False" />
+              <PropertyDescription Name="Setpoint" Value="$'pr::Totalizer:Control Module:FPIntPar.Target'" />
+              <PropertyDescription Name="SetpointVisible" Value="$'pr::Totalizer:Control Module:FPIntPar.Target' &gt; 0." />
+              <PropertyDescription Name="Unit" Value="$'pr::Totalizer:Control Module:FPIntPar.Unit'" />
+              <PropertyDescription Name="Value" Value="$'pr::Totalizer:Control Module:FPIntPar.Total'" />
+              <PropertyDescription Name="ValueMaximum" Value="$'pr::Totalizer:Control Module:FPIntPar.MaxTotal'" />
+              <PropertyDescription Name="ValueMinimum" Value="0." />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField 22</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField 22&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="155." />
+              <PropertyDescription Name="YPos" Value="85." />
+              <PropertyDescription Name="Width" Value="90." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="HeadingText" Value="&quot;&quot;" />
+              <PropertyDescription Name="HeadingText Distance" Value="85." />
+              <PropertyDescription Name="ItemActive" Value="True" />
+              <PropertyDescription Name="Maximum" Value="$'pr::Totalizer:Control Module:FPIntPar.MaxTotal'" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="$'pr::Totalizer:Control Module:FPIntPar.Fraction'" />
+              <PropertyDescription Name="OpenFaceplate" Value="False" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::Totalizer:Control Module:FPIntPar.SetTotal'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextFontHeader" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="TimeFormat" Value="&quot;s&quot;" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::Totalizer:Control Module:FPIntPar.Unit'" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlignment" Value="Bottom" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_ButtonMonostableText1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_ButtonMonostableText1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="60." />
+              <PropertyDescription Name="YPos" Value="85." />
+              <PropertyDescription Name="Width" Value="90." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Action" Value="Direct" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="ButtonText" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_ResetTotal'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="CommandFeedback" Value="$'pr::Totalizer:Control Module:FPIntPar.ApplyTotal'" />
+              <PropertyDescription Name="CommandTarget" Value="$'pr::Totalizer:Control Module:FPIntPar.ApplyTotal'" />
+              <PropertyDescription Name="CommandValue" Value="True" />
+              <PropertyDescription Name="CommandValueTransient" Value="False" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableApplyCancelFunction" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField 23</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField 23&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="155." />
+              <PropertyDescription Name="YPos" Value="25." />
+              <PropertyDescription Name="Width" Value="90." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="if $'pr::Totalizer:Control Module:FPIntPar.SignalFault' then Uncertain else Good" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableInteraction" Value="False" />
+              <PropertyDescription Name="HeadingText" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_CurrentFlow'" />
+              <PropertyDescription Name="HeadingText Distance" Value="85." />
+              <PropertyDescription Name="ItemActive" Value="$'pr::Totalizer:Control Module:FPIntPar.EnableCount'" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="$'pr::Totalizer:Control Module:FPIntPar.Fraction'" />
+              <PropertyDescription Name="OpenFaceplate" Value="False" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::Totalizer:Control Module:FPIntPar.Value'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextFontHeader" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="TimeFormat" Value="&quot;s&quot;" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::Totalizer:Control Module:FPIntPar.Unit' + &quot;/&quot; + $'pr::Totalizer:Control Module:FPIntPar.TimeFactor'" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlignment" Value="Bottom" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField 24</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField 24&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::Totalizer:Control Module:FPIntPar.AEConfigHHH' != 0" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="155." />
+              <PropertyDescription Name="YPos" Value="230." />
+              <PropertyDescription Name="Width" Value="90." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="if $'pr::Totalizer:Control Module:LIO.Out.ActHHH' then $'pr::Totalizer:Alarm Global Properties:AlarmConditionState_Descendants' else 0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="if $'pr::Totalizer:Control Module:LIO.Out.ActHHH' then $'pr::Totalizer:Alarm Global Properties:AlarmPriorityLevel_Descendants' else 0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="$'pr::Totalizer:Control Module:FPIntPar.AlmInh'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="HeadingText" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_HHH'" />
+              <PropertyDescription Name="HeadingText Distance" Value="85." />
+              <PropertyDescription Name="ItemActive" Value="True" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="$'pr::Totalizer:Control Module:FPIntPar.Fraction'" />
+              <PropertyDescription Name="OpenFaceplate" Value="False" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::Totalizer:Control Module:FPIntPar.LimHHH'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextFontHeader" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="TimeFormat" Value="&quot;s&quot;" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::Totalizer:Control Module:FPIntPar.Unit'" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlignment" Value="Bottom" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField 25</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField 25&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::Totalizer:Control Module:FPIntPar.AEConfigHH' != 0" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="155." />
+              <PropertyDescription Name="YPos" Value="255." />
+              <PropertyDescription Name="Width" Value="90." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="if $'pr::Totalizer:Control Module:LIO.Out.ActHH' &amp;&amp; !$'pr::Totalizer:Control Module:LIO.Out.ActHHH' then $'pr::Totalizer:Alarm Global Properties:AlarmConditionState_Descendants' else 0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="if $'pr::Totalizer:Control Module:LIO.Out.ActHH' &amp;&amp; !$'pr::Totalizer:Control Module:LIO.Out.ActHHH' then $'pr::Totalizer:Alarm Global Properties:AlarmPriorityLevel_Descendants' else 0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="$'pr::Totalizer:Control Module:FPIntPar.AlmInh'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="HeadingText" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_HH'" />
+              <PropertyDescription Name="HeadingText Distance" Value="85." />
+              <PropertyDescription Name="ItemActive" Value="True" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="$'pr::Totalizer:Control Module:FPIntPar.Fraction'" />
+              <PropertyDescription Name="OpenFaceplate" Value="False" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::Totalizer:Control Module:FPIntPar.LimHH'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextFontHeader" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="TimeFormat" Value="&quot;s&quot;" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::Totalizer:Control Module:FPIntPar.Unit'" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlignment" Value="Bottom" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField 26</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField 26&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::Totalizer:Control Module:FPIntPar.AEConfigH' != 0" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="155." />
+              <PropertyDescription Name="YPos" Value="280." />
+              <PropertyDescription Name="Width" Value="90." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="if $'pr::Totalizer:Control Module:LIO.Out.ActH' &amp;&amp; !$'pr::Totalizer:Control Module:LIO.Out.ActHH' then $'pr::Totalizer:Alarm Global Properties:AlarmConditionState_Descendants' else 0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="if $'pr::Totalizer:Control Module:LIO.Out.ActH' &amp;&amp; !$'pr::Totalizer:Control Module:LIO.Out.ActHH' then $'pr::Totalizer:Alarm Global Properties:AlarmPriorityLevel_Descendants' else 0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="$'pr::Totalizer:Control Module:FPIntPar.AlmInh'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="HeadingText" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_H'" />
+              <PropertyDescription Name="HeadingText Distance" Value="85." />
+              <PropertyDescription Name="ItemActive" Value="True" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="$'pr::Totalizer:Control Module:FPIntPar.Fraction'" />
+              <PropertyDescription Name="OpenFaceplate" Value="False" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::Totalizer:Control Module:FPIntPar.LimH'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextFontHeader" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="TimeFormat" Value="&quot;s&quot;" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::Totalizer:Control Module:FPIntPar.Unit'" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlignment" Value="Bottom" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_TextField1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::Totalizer:Control Module:FPIntPar.AEConfigHHH' != 0 || $'pr::Totalizer:Control Module:FPIntPar.AEConfigHH' != 0 || $'pr::Totalizer:Control Module:FPIntPar.AEConfigH' != 0" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="155." />
+              <PropertyDescription Name="YPos" Value="205." />
+              <PropertyDescription Name="Width" Value="90." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Center" />
+              <PropertyDescription Name="InputText" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_Limit'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericFieldText1</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericFieldText1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="155." />
+              <PropertyDescription Name="YPos" Value="165." />
+              <PropertyDescription Name="Width" Value="90." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="HeadingText" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_TargetValue'" />
+              <PropertyDescription Name="HeadingText Distance" Value="85." />
+              <PropertyDescription Name="ItemActive" Value="True" />
+              <PropertyDescription Name="Maximum" Value="$'pr::Totalizer:Control Module:FPIntPar.MaxTotal'" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="$'pr::Totalizer:Control Module:FPIntPar.Fraction'" />
+              <PropertyDescription Name="OpenFaceplate" Value="False" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::Totalizer:Control Module:FPIntPar.Target'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextFontHeader" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="TimeFormat" Value="&quot;s&quot;" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::Totalizer:Control Module:FPIntPar.Unit'" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlignment" Value="Bottom" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericFieldText2</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericFieldText2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="155." />
+              <PropertyDescription Name="YPos" Value="130." />
+              <PropertyDescription Name="Width" Value="90." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DateTimeFormatString" Value="if $'pr::Totalizer:Control Module:FPIntPar.TargetTime' &lt; 3600000. then &quot;s&quot; else if $'pr::Totalizer:Control Module:FPIntPar.TargetTime' &lt; 86400000. then &quot;m&quot; else &quot;h&quot;" />
+              <PropertyDescription Name="EnableInteraction" Value="False" />
+              <PropertyDescription Name="HeadingText" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_TimeToTarget'" />
+              <PropertyDescription Name="HeadingText Distance" Value="85." />
+              <PropertyDescription Name="ItemActive" Value="True" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OpenFaceplate" Value="False" />
+              <PropertyDescription Name="OverrideValue" Value="if $'pr::Totalizer:Control Module:FPIntPar.InTarget' then $'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_InTarget' else if $'pr::Totalizer:Control Module:FPIntPar.TargetTime' &gt; 283824000000. || $'pr::Totalizer:Control Module:FPIntPar.TargetTime' &lt; 1000. then &quot;-&quot; else &quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::Totalizer:Control Module:FPIntPar.TargetTime'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextFontHeader" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="TimeFormat" Value="&quot;s&quot;" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlignment" Value="Bottom" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_Fill1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_Fill1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="50." />
+              <PropertyDescription Name="YPos" Value="125." />
+              <PropertyDescription Name="Width" Value="235." />
+              <PropertyDescription Name="Height" Value="1." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="15" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_Fill2</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_Fill2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="50." />
+              <PropertyDescription Name="YPos" Value="205." />
+              <PropertyDescription Name="Width" Value="235." />
+              <PropertyDescription Name="Height" Value="1." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="15" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

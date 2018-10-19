@@ -1,0 +1,1628 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{a3451c9b-8eba-4bc3-90d1-03522e1d5a35}:{2ec1dc66-cef2-4aa5-9c7b-0376751483e6}</ElementId>
+  <ElementName>AInWeight:fpe Main</ElementName>
+  <ElementTypeId>{7b8ba62b-b07e-4957-afff-c2e04e17215d}</ElementTypeId>
+  <ElementTypeName>Faceplate Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>1000</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>DataQuality</PropertyName>
+        <DataType>DataQuality</DataType>
+        <DefaultValue>Good</DefaultValue>
+        <Description>"DataQuality"</Description>
+        <Category>Misc</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evDataQualityOut</Name>
+        <TypeName>DataQuality</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:Out.Out.PV.Value'#IsGood &amp;&amp; $'pr::AInWeight:Function Block:Out.Hw.Status'#Bit(2) &amp;&amp; $'pr::AInWeight:Function Block:Out.Hw.Status'#Bit(3) then Uncertain else $'pr::AInWeight:Function Block:Out.Out.PV.Value'#DataQuality</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evDataQualityPV1</Name>
+        <TypeName>DataQuality</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:AIn1.Out.ActERR' then Uncertain else Good</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evDataQualityPV2</Name>
+        <TypeName>DataQuality</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:AIn2.Out.ActERR' then Uncertain else Good</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evDataQualityPV3</Name>
+        <TypeName>DataQuality</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:AIn3.Out.ActERR' then Uncertain else Good</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evDataQualityPV4</Name>
+        <TypeName>DataQuality</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:AIn4.Out.ActERR' then Uncertain else Good</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evDataQualityPV5</Name>
+        <TypeName>DataQuality</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:AIn5.Out.ActERR' then Uncertain else Good</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evDataQualityPV6</Name>
+        <TypeName>DataQuality</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:AIn6.Out.ActERR' then Uncertain else Good</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evDataQualityPV7</Name>
+        <TypeName>DataQuality</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:AIn7.Out.ActERR' then Uncertain else Good</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evDataQualityPV8</Name>
+        <TypeName>DataQuality</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:AIn8.Out.ActERR' then Uncertain else Good</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evDataQualityPV9</Name>
+        <TypeName>DataQuality</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:AIn9.Out.ActERR' then Uncertain else Good</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evDataQualityPV10</Name>
+        <TypeName>DataQuality</TypeName>
+        <ExpressionText>if $'pr::AInWeight:Function Block:AIn10.Out.ActERR' then Uncertain else Good</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evMouseOver</Name>
+        <TypeName>Transform</TypeName>
+        <ExpressionText>if $'lv::_MouseOver' then ScaleAt(1.08, 1.08, $'lv::_Width' / 2., $'lv::_Height' / 2.) else Empty</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent</BackColor>
+        <DefaultSize>
+          <Width>300</Width>
+          <Height>345</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>_BackgroundColor</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;_BackgroundColor&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="405." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="7" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_ContentBox4</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_ContentBox4&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="5." />
+              <PropertyDescription Name="Width" Value="290." />
+              <PropertyDescription Name="Height" Value="335." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Description1Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description1Text" Value="&quot;Description #1&quot;" />
+              <PropertyDescription Name="Description1Visibility" Value="False" />
+              <PropertyDescription Name="Description2Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description2Text" Value="&quot;Description #2&quot;" />
+              <PropertyDescription Name="Description2Visibility" Value="False" />
+              <PropertyDescription Name="HeaderBlinking" Value="False" />
+              <PropertyDescription Name="HeaderFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="HeaderHighlight" Value="False" />
+              <PropertyDescription Name="HeaderText" Value="&quot;HEADER&quot;" />
+              <PropertyDescription Name="HeaderVisibility" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InteractionVisibility" Value="False" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="ParentObjectName" Value="&quot;xyz#123&quot;" />
+              <PropertyDescription Name="StaticContent" Value="False" />
+              <PropertyDescription Name="UnitFont" Value="$'ft::ABB Marine Customization:Arial_16pt_Regular'" />
+              <PropertyDescription Name="UnitText" Value="&quot;Unit&quot;" />
+              <PropertyDescription Name="UnitVisibility" Value="False" />
+              <PropertyDescription Name="ValueFont" Value="$'ft::ABB Marine Customization:Arial_24pt_Bold'" />
+              <PropertyDescription Name="ValueText" Value="&quot;VALUE&quot;" />
+              <PropertyDescription Name="ValueVisibility" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_PV1</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_PV1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn1.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="160." />
+              <PropertyDescription Name="YPos" Value="60." />
+              <PropertyDescription Name="Width" Value="48." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'ev::evDataQualityPV1'" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="35." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn1.Out.PV.Value'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::AInWeight:Function Block:AIn1.Hw.Parameters.Unit'" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_PV2</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_PV2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn2.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="160." />
+              <PropertyDescription Name="YPos" Value="85." />
+              <PropertyDescription Name="Width" Value="48." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'ev::evDataQualityPV2'" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="35." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn2.Out.PV.Value'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::AInWeight:Function Block:AIn2.Hw.Parameters.Unit'" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_PV3</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_PV3&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn3.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="160." />
+              <PropertyDescription Name="YPos" Value="110." />
+              <PropertyDescription Name="Width" Value="48." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'ev::evDataQualityPV3'" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="35." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn3.Out.PV.Value'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::AInWeight:Function Block:AIn3.Hw.Parameters.Unit'" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_PV4</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_PV4&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn4.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="160." />
+              <PropertyDescription Name="YPos" Value="135." />
+              <PropertyDescription Name="Width" Value="48." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'ev::evDataQualityPV4'" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="35." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn4.Out.PV.Value'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::AInWeight:Function Block:AIn4.Hw.Parameters.Unit'" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_PV5</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_PV5&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn5.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="160." />
+              <PropertyDescription Name="YPos" Value="160." />
+              <PropertyDescription Name="Width" Value="48." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'ev::evDataQualityPV5'" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="35." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn5.Out.PV.Value'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::AInWeight:Function Block:AIn5.Hw.Parameters.Unit'" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_PV6</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_PV6&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::AInWeight:Function Block:AIn6Weight' &gt; 0" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="160." />
+              <PropertyDescription Name="YPos" Value="185." />
+              <PropertyDescription Name="Width" Value="48." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'ev::evDataQualityPV6'" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="35." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn6.Out.PV.Value'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::AInWeight:Function Block:AIn6.Hw.Parameters.Unit'" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_PV7</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_PV7&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn7.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="160." />
+              <PropertyDescription Name="YPos" Value="210." />
+              <PropertyDescription Name="Width" Value="48." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'ev::evDataQualityPV7'" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="35." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn7.Out.PV.Value'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::AInWeight:Function Block:AIn7.Hw.Parameters.Unit'" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_PV8</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_PV8&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn8.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="160." />
+              <PropertyDescription Name="YPos" Value="235." />
+              <PropertyDescription Name="Width" Value="48." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'ev::evDataQualityPV8'" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="35." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn8.Out.PV.Value'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::AInWeight:Function Block:AIn8.Hw.Parameters.Unit'" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_PV9</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_PV9&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn9.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="160." />
+              <PropertyDescription Name="YPos" Value="260." />
+              <PropertyDescription Name="Width" Value="48." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'ev::evDataQualityPV9'" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="35." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn9.Out.PV.Value'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::AInWeight:Function Block:AIn9.Hw.Parameters.Unit'" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_PV10</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_PV10&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn10.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="160." />
+              <PropertyDescription Name="YPos" Value="285." />
+              <PropertyDescription Name="Width" Value="48." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'ev::evDataQualityPV10'" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="35." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn10.Out.PV.Value'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::AInWeight:Function Block:AIn10.Hw.Parameters.Unit'" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_W1</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_W1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn1.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="240." />
+              <PropertyDescription Name="YPos" Value="60." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="True" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Center" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="42." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="100" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="0" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn1Weight_Int'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_W2</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_W2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn2.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="240." />
+              <PropertyDescription Name="YPos" Value="85." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="True" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Center" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="42." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="100" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="0" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn2Weight_Int'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_W3</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_W3&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn3.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="240." />
+              <PropertyDescription Name="YPos" Value="110." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="True" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Center" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="42." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="100" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="0" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn3Weight_Int'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_W4</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_W4&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn4.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="240." />
+              <PropertyDescription Name="YPos" Value="135." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="True" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Center" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="42." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="100" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="0" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn4Weight_Int'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_W5</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_W5&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn5.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="240." />
+              <PropertyDescription Name="YPos" Value="160." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="True" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Center" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="42." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="100" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="0" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn5Weight_Int'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_W6</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_W6&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn6.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="240." />
+              <PropertyDescription Name="YPos" Value="185." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="True" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Center" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="42." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="100" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="0" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn6Weight_Int'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_W7</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_W7&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn7.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="240." />
+              <PropertyDescription Name="YPos" Value="210." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="True" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Center" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="42." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="100" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="0" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn7Weight_Int'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_W8</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_W8&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn8.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="240." />
+              <PropertyDescription Name="YPos" Value="235." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="True" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Center" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="42." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="100" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="0" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn8Weight_Int'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_W9</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_W9&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn9.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="240." />
+              <PropertyDescription Name="YPos" Value="260." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="True" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Center" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="42." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="100" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="0" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn9Weight_Int'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_W10</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_W10&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AInWeight:Function Block:AIn10.Out.SigName' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="240." />
+              <PropertyDescription Name="YPos" Value="285." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="True" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Center" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="42." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="100" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="0" />
+              <PropertyDescription Name="NumberOfDecimals" Value="0" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:AIn10Weight_Int'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_AlphaNumericField_out</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_AlphaNumericField_out&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="160." />
+              <PropertyDescription Name="YPos" Value="10." />
+              <PropertyDescription Name="Width" Value="48." />
+              <PropertyDescription Name="Height" Value="20." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'ev::evDataQualityOut'" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="35." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="1" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::AInWeight:Function Block:Out.Hw.Value'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="$'pr::AInWeight:Function Block:Out.Hw.Parameters.Unit'" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="240." />
+              <PropertyDescription Name="YPos" Value="310." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="True" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::AInWeight_NLS:NLSID_ProcessLib_AInWeight_Reset'" />
+              <PropertyDescription Name="Target" Value="$'pr::AInWeight:Function Block:FP_Reset'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::AInWeight_NLS:NLSID_ProcessLib_AInWeight_Reset_Tooltip'" />
+              <PropertyDescription Name="Value" Value="1" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_TextField11</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField11&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="10." />
+              <PropertyDescription Name="YPos" Value="10." />
+              <PropertyDescription Name="Width" Value="88." />
+              <PropertyDescription Name="Height" Value="20." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'nt::AInWeight_NLS:NLSID_ProcessLib_AInWeight_WeightedValue'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_TextField12</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField12&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="10." />
+              <PropertyDescription Name="YPos" Value="41." />
+              <PropertyDescription Name="Width" Value="88." />
+              <PropertyDescription Name="Height" Value="20." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'nt::AInWeight_NLS:NLSID_ProcessLib_AInWeight_InputValues'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_TextField13</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField13&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="240." />
+              <PropertyDescription Name="YPos" Value="41." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="20." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Center" />
+              <PropertyDescription Name="InputText" Value="$'nt::AInWeight_NLS:NLSID_ProcessLib_AInWeight_Weight'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>CBox Devider</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;CBox Devider&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="10." />
+              <PropertyDescription Name="YPos" Value="35." />
+              <PropertyDescription Name="Width" Value="280." />
+              <PropertyDescription Name="Height" Value="1." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="15" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AInWeight:MAPL AIn Description1</Name>
+            <TypeName>a3451c9b-8eba-4bc3-90d1-03522e1d5a35:91ea72ab-c9e5-4a0b-ad26-9c04012f8e88</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AInWeight:MAPL AIn Description1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="64." />
+              <PropertyDescription Name="Width" Value="120." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::AInWeight:MAPL AIn Description'" />
+              <PropertyDescription Name="EnableInput" Value="False" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="SigName" Value="$'pr::AInWeight:Function Block:AIn1.Out.SigName'" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AInWeight:MAPL AIn Description2</Name>
+            <TypeName>a3451c9b-8eba-4bc3-90d1-03522e1d5a35:91ea72ab-c9e5-4a0b-ad26-9c04012f8e88</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AInWeight:MAPL AIn Description2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="89." />
+              <PropertyDescription Name="Width" Value="120." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::AInWeight:MAPL AIn Description'" />
+              <PropertyDescription Name="EnableInput" Value="False" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="SigName" Value="$'pr::AInWeight:Function Block:AIn2.Out.SigName'" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AInWeight:MAPL AIn Description3</Name>
+            <TypeName>a3451c9b-8eba-4bc3-90d1-03522e1d5a35:91ea72ab-c9e5-4a0b-ad26-9c04012f8e88</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AInWeight:MAPL AIn Description3&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="114." />
+              <PropertyDescription Name="Width" Value="120." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::AInWeight:MAPL AIn Description'" />
+              <PropertyDescription Name="EnableInput" Value="False" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="SigName" Value="$'pr::AInWeight:Function Block:AIn3.Out.SigName'" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AInWeight:MAPL AIn Description4</Name>
+            <TypeName>a3451c9b-8eba-4bc3-90d1-03522e1d5a35:91ea72ab-c9e5-4a0b-ad26-9c04012f8e88</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AInWeight:MAPL AIn Description4&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="139." />
+              <PropertyDescription Name="Width" Value="120." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::AInWeight:MAPL AIn Description'" />
+              <PropertyDescription Name="EnableInput" Value="False" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="SigName" Value="$'pr::AInWeight:Function Block:AIn4.Out.SigName'" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AInWeight:MAPL AIn Description5</Name>
+            <TypeName>a3451c9b-8eba-4bc3-90d1-03522e1d5a35:91ea72ab-c9e5-4a0b-ad26-9c04012f8e88</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AInWeight:MAPL AIn Description5&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="164." />
+              <PropertyDescription Name="Width" Value="120." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::AInWeight:MAPL AIn Description'" />
+              <PropertyDescription Name="EnableInput" Value="False" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="SigName" Value="$'pr::AInWeight:Function Block:AIn5.Out.SigName'" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AInWeight:MAPL AIn Description6</Name>
+            <TypeName>a3451c9b-8eba-4bc3-90d1-03522e1d5a35:91ea72ab-c9e5-4a0b-ad26-9c04012f8e88</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AInWeight:MAPL AIn Description6&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="189." />
+              <PropertyDescription Name="Width" Value="120." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::AInWeight:MAPL AIn Description'" />
+              <PropertyDescription Name="EnableInput" Value="False" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="SigName" Value="$'pr::AInWeight:Function Block:AIn6.Out.SigName'" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AInWeight:MAPL AIn Description7</Name>
+            <TypeName>a3451c9b-8eba-4bc3-90d1-03522e1d5a35:91ea72ab-c9e5-4a0b-ad26-9c04012f8e88</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AInWeight:MAPL AIn Description7&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="214." />
+              <PropertyDescription Name="Width" Value="120." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::AInWeight:MAPL AIn Description'" />
+              <PropertyDescription Name="EnableInput" Value="False" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="SigName" Value="$'pr::AInWeight:Function Block:AIn7.Out.SigName'" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AInWeight:MAPL AIn Description8</Name>
+            <TypeName>a3451c9b-8eba-4bc3-90d1-03522e1d5a35:91ea72ab-c9e5-4a0b-ad26-9c04012f8e88</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AInWeight:MAPL AIn Description8&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="239." />
+              <PropertyDescription Name="Width" Value="120." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::AInWeight:MAPL AIn Description'" />
+              <PropertyDescription Name="EnableInput" Value="False" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="SigName" Value="$'pr::AInWeight:Function Block:AIn8.Out.SigName'" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AInWeight:MAPL AIn Description9</Name>
+            <TypeName>a3451c9b-8eba-4bc3-90d1-03522e1d5a35:91ea72ab-c9e5-4a0b-ad26-9c04012f8e88</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AInWeight:MAPL AIn Description9&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="289." />
+              <PropertyDescription Name="Width" Value="120." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::AInWeight:MAPL AIn Description'" />
+              <PropertyDescription Name="EnableInput" Value="False" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="SigName" Value="$'pr::AInWeight:Function Block:AIn9.Out.SigName'" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AInWeight:MAPL AIn Description10</Name>
+            <TypeName>a3451c9b-8eba-4bc3-90d1-03522e1d5a35:91ea72ab-c9e5-4a0b-ad26-9c04012f8e88</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AInWeight:MAPL AIn Description10&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="264." />
+              <PropertyDescription Name="Width" Value="120." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::AInWeight:MAPL AIn Description'" />
+              <PropertyDescription Name="EnableInput" Value="False" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="SigName" Value="$'pr::AInWeight:Function Block:AIn10.Out.SigName'" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

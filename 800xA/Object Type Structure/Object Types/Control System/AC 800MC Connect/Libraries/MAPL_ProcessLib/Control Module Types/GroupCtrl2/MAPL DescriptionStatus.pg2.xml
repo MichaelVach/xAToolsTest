@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{4939f33b-9d78-4315-8d21-691f4a6c2695}:{fcdec540-7c29-479c-aa9a-92c2dd6e39c4}</ElementId>
+  <ElementName>GroupCtrl2:MAPL DescriptionStatus</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>None</InhibitInput>
+    <SubscriptionRate>0</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>DescriptionFont</PropertyName>
+        <DataType>Font</DataType>
+        <DefaultValue>$'ABB Marine Customization:Arial_11pt_Bold'</DefaultValue>
+        <Description>"DescriptionFont"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>IndicationVisibility</PropertyName>
+        <DataType>BooleanArray</DataType>
+        <DefaultValue>{True, True, True, True}</DefaultValue>
+        <Description>"Selection for indication visibility: {LetterIndicationsVisible, LockControlVisible, OperatorNoteVisible, AlarmsVisible}"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>StatusFont</PropertyName>
+        <DataType>Font</DataType>
+        <DefaultValue>$'ABB Marine Customization:Arial_11pt_Bold'</DefaultValue>
+        <Description>"StatusFont"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>VisibleText</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"Visible text: 0: Name, 1: Description 2: Name and Description"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evStates</Name>
+        <TypeName>StringArray</TypeName>
+        <ExpressionText>{$'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeIdle', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeQStop', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeFBFault', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeHold', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeStopping', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeStarting', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeStopped', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeStarted', $'nt::GroupCtrl_NLS:NLSID_ProcessLib_GroupCtrl_ModeLocal'}</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evHoveringMouse</Name>
+        <TypeName>Transform</TypeName>
+        <ExpressionText>if IsInputEnabled() then if $'lv::_MouseOver' then ScaleAt(1. + 2. / $'lv::_Width', 1. + 2. / $'lv::_Height', $'lv::_Width' / 2., $'lv::_Height' / 2.) else Empty else Empty</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent()</BackColor>
+        <DefaultSize>
+          <Width>200</Width>
+          <Height>25</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>Background</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Background&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="if $'ip::IndicationVisibility'[3] then $'pr::GroupCtrl2:Alarm Global Properties:AlarmConditionState_Descendants' else 0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="if $'ip::IndicationVisibility'[3] then $'pr::GroupCtrl2:Alarm Global Properties:AlarmPriorityLevel_Descendants' else 0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="FillStatus_Color" Value="9" />
+              <PropertyDescription Name="FillStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="FillStatus_Transparency" Value="0" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="OutlineStatus_Color" Value="15" />
+              <PropertyDescription Name="OutlineStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenStyle" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenThickness" Value="0" />
+              <PropertyDescription Name="OutlineStatus_Transparency" Value="0" />
+              <PropertyDescription Name="Roundness" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Description</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Description&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopBottomLeft" />
+              <PropertyDescription Name="XPos" Value="10." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="if $'ip::VisibleText' = 0 then $'pr::GroupCtrl2:Name:Name' else if $'ip::VisibleText' = 1 then $'pr::GroupCtrl2:Name:Description' else $'pr::GroupCtrl2:Name:Name' + &quot; &quot; + $'pr::GroupCtrl2:Name:Description'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ip::DescriptionFont'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Status</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Status&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopBottomRight" />
+              <PropertyDescription Name="XPos" Value="140." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Far" />
+              <PropertyDescription Name="InputText" Value="UpperCase($'ev::evStates'[$'pr::GroupCtrl2:Control Module:FPIntPar.GroupState'])" />
+              <PropertyDescription Name="TextColor" Value="6" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ip::StatusFont'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>GroupCtrl2:MAPL Status Information Frame1</Name>
+            <TypeName>4939f33b-9d78-4315-8d21-691f4a6c2695:a1f01a1c-1351-4909-b54a-84e0f29a631a</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;GroupCtrl2:MAPL Status Information Frame1&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::GroupCtrl2:MAPL Status Information Frame'" />
+              <PropertyDescription Name="EnableInput" Value="True" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::GroupCtrl2:Control Module:FPIntPar.GroupState'#DataQuality" />
+              <PropertyDescription Name="InteractionIndicatorVisible" Value="IsInputEnabled()" />
+              <PropertyDescription Name="ItemInRectangle" Value="True" />
+              <PropertyDescription Name="LetterIndicationsVisible" Value="$'ip::IndicationVisibility'[0]" />
+              <PropertyDescription Name="LockControlVisible" Value="$'ip::IndicationVisibility'[1]" />
+              <PropertyDescription Name="OperatorNoteVisible" Value="$'ip::IndicationVisibility'[2]" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

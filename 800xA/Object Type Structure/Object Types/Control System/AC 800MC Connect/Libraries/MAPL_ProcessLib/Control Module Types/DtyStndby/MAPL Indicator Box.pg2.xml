@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{cf589e7c-ad07-47ef-bcea-e9d6c8a374cf}:{1f2fd08e-a754-4be8-b77a-07f1658f5b20}</ElementId>
+  <ElementName>DtyStndby:MAPL Indicator Box</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>ChangeCursor</InhibitInput>
+    <SubscriptionRate>ip::SubscriptionRate</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>ColorSchemeSelection</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"Selection between dynamic or static color. \n0: Dynamic color library based on workspace selection \n1: Midnight Grey \n2: Graphite White \n3:High Contrast"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>HorizontalAlignment</PropertyName>
+        <DataType>HorizontalAlignment</DataType>
+        <DefaultValue>Near</DefaultValue>
+        <Description>"Horizontal alignment"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>IndicationVisibility</PropertyName>
+        <DataType>BooleanArray</DataType>
+        <DefaultValue>{True, True, True, True}</DefaultValue>
+        <Description>"Selection for indication visibility: {LetterIndicationsVisible, LockControlVisible, OperatorNoteVisible, AlarmsVisible}"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SelectAct</PropertyName>
+        <DataType>__SelectAct</DataType>
+        <DefaultValue>ActA</DefaultValue>
+        <Description>"Select Actuator to display info for"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SubscriptionRate</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"The update rate for all aspect object properties subscribed for"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>TextFont</PropertyName>
+        <DataType>Font</DataType>
+        <DefaultValue>$'ABB Marine Customization:Arial_11pt_Bold'</DefaultValue>
+        <Description>"Text font: font, size, and associated effects of text"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>VisibleText</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>3</DefaultValue>
+        <Description>"Visible text: 0: Name, 1: Description 2: Name and Description, 3: Text according inputs TextRUNNING and TextSTOPPED"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations>
+      <UserEnumeration>
+        <Name>SelectAct</Name>
+        <Values>
+          <string>ActA</string>
+          <string>ActB</string>
+        </Values>
+        <IsSet>false</IsSet>
+        <DefaultValue>ActA</DefaultValue>
+      </UserEnumeration>
+    </UserEnumerations>
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evText</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if !$'pr::DtyStndby:Control Module:vActuatorAReady' &amp;&amp; $'ip::SelectAct' = ActA || !$'pr::DtyStndby:Control Module:vActuatorBReady' &amp;&amp; $'ip::SelectAct' = ActB then $'nt::DtySndby_NLS:NLSID_ProcessLib_DtySndby_MAPL_Indicator_Box_NotReady' else if $'pr::DtyStndby:Control Module:vActuatorAisDuty' &amp;&amp; $'ip::SelectAct' = ActA || $'pr::DtyStndby:Control Module:vActuatorBisDuty' &amp;&amp; $'ip::SelectAct' = ActB then $'nt::DtySndby_NLS:NLSID_ProcessLib_DtySndby_MAPL_Indicator_Box_Duty' else if $'pr::DtyStndby:Control Module:vBoostMode' then "BOOST" else $'nt::DtySndby_NLS:NLSID_ProcessLib_DtySndby_MAPL_Indicator_Box_Standby'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>ActivePlate</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evHoveringMouse</Name>
+        <TypeName>Transform</TypeName>
+        <ExpressionText>if $'lv::_MouseOver' then ScaleAt(1. + 2. / $'lv::_Width', 1. + 2. / $'lv::_Height', $'lv::_Width' / 2., $'lv::_Height' / 2.) else Empty</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent()</BackColor>
+        <DefaultSize>
+          <Width>100</Width>
+          <Height>25</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>MAPL_BooleanIndicator1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_BooleanIndicator1&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="if $'ip::IndicationVisibility'[3] then $'pr::DtyStndby:Alarm Global Properties:AlarmConditionState_Descendants' else 0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="if $'ip::IndicationVisibility'[3] then $'pr::DtyStndby:Alarm Global Properties:AlarmPriorityLevel_Descendants' else 0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="if $'ip::IndicationVisibility'[3] then $'pr::DtyStndby:Control Module:LIO.In.InhAl' else False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ip::ColorSchemeSelection'" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::DtyStndby:Control Module:LIO.Out.Switching'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InputText" Value="$'ev::evText'" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="2" />
+              <PropertyDescription Name="TextFont" Value="$'ip::TextFont'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="$'ip::HorizontalAlignment'" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL Status Information Frame1</Name>
+            <TypeName>cf589e7c-ad07-47ef-bcea-e9d6c8a374cf:3ccd162a-4bd9-4718-add2-bfc9ec9b63ae</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL Status Information Frame1&quot;" />
+              <PropertyDescription Name="Transform" Value="$'ev::evHoveringMouse'" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::DtyStndby:MAPL Status Information Frame'" />
+              <PropertyDescription Name="EnableInput" Value="True" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="InteractionIndicatorVisible" Value="IsInputEnabled()" />
+              <PropertyDescription Name="ItemInRectangle" Value="True" />
+              <PropertyDescription Name="LetterIndicationsVisible" Value="$'ip::IndicationVisibility'[0]" />
+              <PropertyDescription Name="LockControlVisible" Value="$'ip::IndicationVisibility'[1]" />
+              <PropertyDescription Name="LowerRightCornerVisible" Value="True" />
+              <PropertyDescription Name="MouseOverIN" Value="False" />
+              <PropertyDescription Name="OperatorNoteVisible" Value="$'ip::IndicationVisibility'[2]" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+              <PropertyDescription Name="UpperLeftCornerVisible" Value="True" />
+              <PropertyDescription Name="UpperRightCornerVisible" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

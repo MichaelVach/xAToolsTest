@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{4939f33b-9d78-4315-8d21-691f4a6c2695}:{a1f01a1c-1351-4909-b54a-84e0f29a631a}</ElementId>
+  <ElementName>GroupCtrl2:MAPL Status Information Frame</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>None</InhibitInput>
+    <SubscriptionRate>0</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>ColorSchemeSelection</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"Change between dynamic or static color library.\n0: Dynamic, workplace controlled\n1:Midnight Grey\n2:Graphite White\n3:High Contrast"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>DataQuality</PropertyName>
+        <DataType>DataQuality</DataType>
+        <DefaultValue>Good</DefaultValue>
+        <Description>"DataQuality"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>InteractionIndicatorVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE shows the interation indicator for the icon"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>ItemInRectangle</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>False</DefaultValue>
+        <Description>"FALSE: Item is used around the process icon, TRUE: Item is used inside a rectangle element"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>LetterIndicationsVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE shows the \"Quick-Access\" letter indications"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>LockControlVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE enables the lock control information"</Description>
+        <Category>Information - Lock Control</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>OperatorNoteVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE shows operator note"</Description>
+        <Category>Information - OperatorNote</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables />
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent()</BackColor>
+        <DefaultSize>
+          <Width>50</Width>
+          <Height>50</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>Device_Information</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Device_Information&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ip::ColorSchemeSelection'" />
+              <PropertyDescription Name="ControlUseLockStatus" Value="$'pr::GroupCtrl2:Global Properties Definition:ControlUseLock'" />
+              <PropertyDescription Name="InteractionIndicatorVisible" Value="$'ip::InteractionIndicatorVisible'" />
+              <PropertyDescription Name="ItemActive" Value="True" />
+              <PropertyDescription Name="ItemInRectangle" Value="$'ip::ItemInRectangle'" />
+              <PropertyDescription Name="LockControlStatus" Value="$'pr::GroupCtrl2:Global Properties Definition:ControlLockStatus'" />
+              <PropertyDescription Name="LockControlVisible" Value="$'ip::LockControlVisible'" />
+              <PropertyDescription Name="LowerRightCornerBlink" Value="False" />
+              <PropertyDescription Name="LowerRightCornerHighlight" Value="False" />
+              <PropertyDescription Name="LowerRightCornerText" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.Interlocked' then &quot;I&quot; else if !$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1' &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1Block' || !$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2' &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2Block' || !$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3' &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3Block' || !$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4' &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4Block' || !$'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5' &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5Block' then &quot;IB&quot; else if $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock1Block' || $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock2Block' || $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock3Block' || $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock4Block' || $'pr::GroupCtrl2:Control Module:FPIntPar.Ilock5Block' then &quot;B&quot; else &quot;&quot;" />
+              <PropertyDescription Name="LowerRightVisibility" Value="$'ip::LetterIndicationsVisible'" />
+              <PropertyDescription Name="MouseOverIN" Value="False" />
+              <PropertyDescription Name="ObjectInstanceName" Value="$'pr::GroupCtrl2:Name:Name'" />
+              <PropertyDescription Name="OperatorNoteState" Value="$'pr::GroupCtrl2:Operator Note:HoldsData'" />
+              <PropertyDescription Name="OperatorNoteVisible" Value="$'ip::OperatorNoteVisible'" />
+              <PropertyDescription Name="UpperLeftCornerBlink" Value="False" />
+              <PropertyDescription Name="UpperLeftCornerHighlight" Value="False" />
+              <PropertyDescription Name="UpperLeftCornerText" Value="&quot;&quot;" />
+              <PropertyDescription Name="UpperLeftCornerVisibility" Value="$'ip::LetterIndicationsVisible'" />
+              <PropertyDescription Name="UpperRightCornerBlink" Value="False" />
+              <PropertyDescription Name="UpperRightCornerHighlight" Value="False" />
+              <PropertyDescription Name="UpperRightCornerText" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.GroupState' = 8 then &quot;L&quot; else &quot;&quot;" />
+              <PropertyDescription Name="UpperRightCornerVisibility" Value="$'ip::LetterIndicationsVisible'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Error Indicator1</Name>
+            <TypeName>GraphicPrimitives:ErrorIndicator</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Error Indicator1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'ip::DataQuality'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

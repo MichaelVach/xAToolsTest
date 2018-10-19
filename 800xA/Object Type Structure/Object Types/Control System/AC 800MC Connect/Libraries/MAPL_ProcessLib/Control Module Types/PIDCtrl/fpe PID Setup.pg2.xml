@@ -1,0 +1,796 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{7622fdb2-ff96-42b9-8949-4a636a3a9d25}:{bbc0ff4e-e9f8-4dcb-86bc-a6c7f287986a}</ElementId>
+  <ElementName>PIDCtrl:fpe PID Setup</ElementName>
+  <ElementTypeId>{9b12a235-c19a-4ca3-a38f-eb1fdf913445}</ElementTypeId>
+  <ElementTypeName>MAPL Faceplate Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>1000</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties />
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evActiveGain_TextColor</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'pr::PIDCtrl:Control Module:LIO.OUT.Track' || $'pr::PIDCtrl:Control Module:LIO.OUT.Man' then 2 else 3</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evActiveTi_TextColor</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'pr::PIDCtrl:Control Module:LIO.OUT.Track' || $'pr::PIDCtrl:Control Module:LIO.OUT.Man' then 2 else if !$'pr::PIDCtrl:Control Module:LIO.OUT.Man' &amp;&amp; !$'pr::PIDCtrl:Control Module:LIO.OUT.Track' &amp;&amp; ($'pr::PIDCtrl:Control Module:FPIntPar.FP_PIDType' = 1 || $'pr::PIDCtrl:Control Module:FPIntPar.FP_PIDType' = 3) then 3 else 1</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evActiveTd_TextColor</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'pr::PIDCtrl:Control Module:LIO.OUT.Track' || $'pr::PIDCtrl:Control Module:LIO.OUT.Man' then 2 else if !$'pr::PIDCtrl:Control Module:LIO.OUT.Man' &amp;&amp; !$'pr::PIDCtrl:Control Module:LIO.OUT.Track' &amp;&amp; ($'pr::PIDCtrl:Control Module:FPIntPar.FP_PIDType' = 2 || $'pr::PIDCtrl:Control Module:FPIntPar.FP_PIDType' = 3) then 3 else 1</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evApplyButton_Active</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>if !$'pr::PIDCtrl:Control Module:LIO.OUT.Track' &amp;&amp; !$'pr::PIDCtrl:Control Module:LIO.OUT.Man' &amp;&amp; !($'pr::PIDCtrl:Control Module:FPIntPar.FP_Gain' = $'pr::PIDCtrl:Control Module:Gain') || !($'pr::PIDCtrl:Control Module:FPIntPar.FP_Ti' = $'pr::PIDCtrl:Control Module:Ti') || !($'pr::PIDCtrl:Control Module:FPIntPar.FP_Td' = $'pr::PIDCtrl:Control Module:Td') then True else False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent</BackColor>
+        <DefaultSize>
+          <Width>350</Width>
+          <Height>250</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>_BackgroundColor</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;_BackgroundColor&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="350." />
+              <PropertyDescription Name="Height" Value="250." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="7" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_ContentBox1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_ContentBox1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="5." />
+              <PropertyDescription Name="Width" Value="340." />
+              <PropertyDescription Name="Height" Value="240." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Description1Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description1Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description1Visibility" Value="False" />
+              <PropertyDescription Name="Description2Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description2Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description2Visibility" Value="False" />
+              <PropertyDescription Name="HeaderBlinking" Value="False" />
+              <PropertyDescription Name="HeaderFont" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="HeaderHighlight" Value="False" />
+              <PropertyDescription Name="HeaderText" Value="&quot;&quot;" />
+              <PropertyDescription Name="HeaderVisibility" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InteractionVisibility" Value="False" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="ParentObjectName" Value="&quot;&quot;" />
+              <PropertyDescription Name="StaticContent" Value="False" />
+              <PropertyDescription Name="UnitFont" Value="$'ft::ABB Marine Customization:Arial_16pt_Regular'" />
+              <PropertyDescription Name="UnitText" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitVisibility" Value="False" />
+              <PropertyDescription Name="ValueFont" Value="$'ft::ABB Marine Customization:Arial_24pt_Bold'" />
+              <PropertyDescription Name="ValueText" Value="&quot;&quot;" />
+              <PropertyDescription Name="ValueVisibility" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Gain Static</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Gain Static&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="90." />
+              <PropertyDescription Name="Width" Value="75." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_Gain'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Ti Static</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Ti Static&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="121." />
+              <PropertyDescription Name="Width" Value="75." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_Ti'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Td Static</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Td Static&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="150." />
+              <PropertyDescription Name="Width" Value="75." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_Td'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Td Filter Static</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Td Filter Static&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="210." />
+              <PropertyDescription Name="Width" Value="75." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_TdFilter'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Direction Static</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Direction Static&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="52.5" />
+              <PropertyDescription Name="Width" Value="75." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_Direction'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Gain Input Field</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Gain Input Field&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="90." />
+              <PropertyDescription Name="YPos" Value="90." />
+              <PropertyDescription Name="Width" Value="100." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Gain'#DataQuality" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Gain'#IsWritable" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="72." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="2" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Gain'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_Tooltip_SetGain'" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="False" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Ti Input Field</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Ti Input Field&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="90." />
+              <PropertyDescription Name="YPos" Value="120." />
+              <PropertyDescription Name="Width" Value="100." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Ti'#DataQuality" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Ti'#IsWritable" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="72." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="0.01" />
+              <PropertyDescription Name="NumberOfDecimals" Value="2" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Ti'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_Tooltip_SetTi'" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="False" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Td Input Field</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Td Input Field&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="90." />
+              <PropertyDescription Name="YPos" Value="150." />
+              <PropertyDescription Name="Width" Value="100." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Td'#DataQuality" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Td'#IsWritable" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="72." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="2" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Td'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_Tooltip_SetTd'" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="False" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Td Filter Input Field</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Td Filter Input Field&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="90." />
+              <PropertyDescription Name="YPos" Value="210." />
+              <PropertyDescription Name="Width" Value="100." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_TdFilter'#DataQuality" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_TdFilter'#IsWritable" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="72." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="2" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_TdFilter'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="1" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_Tooltip_SetTdFilter'" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="False" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>RadioButton Direction</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;RadioButton Direction&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="90." />
+              <PropertyDescription Name="YPos" Value="45." />
+              <PropertyDescription Name="Width" Value="80." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Dir'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Dir'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Dir'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_Direct'" />
+              <PropertyDescription Name="Target" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Dir'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_Tooltip_SetDirection'" />
+              <PropertyDescription Name="Value" Value="if $'pr::PIDCtrl:Control Module:FPIntPar.FP_Dir' then Variant(False) else Variant(True)" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Active Setup static</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Active Setup static&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="205." />
+              <PropertyDescription Name="YPos" Value="65." />
+              <PropertyDescription Name="Width" Value="70." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Center" />
+              <PropertyDescription Name="InputText" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_ActiveSetup'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Gain Active Setup</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Gain Active Setup&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="195." />
+              <PropertyDescription Name="YPos" Value="90." />
+              <PropertyDescription Name="Width" Value="100." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::PIDCtrl:Control Module:Gain'#DataQuality" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="50." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="2" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::PIDCtrl:Control Module:Gain'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="$'ev::evActiveGain_TextColor'" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Ti Active Setup</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Ti Active Setup&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="195." />
+              <PropertyDescription Name="YPos" Value="120." />
+              <PropertyDescription Name="Width" Value="100." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::PIDCtrl:Control Module:Ti'#DataQuality" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="50." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="2" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::PIDCtrl:Control Module:Ti'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="$'ev::evActiveTi_TextColor'" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Td Active Setup</Name>
+            <TypeName>Interactive:Input Field</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Td Active Setup&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="195." />
+              <PropertyDescription Name="YPos" Value="150." />
+              <PropertyDescription Name="Width" Value="100." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Culture" Value="&quot;&quot;" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::PIDCtrl:Control Module:Td'#DataQuality" />
+              <PropertyDescription Name="DataType" Value="Real" />
+              <PropertyDescription Name="DateTimeFormatString" Value="&quot;&quot;" />
+              <PropertyDescription Name="EnableSetpointApply" Value="False" />
+              <PropertyDescription Name="EntryWindowOnTop" Value="False" />
+              <PropertyDescription Name="HorizontalAlign" Value="Far" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputWidth" Value="50." />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="Maximum" Value="Empty" />
+              <PropertyDescription Name="MaxNoOfChars" Value="0" />
+              <PropertyDescription Name="Minimum" Value="Empty" />
+              <PropertyDescription Name="NumberOfDecimals" Value="2" />
+              <PropertyDescription Name="OverrideValue" Value="&quot;&quot;" />
+              <PropertyDescription Name="PropertyReference" Value="$'pr::PIDCtrl:Control Module:Td'" />
+              <PropertyDescription Name="StepSize" Value="1." />
+              <PropertyDescription Name="TargetArrayIndices" Value="{-1}" />
+              <PropertyDescription Name="TextColorValue" Value="$'ev::evActiveTd_TextColor'" />
+              <PropertyDescription Name="TextFontUnit" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextFontValue" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="Unit" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitPosition" Value="Right" />
+              <PropertyDescription Name="UnitVisible" Value="True" />
+              <PropertyDescription Name="ValueForced" Value="False" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>PID Type Dropdown</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;PID Type Dropdown&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="90." />
+              <PropertyDescription Name="YPos" Value="15." />
+              <PropertyDescription Name="Width" Value="80." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ConfirmSelectedIndex" Value="-1" />
+              <PropertyDescription Name="Enabled" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_PIDType'#IsWritable" />
+              <PropertyDescription Name="Entry00Enable" Value="True" />
+              <PropertyDescription Name="Entry00Text" Value="&quot;P&quot;" />
+              <PropertyDescription Name="Entry01Enable" Value="True" />
+              <PropertyDescription Name="Entry01Text" Value="&quot;PI&quot;" />
+              <PropertyDescription Name="Entry02Enable" Value="True" />
+              <PropertyDescription Name="Entry02Text" Value="&quot;PD&quot;" />
+              <PropertyDescription Name="Entry03Enable" Value="True" />
+              <PropertyDescription Name="Entry03Text" Value="&quot;PID&quot;" />
+              <PropertyDescription Name="Entry04Enable" Value="False" />
+              <PropertyDescription Name="Entry04Text" Value="&quot;TEXT&quot;" />
+              <PropertyDescription Name="Entry05Enable" Value="False" />
+              <PropertyDescription Name="Entry05Text" Value="&quot;TEXT&quot;" />
+              <PropertyDescription Name="Entry06Enable" Value="False" />
+              <PropertyDescription Name="Entry06Text" Value="&quot;TEXT&quot;" />
+              <PropertyDescription Name="Entry07Enable" Value="False" />
+              <PropertyDescription Name="Entry07Text" Value="&quot;TEXT&quot;" />
+              <PropertyDescription Name="Entry08Enable" Value="False" />
+              <PropertyDescription Name="Entry08Text" Value="&quot;TEXT&quot;" />
+              <PropertyDescription Name="Entry09Enable" Value="False" />
+              <PropertyDescription Name="Entry09Text" Value="&quot;TEXT&quot;" />
+              <PropertyDescription Name="Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="NumOfVisibleEntries" Value="4" />
+              <PropertyDescription Name="SelectedIndex" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_PIDType'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>radioButtonApply</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;radioButtonApply&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Apply'#IsWritable" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="200." />
+              <PropertyDescription Name="YPos" Value="180." />
+              <PropertyDescription Name="Width" Value="80." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="$'ev::evApplyButton_Active'" />
+              <PropertyDescription Name="Checked" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Apply'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Apply'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Apply'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_ApplySettings'" />
+              <PropertyDescription Name="Target" Value="$'pr::PIDCtrl:Control Module:FPIntPar.FP_Apply'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_Tooltip_ApplySettings'" />
+              <PropertyDescription Name="Value" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_TextField1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="15." />
+              <PropertyDescription Name="Width" Value="75." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'nt::PIDCtrl_NLS:NLSID_ProcessLib_PIDCtrl_PIDType'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

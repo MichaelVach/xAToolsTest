@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{e4905187-0935-4fb3-88e8-85a7cb8f7fc4}:{5c0cae39-ab75-4a51-a429-14569d250aae}</ElementId>
+  <ElementName>DoubleDIn:AlarmControl</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>All</InhibitInput>
+    <SubscriptionRate>ip::SubscriptionRate</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>ColorSchemeSelection</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"Selection between dynamic or static color library. \n0: Dynamic color library based on workspace selection \n1: Midnight Grey \n2: Graphite White \n3: High Contrast"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>EnableInteraction</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"Enables interactions with element\nFalse:Element doesn't react to commands\nTrue: Element allows interaction"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SubscriptionRate</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"The update rate for all aspect object properties subscribed for"</Description>
+        <Category>Behaviour</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems>
+      <InputItem>
+        <Name>PropertyWriter2</Name>
+        <TypeName>InputItems:PropertyWriter1</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;PropertyWriter2&quot;" />
+          <PropertyDescription Name="Enabled" Value="False" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="Action" Value="SystemDefault" />
+          <PropertyDescription Name="Event" Value="OnMouseUp" />
+          <PropertyDescription Name="Trigger" Value="False" />
+          <PropertyDescription Name="GroupIndex" Value="-1" />
+          <PropertyDescription Name="Target" Value="$'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:IsAlarmUnack_Descendants'" />
+          <PropertyDescription Name="Value" Value="False" />
+          <PropertyDescription Name="NoOfTargets" Value="1" />
+          <PropertyDescription Name="WriteSequence" Value="Async" />
+          <PropertyDescription Name="WriteDelay" Value="0" />
+        </PropertyDescriptions>
+      </InputItem>
+      <InputItem>
+        <Name>Tooltip1</Name>
+        <TypeName>InputItems:TooltipItem</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;Tooltip1&quot;" />
+          <PropertyDescription Name="Enabled" Value="True" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="Text" Value="if !$'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:IsAlarmActive_Descendants' &amp;&amp; !$'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:IsAlarmUnack_Descendants' then $'nt::MAPL_GraphicsLib:NLSID_GraphicsLib_NoAlarms' else if $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(0) then $'nt::MAPL_GraphicsLib:NLSID_GraphicsLib_AlarmsDisabled' else if $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(4) then $'nt::MAPL_GraphicsLib:NLSID_GraphicsLib_AlarmsAutoDisabled' else if $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:IsAlarmActive_Descendants' &amp;&amp; !$'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:IsAlarmUnack_Descendants' then $'nt::MAPL_GraphicsLib:NLSID_GraphicsLib_AlarmsActiveAndAcked' else if !$'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:IsAlarmActive_Descendants' &amp;&amp; $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:IsAlarmUnack_Descendants' then $'nt::MAPL_GraphicsLib:NLSID_GraphicsLib_AlarmsInactiveAndUnacked' else if $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:IsAlarmActive_Descendants' &amp;&amp; $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:IsAlarmUnack_Descendants' then $'nt::MAPL_GraphicsLib:NLSID_GraphicsLib_AlarmsActiveAndUnacked' else &quot;&quot;" />
+        </PropertyDescriptions>
+      </InputItem>
+    </ElementHostedInputItems>
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>ColorSchemeName</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>ColorSchemeIsLight</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evAlarmBell_FillStatus_Color</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants' &gt; 0 then if $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(1) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(2) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(3) then 7 else if $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(0) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(4) then 12 else 10 else 12</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evAlarmNumber</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if Integer(LateBoundPropertyRef(".", "Alarm List", "IsAlarm", True, 1000)#Value) &gt; 0 then String(LateBoundPropertyRef(".", "Alarm List", "IsAlarm", True, 1000)#Value) else ""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evInhibitAlarmAccent</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>$'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(0) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(4) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(5) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(6) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(7) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(8) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(9)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evShelvedHiddenLetter</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState'#Bit(5) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState'#Bit(6) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState'#Bit(7) then "H" else if $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState'#Bit(8) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState'#Bit(9) then "S" else ""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evBackground_PenThickness</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>if $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(0) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(4) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(5) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(6) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(7) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(8) || $'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'#Bit(9) then 2 else 0</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent</BackColor>
+        <DefaultSize>
+          <Width>50</Width>
+          <Height>50</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>ButtonBackground</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;ButtonBackground&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="$'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmConditionState_Descendants'" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="$'pr::AlarmAndLockControl_MAPL:Alarm Global Properties:AlarmPriorityLevel_Descendants'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ip::ColorSchemeSelection'" />
+              <PropertyDescription Name="FillStatus_Color" Value="8" />
+              <PropertyDescription Name="FillStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="FillStatus_Transparency" Value="0" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="$'ev::evInhibitAlarmAccent'" />
+              <PropertyDescription Name="OutlineStatus_Color" Value="15" />
+              <PropertyDescription Name="OutlineStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenStyle" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenThickness" Value="$'ev::evBackground_PenThickness'" />
+              <PropertyDescription Name="OutlineStatus_Transparency" Value="0" />
+              <PropertyDescription Name="Roundness" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AlarmBell</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AlarmBell&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="FillStatus_Color" Value="$'ev::evAlarmBell_FillStatus_Color'" />
+              <PropertyDescription Name="FillStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="FillStatus_Transparency" Value="0" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="$'ev::ColorSchemeIsLight'" />
+              <PropertyDescription Name="OutlineStatus_Color" Value="0" />
+              <PropertyDescription Name="OutlineStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenStyle" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenThickness" Value="0" />
+              <PropertyDescription Name="OutlineStatus_Transparency" Value="4" />
+              <PropertyDescription Name="PathInfo#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_AlarmBell'))" />
+              <PropertyDescription Name="PathInfo#02" Value="&quot;M 0, 0&quot;" />
+              <PropertyDescription Name="PathInfo#03" Value="&quot;M 0, 0&quot;" />
+              <PropertyDescription Name="PathInfo#04" Value="&quot;M 0, 0&quot;" />
+              <PropertyDescription Name="PathInfo#05" Value="&quot;M 0, 0&quot;" />
+              <PropertyDescription Name="PathInfo#06" Value="&quot;M 0, 0&quot;" />
+              <PropertyDescription Name="PathInfo#07" Value="&quot;M 0, 0&quot;" />
+              <PropertyDescription Name="PathInfo#08" Value="&quot;M 0, 0&quot;" />
+              <PropertyDescription Name="PathInfo#09" Value="&quot;M 0, 0&quot;" />
+              <PropertyDescription Name="PathInfo#10" Value="&quot;M 0, 0&quot;" />
+              <PropertyDescription Name="PathSelection" Value="1" />
+              <PropertyDescription Name="RotationAngle" Value="0." />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AlarmNumber</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AlarmNumber&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="38." />
+              <PropertyDescription Name="YPos" Value="38." />
+              <PropertyDescription Name="Width" Value="10." />
+              <PropertyDescription Name="Height" Value="10." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Far" />
+              <PropertyDescription Name="InputText" Value="$'ev::evAlarmNumber'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>ShelveHiddenIndication</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;ShelveHiddenIndication&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="38." />
+              <PropertyDescription Name="YPos" Value="2." />
+              <PropertyDescription Name="Width" Value="10." />
+              <PropertyDescription Name="Height" Value="10." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Far" />
+              <PropertyDescription Name="InputText" Value="$'ev::evShelvedHiddenLetter'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

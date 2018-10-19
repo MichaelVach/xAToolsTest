@@ -1,0 +1,639 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{2149e9e7-c8b7-4294-86c7-dd993abfad58}:{0dad42aa-6e29-46f7-8a68-f2816a10028e}</ElementId>
+  <ElementName>OnOffCtrl:fpe Interlocks</ElementName>
+  <ElementTypeId>{9b12a235-c19a-4ca3-a38f-eb1fdf913445}</ElementTypeId>
+  <ElementTypeName>MAPL Faceplate Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>1000</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties />
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>FaceplateColorSchemeNumber</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>-1</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent</BackColor>
+        <DefaultSize>
+          <Width>300</Width>
+          <Height>310</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>_BackgroundColor</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;_BackgroundColor&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="All" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="300." />
+              <PropertyDescription Name="Height" Value="310." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="7" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_ContentBox1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_ContentBox1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="5." />
+              <PropertyDescription Name="Width" Value="290." />
+              <PropertyDescription Name="Height" Value="300." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Description1Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description1Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description1Visibility" Value="False" />
+              <PropertyDescription Name="Description2Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="Description2Text" Value="&quot;&quot;" />
+              <PropertyDescription Name="Description2Visibility" Value="False" />
+              <PropertyDescription Name="HeaderBlinking" Value="False" />
+              <PropertyDescription Name="HeaderFont" Value="$'ft::ABB Marine Customization:Arial_16pt_Bold'" />
+              <PropertyDescription Name="HeaderHighlight" Value="False" />
+              <PropertyDescription Name="HeaderText" Value="&quot;&quot;" />
+              <PropertyDescription Name="HeaderVisibility" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="InteractionVisibility" Value="False" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="ParentObjectName" Value="&quot;xyz#123&quot;" />
+              <PropertyDescription Name="StaticContent" Value="False" />
+              <PropertyDescription Name="UnitFont" Value="$'ft::ABB Marine Customization:Arial_16pt_Regular'" />
+              <PropertyDescription Name="UnitText" Value="&quot;&quot;" />
+              <PropertyDescription Name="UnitVisibility" Value="False" />
+              <PropertyDescription Name="ValueFont" Value="$'ft::ABB Marine Customization:Arial_24pt_Bold'" />
+              <PropertyDescription Name="ValueText" Value="&quot;&quot;" />
+              <PropertyDescription Name="ValueVisibility" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton3</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton3&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:IB1Txt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="75." />
+              <PropertyDescription Name="Width" Value="25." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="if $'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB1Block' then True else False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB1Block'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB1Block'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Button_Block'" />
+              <PropertyDescription Name="Target" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB1Block'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Button_Block_Tooltip'" />
+              <PropertyDescription Name="Value" Value="if $'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB1Block' then Variant(False) else Variant(True)" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>ICTTxt</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;ICTTxt&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:ICTxt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="45." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:LIO.IN.IC'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::OnOffCtrl:Control Module:ICTxt', &quot;Proj_OnOffCtrl&quot;, $'pr::OnOffCtrl:Control Module:ICTxt')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::OnOffCtrl:Control Module:LIO.IN.IC' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>IB1Ind</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;IB1Ind&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:IB1Txt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="75." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:LIO.IN.IB1'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::OnOffCtrl:Control Module:IB1Txt', &quot;Proj_OnOffCtrl&quot;, $'pr::OnOffCtrl:Control Module:IB1Txt')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::OnOffCtrl:Control Module:LIO.IN.IB1' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>IB2Ind</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;IB2Ind&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:IB2Txt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="105." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:LIO.IN.IB2'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::OnOffCtrl:Control Module:IB2Txt', &quot;Proj_OnOffCtrl&quot;, $'pr::OnOffCtrl:Control Module:IB2Txt')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::OnOffCtrl:Control Module:LIO.IN.IB2' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>IB3Ind</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;IB3Ind&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:IB3Txt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="135." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:LIO.IN.IB3'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::OnOffCtrl:Control Module:IB3Txt', &quot;Proj_OnOffCtrl&quot;, $'pr::OnOffCtrl:Control Module:IB3Txt')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::OnOffCtrl:Control Module:LIO.IN.IB3' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>IB4Ind</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;IB4Ind&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:IB4Txt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="165." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:LIO.IN.IB4'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::OnOffCtrl:Control Module:IB4Txt', &quot;Proj_OnOffCtrl&quot;, $'pr::OnOffCtrl:Control Module:IB4Txt')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::OnOffCtrl:Control Module:LIO.IN.IB4' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>IAInd</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;IAInd&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:IATxt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="210." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:LIO.IN.IA'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::OnOffCtrl:Control Module:IATxt', &quot;Proj_OnOffCtrl&quot;, $'pr::OnOffCtrl:Control Module:IATxt')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::OnOffCtrl:Control Module:LIO.IN.IA' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>PDInd</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;PDInd&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:PDTxt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="240." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:PreDevInt'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::OnOffCtrl:Control Module:PDTxt', &quot;Proj_OnOffCtrl&quot;, $'pr::OnOffCtrl:Control Module:PDTxt')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::OnOffCtrl:Control Module:PreDevInt' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:IB2Txt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="105." />
+              <PropertyDescription Name="Width" Value="25." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB2Block'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB2Block'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB2Block'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Button_Block'" />
+              <PropertyDescription Name="Target" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB2Block'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Button_Block_Tooltip'" />
+              <PropertyDescription Name="Value" Value="if $'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB2Block' then Variant(False) else Variant(True)" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton2</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:IB3Txt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="135." />
+              <PropertyDescription Name="Width" Value="25." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB3Block'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB3Block'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB3Block'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Button_Block'" />
+              <PropertyDescription Name="Target" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB3Block'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Button_Block_Tooltip'" />
+              <PropertyDescription Name="Value" Value="if $'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB3Block' then Variant(False) else Variant(True)" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton4</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton4&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:IB4Txt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="165." />
+              <PropertyDescription Name="Width" Value="25." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB4Block'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB4Block'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB4Block'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Button_Block'" />
+              <PropertyDescription Name="Target" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB4Block'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Button_Block_Tooltip'" />
+              <PropertyDescription Name="Value" Value="if $'pr::OnOffCtrl:Control Module:FPIntPar.FP_IB4Block' then Variant(False) else Variant(True)" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton5</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton5&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:IATxt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="210." />
+              <PropertyDescription Name="Width" Value="25." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IABlock'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IABlock'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IABlock'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Button_Block'" />
+              <PropertyDescription Name="Target" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_IABlock'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Button_Block_Tooltip'" />
+              <PropertyDescription Name="Value" Value="if $'pr::OnOffCtrl:Control Module:FPIntPar.FP_IABlock' then Variant(False) else Variant(True)" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_RadioButton6</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_RadioButton6&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:PDTxt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="240." />
+              <PropertyDescription Name="Width" Value="25." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ButtonActive" Value="True" />
+              <PropertyDescription Name="Checked" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_PDBlock'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_PDBlock'#DataQuality" />
+              <PropertyDescription Name="EnableApplyCancelSessionFunctionality" Value="False" />
+              <PropertyDescription Name="EnableInteraction" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_PDBlock'#IsWritable" />
+              <PropertyDescription Name="EnableTwoStepCommands" Value="False" />
+              <PropertyDescription Name="GroupIndex" Value="-1" />
+              <PropertyDescription Name="HorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="OptionText" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Button_Block'" />
+              <PropertyDescription Name="Target" Value="$'pr::OnOffCtrl:Control Module:FPIntPar.FP_PDBlock'" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Button_Block_Tooltip'" />
+              <PropertyDescription Name="Value" Value="if $'pr::OnOffCtrl:Control Module:FPIntPar.FP_PDBlock' then Variant(False) else Variant(True)" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>InterlockStatus</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;InterlockStatus&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="15." />
+              <PropertyDescription Name="Width" Value="270." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:vInterlock'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputText" Value="$'nt::OnOffCtrl_NLS:NLSID_ProcessLib_OnOffCtrl_Tab2_InterlockStatus'" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::OnOffCtrl:Control Module:vInterlock' &amp;&amp; $'pr::OnOffCtrl:Control Module:vInterlock_IA' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_Fill1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_Fill1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:FBFollTxt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="15." />
+              <PropertyDescription Name="YPos" Value="200." />
+              <PropertyDescription Name="Width" Value="270." />
+              <PropertyDescription Name="Height" Value="1." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="15" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>FBFollower</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;FBFollower&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::OnOffCtrl:Control Module:FBFollTxt' = &quot;&quot; then False else True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="270." />
+              <PropertyDescription Name="Width" Value="240." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="$'pr::OnOffCtrl:Control Module:FBFoll'#DataQuality" />
+              <PropertyDescription Name="Forced" Value="False" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="InputText" Value="NlsTextFromIdent($'pr::OnOffCtrl:Control Module:FBFollTxt', &quot;Proj_OnOffCtrl&quot;, $'pr::OnOffCtrl:Control Module:FBFollTxt')" />
+              <PropertyDescription Name="ItemInactive" Value="False" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::OnOffCtrl:Control Module:FBFoll' then 2 else 1" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextHorizontalAlignment" Value="Near" />
+              <PropertyDescription Name="TextUpperCase" Value="True" />
+              <PropertyDescription Name="WrapText" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

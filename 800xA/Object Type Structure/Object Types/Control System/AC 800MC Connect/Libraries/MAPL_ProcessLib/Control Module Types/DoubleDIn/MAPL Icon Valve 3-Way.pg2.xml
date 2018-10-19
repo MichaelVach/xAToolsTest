@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{e4905187-0935-4fb3-88e8-85a7cb8f7fc4}:{84379663-4bae-472c-8be5-b40b24a270f3}</ElementId>
+  <ElementName>DoubleDIn:MAPL Icon Valve 3-Way</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>0</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>None</InhibitInput>
+    <SubscriptionRate>ip::SubscriptionRate</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>ColorSchemeSelection</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"Selection between dynamic or static color library. \n0: Dynamic color library based on workspace selection \n1: Midnight Grey \n2: Graphite White \n3: High Contrast"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>IconRotation</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>-9999</DefaultValue>
+        <Description>"Degrees to rotate icon"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>InformationFrameVisibility</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE shows the \"quick access\" information frame for the icon"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>InitialPositionForComplex</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>-1</DefaultValue>
+        <Description>"Changes the default, no action, appearance of the device. Only applied to complex icons."</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>InteractionIndicatorVisibility</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE shows the interaction indicator for the icon"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>LockControlVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE enables lock control information"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>OperatorNoteVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE operator note information"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>ReverseStateFlow</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>False</DefaultValue>
+        <Description>"Reverse State Machine Flow"</Description>
+        <Category>Status Indications</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SubscriptionRate</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"The update rate for all aspect object properties subscribed for"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SwitchP0andP1</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>False</DefaultValue>
+        <Description>"TRUE swaps 'State Machine 0 Path' with 'State Machine 1 Path'.\nThis is executed before reversing state machine flow with 'ReverseStateFlow'."</Description>
+        <Category>Status Indications</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evSwitchP0andP1</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evReverseStateFlow</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Simple_Path00</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'nt::MAPL_Paths_HVAC:NLSID_Path_Pump_1Speed_P0'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Simple_Path01</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'nt::MAPL_Paths_HVAC:NLSID_Path_Pump_1Speed_P1'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Simple_Path02</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'nt::MAPL_Paths_HVAC:NLSID_Path_Pump_1Speed_P2'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Init_SM_Path00</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'is::MAPL Icon Simple_Complex Init.Init_SM_Path00'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Init_SM_Path01</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'is::MAPL Icon Simple_Complex Init.Init_SM_Path01'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Init_SM_Path02</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'is::MAPL Icon Simple_Complex Init.Init_SM_Path02'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Init_Base_Path00</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'is::MAPL Icon Simple_Complex Init.Init_Base_Path00'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Init_Base_Path01</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'is::MAPL Icon Simple_Complex Init.Init_Base_Path01'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Init_Base_Path02</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'is::MAPL Icon Simple_Complex Init.Init_Base_Path02'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Complex_Path00</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'nt::MAPL_Paths_HVAC:NLSID_Path_Valve_3Way_Pos0'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Complex_Path01</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'nt::MAPL_Paths_HVAC:NLSID_Path_Valve_3Way_Pos1'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Complex_Path02</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'nt::MAPL_Paths_HVAC:NLSID_Path_Valve_3Way_Pos2'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Complex_Transient</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'nt::MAPL_Paths_HVAC:NLSID_Path_Valve_3Way_Trans'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Mutual_Static</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Mutual_Base_Path00</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'nt::MAPL_Paths_HVAC:NLSID_Path_Valve_3Way_Base0'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Mutual_Base_Path01</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'nt::MAPL_Paths_HVAC:NLSID_Path_Valve_3Way_Base1'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Mutual_Base_Path02</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'nt::MAPL_Paths_HVAC:NLSID_Path_Valve_3Way_Base2'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Mutual_IsComplex</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>True</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Config_Complex_StartPosition</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>0</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>Init_SM_AlwaysON</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'is::MAPL Icon Simple_Complex Init.Init_SM_InitComplex'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evRotation</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>0</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent()</BackColor>
+        <DefaultSize>
+          <Width>50</Width>
+          <Height>50</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>MAPL CM Specific Status</Name>
+            <TypeName>e4905187-0935-4fb3-88e8-85a7cb8f7fc4:01d9c012-7111-4ce6-9b29-166e58f6aaef</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL CM Specific Status&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::DoubleDIn:MAPL CM Status'" />
+              <PropertyDescription Name="EnableInput" Value="True" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="BaseIcon_0" Value="$'ev::Init_Base_Path00'" />
+              <PropertyDescription Name="BaseIcon_1" Value="$'ev::Init_Base_Path01'" />
+              <PropertyDescription Name="BaseIcon_2" Value="$'ev::Init_Base_Path02'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ip::ColorSchemeSelection'" />
+              <PropertyDescription Name="IconClickDown" Value="$'lv::_MouseOver' &amp;&amp; $'lv::_ButtonState' = Left" />
+              <PropertyDescription Name="IconRotation" Value="if $'ip::IconRotation' = -9999 then $'ev::evRotation' else $'ip::IconRotation'" />
+              <PropertyDescription Name="ItemActive" Value="False" />
+              <PropertyDescription Name="MouseOverIN" Value="$'lv::_MouseOver'" />
+              <PropertyDescription Name="ReverseStateFlow" Value="$'ev::evReverseStateFlow' || $'ip::ReverseStateFlow'" />
+              <PropertyDescription Name="StateMachine0Path" Value="$'ev::Init_SM_Path00'" />
+              <PropertyDescription Name="StateMachine1Path" Value="$'ev::Init_SM_Path01'" />
+              <PropertyDescription Name="StateMachine2Path" Value="$'ev::Init_SM_Path02'" />
+              <PropertyDescription Name="StaticIconFill" Value="$'ev::Init_SM_AlwaysON'" />
+              <PropertyDescription Name="SubscriptionRate" Value="$'ip::SubscriptionRate'" />
+              <PropertyDescription Name="SwitchP0andP1" Value="$'ev::evSwitchP0andP1' || $'ip::SwitchP0andP1'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL Icon Simple_Complex Init</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL Icon Simple_Complex Init&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="6." />
+              <PropertyDescription Name="Height" Value="6." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Config_Complex_Path00" Value="$'ev::Config_Complex_Path00'" />
+              <PropertyDescription Name="Config_Complex_Path01" Value="$'ev::Config_Complex_Path01'" />
+              <PropertyDescription Name="Config_Complex_Path02" Value="$'ev::Config_Complex_Path02'" />
+              <PropertyDescription Name="Config_Complex_StartPosition" Value="if $'ip::InitialPositionForComplex' = -1 then $'ev::Config_Complex_StartPosition' else $'ip::InitialPositionForComplex'" />
+              <PropertyDescription Name="Config_Complex_Transient" Value="$'ev::Config_Complex_Transient'" />
+              <PropertyDescription Name="Config_Mutual_Base00" Value="$'ev::Config_Mutual_Base_Path00'" />
+              <PropertyDescription Name="Config_Mutual_Base01" Value="$'ev::Config_Mutual_Base_Path01'" />
+              <PropertyDescription Name="Config_Mutual_Base02" Value="$'ev::Config_Mutual_Base_Path02'" />
+              <PropertyDescription Name="Config_Mutual_IsComplex" Value="$'ev::Config_Mutual_IsComplex'" />
+              <PropertyDescription Name="Config_Mutual_Static" Value="$'ev::Config_Mutual_Static'" />
+              <PropertyDescription Name="Config_Simple_Path00" Value="$'ev::Config_Simple_Path00'" />
+              <PropertyDescription Name="Config_Simple_Path01" Value="$'ev::Config_Simple_Path01'" />
+              <PropertyDescription Name="Config_Simple_Path02" Value="$'ev::Config_Simple_Path02'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL CM Specific Information Frame</Name>
+            <TypeName>e4905187-0935-4fb3-88e8-85a7cb8f7fc4:b98c9825-c7df-4775-b212-fbeb2230e67d</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL CM Specific Information Frame&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::DoubleDIn:MAPL Status Information Frame'" />
+              <PropertyDescription Name="EnableInput" Value="True" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ip::ColorSchemeSelection'" />
+              <PropertyDescription Name="InteractionIndicatorVisible" Value="$'ip::InteractionIndicatorVisibility'" />
+              <PropertyDescription Name="ItemInRectangle" Value="False" />
+              <PropertyDescription Name="LetterIndicationsVisible" Value="$'ip::InformationFrameVisibility'" />
+              <PropertyDescription Name="LockControlVisible" Value="$'ip::LockControlVisible'" />
+              <PropertyDescription Name="LowerRightCornerVisible" Value="True" />
+              <PropertyDescription Name="MouseOverIN" Value="$'lv::_MouseOver'" />
+              <PropertyDescription Name="OperatorNoteVisible" Value="$'ip::OperatorNoteVisible'" />
+              <PropertyDescription Name="SubscriptionRate" Value="$'ip::SubscriptionRate'" />
+              <PropertyDescription Name="UpperLeftCornerVisible" Value="True" />
+              <PropertyDescription Name="UpperRightCornerVisible" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

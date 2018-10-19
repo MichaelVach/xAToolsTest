@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{d3b523f8-1aa2-421b-8e21-e38c6a3815eb}:{033f48bf-94b2-4afb-9157-328a91d2f9ff}</ElementId>
+  <ElementName>Totalizer:MAPL Faceplate Base Element</ElementName>
+  <ElementTypeId>{1c0fedcf-764b-42e0-8ffd-76cff2a6285b}</ElementTypeId>
+  <ElementTypeName>MAPL Faceplate Base Element</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>1000</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties />
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables />
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>lc::ABBMarine_UI_MidnightGrey:Background</BackColor>
+        <DefaultSize>
+          <Width>300</Width>
+          <Height>460</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>_Configuration</Name>
+            <TypeName> Configuration</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;_Configuration&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="$'lv::_Extent'#X" />
+              <PropertyDescription Name="YPos" Value="$'lv::_Extent'#Y" />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="BottomButtonRows" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DescriptionText" Value="$'pr::Totalizer:Name:Description'" />
+              <PropertyDescription Name="ModeText" Value="&quot;Mode&quot;" />
+              <PropertyDescription Name="StatusModeFieldVisible" Value="False" />
+              <PropertyDescription Name="StatusText" Value="&quot;Status&quot;" />
+              <PropertyDescription Name="SwitchTagAndDescription" Value="False" />
+              <PropertyDescription Name="Tab1" Value="$'vw::Totalizer:fpe Main:Main View'" />
+              <PropertyDescription Name="Tab1 Enabled" Value="True" />
+              <PropertyDescription Name="Tab1 Text" Value="&quot;TAB1&quot;" />
+              <PropertyDescription Name="Tab1_1" Value="$'null'" />
+              <PropertyDescription Name="Tab1_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_1_Text" Value="&quot;TAB1-1&quot;" />
+              <PropertyDescription Name="Tab1_2" Value="$'null'" />
+              <PropertyDescription Name="Tab1_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_2_Text" Value="&quot;TAB1-2&quot;" />
+              <PropertyDescription Name="Tab1_3" Value="$'null'" />
+              <PropertyDescription Name="Tab1_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_3_Text" Value="&quot;TAB1-3&quot;" />
+              <PropertyDescription Name="Tab1_4" Value="$'null'" />
+              <PropertyDescription Name="Tab1_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_4_Text" Value="&quot;TAB1-4&quot;" />
+              <PropertyDescription Name="Tab1_5" Value="$'null'" />
+              <PropertyDescription Name="Tab1_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab1_5_Text" Value="&quot;TAB1-5&quot;" />
+              <PropertyDescription Name="Tab2" Value="$'null'" />
+              <PropertyDescription Name="Tab2 Enabled" Value="True" />
+              <PropertyDescription Name="Tab2 Text" Value="&quot;TAB2&quot;" />
+              <PropertyDescription Name="Tab2_1" Value="$'null'" />
+              <PropertyDescription Name="Tab2_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_1_Text" Value="&quot;TAB2-1&quot;" />
+              <PropertyDescription Name="Tab2_2" Value="$'null'" />
+              <PropertyDescription Name="Tab2_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_2_Text" Value="&quot;TAB2-2&quot;" />
+              <PropertyDescription Name="Tab2_3" Value="$'null'" />
+              <PropertyDescription Name="Tab2_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_3_Text" Value="&quot;TAB2-3&quot;" />
+              <PropertyDescription Name="Tab2_4" Value="$'null'" />
+              <PropertyDescription Name="Tab2_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_4_Text" Value="&quot;TAB2-4&quot;" />
+              <PropertyDescription Name="Tab2_5" Value="$'null'" />
+              <PropertyDescription Name="Tab2_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab2_5_Text" Value="&quot;TAB2-5&quot;" />
+              <PropertyDescription Name="Tab3" Value="$'null'" />
+              <PropertyDescription Name="Tab3 Enabled" Value="True" />
+              <PropertyDescription Name="Tab3 Text" Value="&quot;TAB3&quot;" />
+              <PropertyDescription Name="Tab3_1" Value="$'null'" />
+              <PropertyDescription Name="Tab3_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_1_Text" Value="&quot;TAB3-1&quot;" />
+              <PropertyDescription Name="Tab3_2" Value="$'null'" />
+              <PropertyDescription Name="Tab3_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_2_Text" Value="&quot;TAB3-2&quot;" />
+              <PropertyDescription Name="Tab3_3" Value="$'null'" />
+              <PropertyDescription Name="Tab3_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_3_Text" Value="&quot;TAB3-3&quot;" />
+              <PropertyDescription Name="Tab3_4" Value="$'null'" />
+              <PropertyDescription Name="Tab3_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_4_Text" Value="&quot;TAB3-4&quot;" />
+              <PropertyDescription Name="Tab3_5" Value="$'null'" />
+              <PropertyDescription Name="Tab3_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab3_5_Text" Value="&quot;TAB3-5&quot;" />
+              <PropertyDescription Name="Tab4" Value="$'null'" />
+              <PropertyDescription Name="Tab4 Enabled" Value="True" />
+              <PropertyDescription Name="Tab4 Text" Value="&quot;TAB4&quot;" />
+              <PropertyDescription Name="Tab4_1" Value="$'null'" />
+              <PropertyDescription Name="Tab4_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_1_Text" Value="&quot;TAB4-1&quot;" />
+              <PropertyDescription Name="Tab4_2" Value="$'null'" />
+              <PropertyDescription Name="Tab4_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_2_Text" Value="&quot;TAB4-2&quot;" />
+              <PropertyDescription Name="Tab4_3" Value="$'null'" />
+              <PropertyDescription Name="Tab4_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_3_Text" Value="&quot;TAB4-3&quot;" />
+              <PropertyDescription Name="Tab4_4" Value="$'null'" />
+              <PropertyDescription Name="Tab4_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_4_Text" Value="&quot;TAB4-4&quot;" />
+              <PropertyDescription Name="Tab4_5" Value="$'null'" />
+              <PropertyDescription Name="Tab4_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab4_5_Text" Value="&quot;TAB4-5&quot;" />
+              <PropertyDescription Name="Tab5" Value="$'null'" />
+              <PropertyDescription Name="Tab5 Enabled" Value="True" />
+              <PropertyDescription Name="Tab5 Text" Value="&quot;TAB5&quot;" />
+              <PropertyDescription Name="Tab5_1" Value="$'null'" />
+              <PropertyDescription Name="Tab5_1_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_1_Text" Value="&quot;TAB5-1&quot;" />
+              <PropertyDescription Name="Tab5_2" Value="$'null'" />
+              <PropertyDescription Name="Tab5_2_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_2_Text" Value="&quot;TAB5-2&quot;" />
+              <PropertyDescription Name="Tab5_3" Value="$'null'" />
+              <PropertyDescription Name="Tab5_3_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_3_Text" Value="&quot;TAB5-3&quot;" />
+              <PropertyDescription Name="Tab5_4" Value="$'null'" />
+              <PropertyDescription Name="Tab5_4_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_4_Text" Value="&quot;TAB5-4&quot;" />
+              <PropertyDescription Name="Tab5_5" Value="$'null'" />
+              <PropertyDescription Name="Tab5_5_Enabled" Value="True" />
+              <PropertyDescription Name="Tab5_5_Text" Value="&quot;TAB5-5&quot;" />
+              <PropertyDescription Name="TabColumns" Value="5" />
+              <PropertyDescription Name="TagText" Value="$'pr::Totalizer:Name:Name'" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+              <PropertyDescription Name="TopButtonRows" Value="1" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AlarmAndLockControl_MAPL:AlarmControl1</Name>
+            <TypeName>b2b649a9-8ecd-49c4-8da4-4f23d853d9a7:5c0cae39-ab75-4a51-a429-14569d250aae</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AlarmAndLockControl_MAPL:AlarmControl1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopRight" />
+              <PropertyDescription Name="XPos" Value="250." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::Totalizer:AlarmControl'" />
+              <PropertyDescription Name="EnableInput" Value="True" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AlarmAndLockControl_MAPL:LockControl1</Name>
+            <TypeName>b2b649a9-8ecd-49c4-8da4-4f23d853d9a7:3b53c2ce-16fd-492d-9ed8-03cb86899d66</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AlarmAndLockControl_MAPL:LockControl1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopLeft" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Element" Value="$'el::Totalizer:LockControl'" />
+              <PropertyDescription Name="EnableInput" Value="True" />
+              <PropertyDescription Name="TagPlacement" Value="Default" />
+              <PropertyDescription Name="SubscriptionRate" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>true</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Button Alarm List</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Button Alarm List&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopRight" />
+              <PropertyDescription Name="XPos" Value="200." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AspectInvokeReference" Value="$'vw::Totalizer:Alarm List:Main View'" />
+              <PropertyDescription Name="ButtonActive" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="PathInformation#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_AlarmList'))" />
+              <PropertyDescription Name="PresentationMode" Value="Overlap_Preserve" />
+              <PropertyDescription Name="Roundness" Value="0" />
+              <PropertyDescription Name="ScreenID" Value="Tuple(0, 0)" />
+              <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_Button_AlarmList'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Button Event List</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Button Event List&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopRight" />
+              <PropertyDescription Name="XPos" Value="150." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AspectInvokeReference" Value="$'vw::Totalizer:Event List:Main View'" />
+              <PropertyDescription Name="ButtonActive" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="PathInformation#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_EventList'))" />
+              <PropertyDescription Name="PresentationMode" Value="Overlap_Preserve" />
+              <PropertyDescription Name="Roundness" Value="0" />
+              <PropertyDescription Name="ScreenID" Value="Tuple(0, 0)" />
+              <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_Button_EventList'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Button Operator Note</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Button Operator Note&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="False" />
+              <PropertyDescription Name="AnchorStyle" Value="TopRight" />
+              <PropertyDescription Name="XPos" Value="50." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AspectInvokeReference" Value="$'vw::Totalizer:Operator Note:Config View'" />
+              <PropertyDescription Name="ButtonActive" Value="$'pr::Totalizer:Operator Note:HoldsData'" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="PathInformation#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_OperatorNote'))" />
+              <PropertyDescription Name="PresentationMode" Value="Overlap_Preserve" />
+              <PropertyDescription Name="Roundness" Value="0" />
+              <PropertyDescription Name="ScreenID" Value="Tuple(0, 0)" />
+              <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_Button_OperatorNote'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Button Trend</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Button Trend&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopRight" />
+              <PropertyDescription Name="XPos" Value="100." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AspectInvokeReference" Value="$'vw::Totalizer:Trend Display:Main View'" />
+              <PropertyDescription Name="ButtonActive" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="EnableInteraction" Value="True" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="PathInformation#01" Value="Path(String($'nt::MAPL_Paths_Common:NLSID_Path_Trend'))" />
+              <PropertyDescription Name="PresentationMode" Value="Overlap_Preserve" />
+              <PropertyDescription Name="Roundness" Value="0" />
+              <PropertyDescription Name="ScreenID" Value="Tuple(0, 0)" />
+              <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+              <PropertyDescription Name="Tooltip" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_Button_Trend'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>DropDown_OpNote_PCC</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;DropDown_OpNote_PCC&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="TopLeft" />
+              <PropertyDescription Name="XPos" Value="50." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="50." />
+              <PropertyDescription Name="Height" Value="50." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="Enabled" Value="True" />
+              <PropertyDescription Name="Entry Alignment" Value="$'Align entries to left'" />
+              <PropertyDescription Name="Entry00Enable" Value="True" />
+              <PropertyDescription Name="Entry00Text" Value="$'nt::Totalizer_NLS:NLSID_ProcessLib_Totalizer_Button_OperatorNote'" />
+              <PropertyDescription Name="Entry00ViewReference" Value="$'vw::Totalizer:Operator Note:Config View'" />
+              <PropertyDescription Name="Entry01Enable" Value="$'pr::PCCLink:Function Block:PCC_Child.Connected'" />
+              <PropertyDescription Name="Entry01Text" Value="$'nt::PCCLink_NLS:NLSID_SupportLib_PCCLink_ChildLink'" />
+              <PropertyDescription Name="Entry01ViewReference" Value="$'vw::PCCLink:Connection List:Main View'" />
+              <PropertyDescription Name="Entry02Enable" Value="True" />
+              <PropertyDescription Name="Entry02Text" Value="&quot;TEXT&quot;" />
+              <PropertyDescription Name="Entry02ViewReference" Value="$'null'" />
+              <PropertyDescription Name="Entry03Enable" Value="True" />
+              <PropertyDescription Name="Entry03Text" Value="&quot;TEXT&quot;" />
+              <PropertyDescription Name="Entry03ViewReference" Value="$'null'" />
+              <PropertyDescription Name="Entry04Enable" Value="True" />
+              <PropertyDescription Name="Entry04Text" Value="&quot;TEXT&quot;" />
+              <PropertyDescription Name="Entry04ViewReference" Value="$'null'" />
+              <PropertyDescription Name="Font" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="ForceHeight" Value="25" />
+              <PropertyDescription Name="ForceWidth" Value="120" />
+              <PropertyDescription Name="Icon" Value="&quot;&quot;" />
+              <PropertyDescription Name="InNavigation" Value="False" />
+              <PropertyDescription Name="OpeningDirection" Value="Down" />
+              <PropertyDescription Name="Tooltip" Value="&quot;&quot;" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

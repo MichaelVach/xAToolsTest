@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{0137056f-b908-4891-93d5-1e97de443fa1}:{1ce5b661-76b3-4337-ab0b-eca33d2fa417}</ElementId>
+  <ElementName>TwoSpeedCtrl:MAPL Status Information Frame</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>None</InhibitInput>
+    <SubscriptionRate>ip::SubscriptionRate</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>ColorSchemeSelection</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"Change between dynamic or static color library.\n0: Dynamic, workplace controlled\n1:Midnight Grey\n2:Graphite White\n3:High Contrast"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>InteractionIndicatorVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE shows the interation indicator for the icon"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>ItemInRectangle</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>False</DefaultValue>
+        <Description>"FALSE: Item is used around the process icon, TRUE: Item is used inside a rectangle element"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>LetterIndicationsVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE shows the \"Quick-Access\" letter indications"</Description>
+        <Category>Appearance</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>LockControlVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE enables the lock control information"</Description>
+        <Category>Information - Lock Control</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>LowerRightCornerVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE enables the lower right corner indication"</Description>
+        <Category>Information - Lower Right</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>MouseOverIN</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>False</DefaultValue>
+        <Description>"MouseOver information from upper level"</Description>
+        <Category>Misc</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>OperatorNoteVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE shows operator note"</Description>
+        <Category>Information - OperatorNote</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>SubscriptionRate</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"The update rate for all aspect object properties subscribed for"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>UpperLeftCornerVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE enables the lower right corner indication"</Description>
+        <Category>Information - Upper Left</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+      <InputProperty>
+        <PropertyName>UpperRightCornerVisible</PropertyName>
+        <DataType>Boolean</DataType>
+        <DefaultValue>True</DefaultValue>
+        <Description>"TRUE enables the upper right corner indication"</Description>
+        <Category>Information - Upper Right</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evControlLockStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>$'pr::TwoSpeedCtrl:Global Properties Definition:ControlLockStatus'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evControlLockUseStatus</Name>
+        <TypeName>Integer</TypeName>
+        <ExpressionText>$'pr::TwoSpeedCtrl:Global Properties Definition:ControlUseLock'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evLowerRightIndicationBlink</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evLowerRightIndicationHighlight</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evLowerRightIndicationLetter</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if !$'pr::TwoSpeedCtrl:Control Module:vInterlock_x' &amp;&amp; !($'pr::TwoSpeedCtrl:Control Module:LIO.OUT.Auto' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:LIO.IN.IAx') || !$'pr::TwoSpeedCtrl:Control Module:vInterlock_y' &amp;&amp; !($'pr::TwoSpeedCtrl:Control Module:LIO.OUT.Auto' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:LIO.IN.IAy') then "I" else if $'pr::TwoSpeedCtrl:Control Module:LIO.OUT.Auto' &amp;&amp; $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IAxBlock' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:LIO.IN.IAx' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBx1Block' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:LIO.IN.IBx1' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBx2Block' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:LIO.IN.IBx2' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBx3Block' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:LIO.IN.IBx3' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBx4Block' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:LIO.IN.IBx4' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_PDxBlock' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:PreDevx_Int' || $'pr::TwoSpeedCtrl:Control Module:LIO.OUT.Auto' &amp;&amp; $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IAyBlock' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:LIO.IN.IAy' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBy1Block' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:LIO.IN.IBy1' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBy2Block' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:LIO.IN.IBy2' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBy3Block' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:LIO.IN.IBy3' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBy4Block' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:LIO.IN.IBy4' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_PDyBlock' &amp;&amp; !$'pr::TwoSpeedCtrl:Control Module:PreDevy_Int' then "IB" else if $'pr::TwoSpeedCtrl:Control Module:LIO.OUT.Auto' &amp;&amp; $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IAxBlock' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBx1Block' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBx2Block' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBx3Block' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBx4Block' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_PDxBlock' || $'pr::TwoSpeedCtrl:Control Module:LIO.OUT.Auto' &amp;&amp; $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IAyBlock' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBy1Block' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBy2Block' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBy3Block' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_IBy4Block' || $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_PDyBlock' then "B" else ""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evObjectInstanceName</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>$'pr::TwoSpeedCtrl:Name:Name'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evOperatorNoteStatus</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>$'pr::TwoSpeedCtrl:Operator Note:HoldsData'</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evUpperLeftIndicationBlink</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evUpperLeftIndicationHighlight</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evUpperLeftIndicationLetter</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_Forced' then "F" else if $'pr::TwoSpeedCtrl:Control Module:FPIntPar.FP_Sim' then "S" else ""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evUpperRightIndicationBlink</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evUpperRightIndicationLetter</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'pr::TwoSpeedCtrl:Control Module:BlackoutAct' then "B" else if $'pr::TwoSpeedCtrl:Control Module:LIO.OUT.Loc' then "L" else if $'pr::TwoSpeedCtrl:Control Module:LIO.OUT.Auto' then "A" else if $'pr::TwoSpeedCtrl:Control Module:LIO.OUT.Seq' then "S" else if $'pr::TwoSpeedCtrl:Control Module:LIO.OUT.Cen' then "M" else ""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evUpperRightIndicationHighlight</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>False</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent()</BackColor>
+        <DefaultSize>
+          <Width>50</Width>
+          <Height>50</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>MAPL_DeviceInformation_Template1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_DeviceInformation_Template1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="$'ip::ColorSchemeSelection'" />
+              <PropertyDescription Name="ControlUseLockStatus" Value="$'ev::evControlLockUseStatus'" />
+              <PropertyDescription Name="InteractionIndicatorVisible" Value="$'ip::InteractionIndicatorVisible'" />
+              <PropertyDescription Name="ItemActive" Value="True" />
+              <PropertyDescription Name="ItemInRectangle" Value="$'ip::ItemInRectangle'" />
+              <PropertyDescription Name="LockControlStatus" Value="$'ev::evControlLockStatus'" />
+              <PropertyDescription Name="LockControlVisible" Value="$'ip::LockControlVisible'" />
+              <PropertyDescription Name="LowerRightCornerBlink" Value="$'ev::evLowerRightIndicationBlink'" />
+              <PropertyDescription Name="LowerRightCornerHighlight" Value="$'ev::evLowerRightIndicationHighlight'" />
+              <PropertyDescription Name="LowerRightCornerText" Value="$'ev::evLowerRightIndicationLetter'" />
+              <PropertyDescription Name="LowerRightVisibility" Value="$'ip::LowerRightCornerVisible' &amp;&amp; $'ip::LetterIndicationsVisible'" />
+              <PropertyDescription Name="MouseOverIN" Value="$'ip::MouseOverIN'" />
+              <PropertyDescription Name="ObjectInstanceName" Value="$'pr::TwoSpeedCtrl:Name:Name'" />
+              <PropertyDescription Name="OperatorNoteState" Value="$'ev::evOperatorNoteStatus'" />
+              <PropertyDescription Name="OperatorNoteVisible" Value="$'ip::OperatorNoteVisible'" />
+              <PropertyDescription Name="UpperLeftCornerBlink" Value="$'ev::evUpperLeftIndicationBlink'" />
+              <PropertyDescription Name="UpperLeftCornerHighlight" Value="$'ev::evUpperLeftIndicationHighlight'" />
+              <PropertyDescription Name="UpperLeftCornerText" Value="$'ev::evUpperLeftIndicationLetter'" />
+              <PropertyDescription Name="UpperLeftCornerVisibility" Value="$'ip::UpperLeftCornerVisible' &amp;&amp; $'ip::LetterIndicationsVisible'" />
+              <PropertyDescription Name="UpperRightCornerBlink" Value="$'ev::evUpperRightIndicationBlink'" />
+              <PropertyDescription Name="UpperRightCornerHighlight" Value="$'ev::evUpperRightIndicationHighlight'" />
+              <PropertyDescription Name="UpperRightCornerText" Value="$'ev::evUpperRightIndicationLetter'" />
+              <PropertyDescription Name="UpperRightCornerVisibility" Value="$'ip::UpperRightCornerVisible' &amp;&amp; $'ip::LetterIndicationsVisible'" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

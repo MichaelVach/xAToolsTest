@@ -1,0 +1,509 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{e9003218-d54d-4629-a336-3e9bce8b2946}:{1f8abbc4-dc19-4af4-ae11-72b711d24418}</ElementId>
+  <ElementName>LinearReal21points:fpe Main</ElementName>
+  <ElementTypeId>{9b12a235-c19a-4ca3-a38f-eb1fdf913445}</ElementTypeId>
+  <ElementTypeName>MAPL Faceplate Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>3</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>1000</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties />
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>ColorSchemeName</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>""</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>true</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evRulerPos</Name>
+        <TypeName>Real</TypeName>
+        <ExpressionText>382. * ($'pr::LinearReal21points:Function Block:In' + Abs($'pr::LinearReal21points:Function Block:XMin')) / ($'pr::LinearReal21points:Function Block:XMax' + Abs($'pr::LinearReal21points:Function Block:XMin')) + 160.</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evTraceColorScheme</Name>
+        <TypeName>String</TypeName>
+        <ExpressionText>if $'ev::ColorSchemeName' = "ABBMarine_UI_MidnightGrey" then "ABBMarine_Graph_MidnightGrey" else if $'ev::ColorSchemeName' = "ABBMarine_UI_GraphiteWhite" then "ABBMarine_Graph_GraphiteWhite" else if $'ev::ColorSchemeName' = "ABBMarine_UI_HighContrast" then "ABBMarine_Graph_HighContrast" else "ABBMarine_Graph_MidnightGrey"</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evGridColor</Name>
+        <TypeName>Color</TypeName>
+        <ExpressionText>LogicalColorFromName("GraphGrid", $'ev::evTraceColorScheme', Gray)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evInRulerPen</Name>
+        <TypeName>Pen</TypeName>
+        <ExpressionText>DashDotPen($'ev::evGridColor', 2., Dot, Flat, Miter)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evLinePen</Name>
+        <TypeName>Pen</TypeName>
+        <ExpressionText>Pen(LogicalColorFromName("GraphScale", $'ev::evTraceColorScheme', Gray), 1.)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evOut1Color</Name>
+        <TypeName>Color</TypeName>
+        <ExpressionText>LogicalColorFromName("Trace03", $'ev::evTraceColorScheme', Lime)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evBackgroundColor</Name>
+        <TypeName>Color</TypeName>
+        <ExpressionText>LogicalColorFromName("GraphBackground", $'ev::evTraceColorScheme', Black)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent</BackColor>
+        <DefaultSize>
+          <Width>550</Width>
+          <Height>425</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>_BackgroundColor</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;_BackgroundColor&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="$'lv::_Extent'#X" />
+              <PropertyDescription Name="YPos" Value="$'lv::_Extent'#Y" />
+              <PropertyDescription Name="Width" Value="$'lv::_Width'" />
+              <PropertyDescription Name="Height" Value="$'lv::_Height'" />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="ColorSelection" Value="7" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>ActualAct1</Name>
+            <TypeName>GraphicPrimitives:XYGraph1</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;ActualAct1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="160." />
+              <PropertyDescription Name="YPos" Value="20." />
+              <PropertyDescription Name="Width" Value="382." />
+              <PropertyDescription Name="Height" Value="382." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="FrameColor" Value="RGB(200, 200, 200)" />
+              <PropertyDescription Name="FrameWidth" Value="0." />
+              <PropertyDescription Name="Frame3dEffect" Value="Raised" />
+              <PropertyDescription Name="SelectFrameLine" Value="Pen(White, 1.)" />
+              <PropertyDescription Name="SelectFrameVisible" Value="False" />
+              <PropertyDescription Name="BackgroundColor" Value="$'ev::evBackgroundColor'" />
+              <PropertyDescription Name="GridPen" Value="DashDotPen($'ev::evGridColor', 0.5, Dot, Flat, Miter)" />
+              <PropertyDescription Name="NoOfVerticalGridLines" Value="3" />
+              <PropertyDescription Name="NoOfHorizGridLines" Value="3" />
+              <PropertyDescription Name="Font" Value="Font(&quot;Tahoma&quot;, 10, Italic, DemiBold)" />
+              <PropertyDescription Name="RulerPen" Value="Pen(LimeGreen, 0.)" />
+              <PropertyDescription Name="NumberOfTraces" Value="1" />
+              <PropertyDescription Name="OutsideLimitsPen" Value="Pen(Crimson, 0.5)" />
+              <PropertyDescription Name="xAxisMinValue" Value="$'pr::LinearReal21points:Function Block:XMin'" />
+              <PropertyDescription Name="xAxisMaxValue" Value="$'pr::LinearReal21points:Function Block:XMax'" />
+              <PropertyDescription Name="xAxisLeftTrim" Value="0." />
+              <PropertyDescription Name="xAxisRightTrim" Value="0." />
+              <PropertyDescription Name="xAxisValueArray" Value="if $'pr::LinearReal21points:Function Block:InteractionPar.x21used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9', $'pr::LinearReal21points:Function Block:InteractionPar.x10', $'pr::LinearReal21points:Function Block:InteractionPar.x11', $'pr::LinearReal21points:Function Block:InteractionPar.x12', $'pr::LinearReal21points:Function Block:InteractionPar.x13', $'pr::LinearReal21points:Function Block:InteractionPar.x14', $'pr::LinearReal21points:Function Block:InteractionPar.x15', $'pr::LinearReal21points:Function Block:InteractionPar.x16', $'pr::LinearReal21points:Function Block:InteractionPar.x17', $'pr::LinearReal21points:Function Block:InteractionPar.x18', $'pr::LinearReal21points:Function Block:InteractionPar.x19', $'pr::LinearReal21points:Function Block:InteractionPar.x20', $'pr::LinearReal21points:Function Block:InteractionPar.x21') else if $'pr::LinearReal21points:Function Block:InteractionPar.x20used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9', $'pr::LinearReal21points:Function Block:InteractionPar.x10', $'pr::LinearReal21points:Function Block:InteractionPar.x11', $'pr::LinearReal21points:Function Block:InteractionPar.x12', $'pr::LinearReal21points:Function Block:InteractionPar.x13', $'pr::LinearReal21points:Function Block:InteractionPar.x14', $'pr::LinearReal21points:Function Block:InteractionPar.x15', $'pr::LinearReal21points:Function Block:InteractionPar.x16', $'pr::LinearReal21points:Function Block:InteractionPar.x17', $'pr::LinearReal21points:Function Block:InteractionPar.x18', $'pr::LinearReal21points:Function Block:InteractionPar.x19', $'pr::LinearReal21points:Function Block:InteractionPar.x20') else if $'pr::LinearReal21points:Function Block:InteractionPar.x19used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9', $'pr::LinearReal21points:Function Block:InteractionPar.x10', $'pr::LinearReal21points:Function Block:InteractionPar.x11', $'pr::LinearReal21points:Function Block:InteractionPar.x12', $'pr::LinearReal21points:Function Block:InteractionPar.x13', $'pr::LinearReal21points:Function Block:InteractionPar.x14', $'pr::LinearReal21points:Function Block:InteractionPar.x15', $'pr::LinearReal21points:Function Block:InteractionPar.x16', $'pr::LinearReal21points:Function Block:InteractionPar.x17', $'pr::LinearReal21points:Function Block:InteractionPar.x18', $'pr::LinearReal21points:Function Block:InteractionPar.x19') else if $'pr::LinearReal21points:Function Block:InteractionPar.x18used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9', $'pr::LinearReal21points:Function Block:InteractionPar.x10', $'pr::LinearReal21points:Function Block:InteractionPar.x11', $'pr::LinearReal21points:Function Block:InteractionPar.x12', $'pr::LinearReal21points:Function Block:InteractionPar.x13', $'pr::LinearReal21points:Function Block:InteractionPar.x14', $'pr::LinearReal21points:Function Block:InteractionPar.x15', $'pr::LinearReal21points:Function Block:InteractionPar.x16', $'pr::LinearReal21points:Function Block:InteractionPar.x17', $'pr::LinearReal21points:Function Block:InteractionPar.x18') else if $'pr::LinearReal21points:Function Block:InteractionPar.x17used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9', $'pr::LinearReal21points:Function Block:InteractionPar.x10', $'pr::LinearReal21points:Function Block:InteractionPar.x11', $'pr::LinearReal21points:Function Block:InteractionPar.x12', $'pr::LinearReal21points:Function Block:InteractionPar.x13', $'pr::LinearReal21points:Function Block:InteractionPar.x14', $'pr::LinearReal21points:Function Block:InteractionPar.x15', $'pr::LinearReal21points:Function Block:InteractionPar.x16', $'pr::LinearReal21points:Function Block:InteractionPar.x17') else if $'pr::LinearReal21points:Function Block:InteractionPar.x16used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9', $'pr::LinearReal21points:Function Block:InteractionPar.x10', $'pr::LinearReal21points:Function Block:InteractionPar.x11', $'pr::LinearReal21points:Function Block:InteractionPar.x12', $'pr::LinearReal21points:Function Block:InteractionPar.x13', $'pr::LinearReal21points:Function Block:InteractionPar.x14', $'pr::LinearReal21points:Function Block:InteractionPar.x15', $'pr::LinearReal21points:Function Block:InteractionPar.x16') else if $'pr::LinearReal21points:Function Block:InteractionPar.x15used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9', $'pr::LinearReal21points:Function Block:InteractionPar.x10', $'pr::LinearReal21points:Function Block:InteractionPar.x11', $'pr::LinearReal21points:Function Block:InteractionPar.x12', $'pr::LinearReal21points:Function Block:InteractionPar.x13', $'pr::LinearReal21points:Function Block:InteractionPar.x14', $'pr::LinearReal21points:Function Block:InteractionPar.x15') else if $'pr::LinearReal21points:Function Block:InteractionPar.x14used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9', $'pr::LinearReal21points:Function Block:InteractionPar.x10', $'pr::LinearReal21points:Function Block:InteractionPar.x11', $'pr::LinearReal21points:Function Block:InteractionPar.x12', $'pr::LinearReal21points:Function Block:InteractionPar.x13', $'pr::LinearReal21points:Function Block:InteractionPar.x14') else if $'pr::LinearReal21points:Function Block:InteractionPar.x13used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9', $'pr::LinearReal21points:Function Block:InteractionPar.x10', $'pr::LinearReal21points:Function Block:InteractionPar.x11', $'pr::LinearReal21points:Function Block:InteractionPar.x12', $'pr::LinearReal21points:Function Block:InteractionPar.x13') else if $'pr::LinearReal21points:Function Block:InteractionPar.x12used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9', $'pr::LinearReal21points:Function Block:InteractionPar.x10', $'pr::LinearReal21points:Function Block:InteractionPar.x11', $'pr::LinearReal21points:Function Block:InteractionPar.x12') else if $'pr::LinearReal21points:Function Block:InteractionPar.x11used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9', $'pr::LinearReal21points:Function Block:InteractionPar.x10', $'pr::LinearReal21points:Function Block:InteractionPar.x11') else if $'pr::LinearReal21points:Function Block:InteractionPar.x10used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9', $'pr::LinearReal21points:Function Block:InteractionPar.x10') else if $'pr::LinearReal21points:Function Block:InteractionPar.x9used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8', $'pr::LinearReal21points:Function Block:InteractionPar.x9') else if $'pr::LinearReal21points:Function Block:InteractionPar.x8used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7', $'pr::LinearReal21points:Function Block:InteractionPar.x8') else if $'pr::LinearReal21points:Function Block:InteractionPar.x7used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6', $'pr::LinearReal21points:Function Block:InteractionPar.x7') else if $'pr::LinearReal21points:Function Block:InteractionPar.x6used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5', $'pr::LinearReal21points:Function Block:InteractionPar.x6') else if $'pr::LinearReal21points:Function Block:InteractionPar.x5used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4', $'pr::LinearReal21points:Function Block:InteractionPar.x5') else if $'pr::LinearReal21points:Function Block:InteractionPar.x4used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3', $'pr::LinearReal21points:Function Block:InteractionPar.x4') else if $'pr::LinearReal21points:Function Block:InteractionPar.x3used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2', $'pr::LinearReal21points:Function Block:InteractionPar.x3') else MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar.x1', $'pr::LinearReal21points:Function Block:InteractionPar.x2')" />
+              <PropertyDescription Name="xAxisValueArrayInUse" Value="True" />
+              <PropertyDescription Name="ScrollbarActive" Value="null" />
+              <PropertyDescription Name="SelectionBrush" Value="Green" />
+              <PropertyDescription Name="StateBrushArray" Value="MakeBrushArray(Green, Yellow, Red, Blue, HatchBrush(DiagonalCross, Transparent, Black))" />
+              <PropertyDescription Name="SelectedTrace" Value="null" />
+              <PropertyDescription Name="ScrollbarHeight" Value="10." />
+              <PropertyDescription Name="FigureSize" Value="5." />
+              <PropertyDescription Name="Trace01CurrentValue" Value="if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x21used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y10', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y11', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y12', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y13', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y14', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y15', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y16', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y17', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y18', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y19', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y20', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y21') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x20used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y10', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y11', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y12', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y13', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y14', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y15', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y16', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y17', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y18', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y19', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y20') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x19used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y10', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y11', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y12', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y13', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y14', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y15', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y16', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y17', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y18', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y19') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x18used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y10', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y11', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y12', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y13', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y14', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y15', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y16', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y17', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y18') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x17used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y10', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y11', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y12', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y13', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y14', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y15', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y16', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y17') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x16used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y10', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y11', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y12', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y13', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y14', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y15', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y16') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x15used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y10', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y11', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y12', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y13', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y14', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y15') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x14used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y10', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y11', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y12', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y13', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y14') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x13used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y10', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y11', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y12', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y13') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x12used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y10', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y11', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y12') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x11used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y10', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y11') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x10used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y10') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x9used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y9') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x8used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y8') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x7used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y7') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x6used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y6') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x5used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y5') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x4used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y4') else if $'pr::LinearReal21points:Function Block:InteractionPar_Internal.x3used' then MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y3') else MakeRealArray($'pr::LinearReal21points:Function Block:InteractionPar_Internal.y1', $'pr::LinearReal21points:Function Block:InteractionPar_Internal.y2')" />
+              <PropertyDescription Name="Trace01Pen" Value="Pen($'ev::evOut1Color', 1.)" />
+              <PropertyDescription Name="Trace01EngineeringUnit" Value="&quot;&quot;" />
+              <PropertyDescription Name="Trace01DrawMode" Value="Line" />
+              <PropertyDescription Name="Trace01MaxValue" Value="$'pr::LinearReal21points:Function Block:YMax'" />
+              <PropertyDescription Name="Trace01MinValue" Value="$'pr::LinearReal21points:Function Block:YMin'" />
+              <PropertyDescription Name="Trace01NormValue" Value="0." />
+              <PropertyDescription Name="Trace01NumberOfLimitPairs" Value="0" />
+              <PropertyDescription Name="Trace01HighLimit" Value="0." />
+              <PropertyDescription Name="Trace01LowLimit" Value="0." />
+              <PropertyDescription Name="Trace01NumberOfDecimals" Value="2" />
+              <PropertyDescription Name="Trace01CurrentLeftmostIndex" Value="null" />
+              <PropertyDescription Name="Trace01CurrentRightmostIndex" Value="null" />
+              <PropertyDescription Name="Trace01ModifiedValue" Value="null" />
+              <PropertyDescription Name="Trace01Create snapshot" Value="False" />
+              <PropertyDescription Name="Trace01OutputSelectionArray" Value="null" />
+              <PropertyDescription Name="Trace01StateArray" Value="{}" />
+              <PropertyDescription Name="Trace01xAxisDirection" Value="LeftToRight" />
+              <PropertyDescription Name="Trace01yAxisStackPosition" Value="1" />
+              <PropertyDescription Name="Trace01SelectionArray" Value="MakeBooleanArray(True, True, $'pr::LinearReal21points:Function Block:InteractionPar.x3used', $'pr::LinearReal21points:Function Block:InteractionPar.x4used', $'pr::LinearReal21points:Function Block:InteractionPar.x5used', $'pr::LinearReal21points:Function Block:InteractionPar.x6used', $'pr::LinearReal21points:Function Block:InteractionPar.x7used', $'pr::LinearReal21points:Function Block:InteractionPar.x8used', $'pr::LinearReal21points:Function Block:InteractionPar.x9used', $'pr::LinearReal21points:Function Block:InteractionPar.x10used')" />
+              <PropertyDescription Name="Trace01GridPen" Value="Pen(White, 1.)" />
+              <PropertyDescription Name="Trace01GridArray" Value="{}" />
+              <PropertyDescription Name="Trace01RulerValuePosition" Value="AtTrace" />
+              <PropertyDescription Name="Trace01BestFitPolynomialGrade" Value="3" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Polyline1</Name>
+            <TypeName>GraphicPrimitives:PolyLine</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Polyline1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="FillColor" Value="Transparent()" />
+              <PropertyDescription Name="PointList" Value="&quot;152, 413   267, 413&quot;" />
+              <PropertyDescription Name="Pen" Value="$'ev::evLinePen'" />
+              <PropertyDescription Name="StartCap" Value="Flat" />
+              <PropertyDescription Name="EndCap" Value="Flat" />
+              <PropertyDescription Name="StartSymbol" Value="None" />
+              <PropertyDescription Name="EndSymbol" Value="None" />
+              <PropertyDescription Name="SymbolSize" Value="8." />
+              <PropertyDescription Name="SnapsToDevicePixels" Value="False" />
+              <PropertyDescription Name="XStart" Value="152." />
+              <PropertyDescription Name="YStart" Value="413." />
+              <PropertyDescription Name="XEnd" Value="267." />
+              <PropertyDescription Name="YEnd" Value="413." />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Polyline2</Name>
+            <TypeName>GraphicPrimitives:PolyLine</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Polyline2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="FillColor" Value="Transparent()" />
+              <PropertyDescription Name="PointList" Value="&quot;152, 300   152, 412&quot;" />
+              <PropertyDescription Name="Pen" Value="$'ev::evLinePen'" />
+              <PropertyDescription Name="StartCap" Value="Flat" />
+              <PropertyDescription Name="EndCap" Value="Flat" />
+              <PropertyDescription Name="StartSymbol" Value="None" />
+              <PropertyDescription Name="EndSymbol" Value="None" />
+              <PropertyDescription Name="SymbolSize" Value="8." />
+              <PropertyDescription Name="SnapsToDevicePixels" Value="False" />
+              <PropertyDescription Name="XStart" Value="152." />
+              <PropertyDescription Name="YStart" Value="300." />
+              <PropertyDescription Name="XEnd" Value="152." />
+              <PropertyDescription Name="YEnd" Value="412." />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Polyline3</Name>
+            <TypeName>GraphicPrimitives:PolyLine</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Polyline3&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="FillColor" Value="Transparent()" />
+              <PropertyDescription Name="PointList" Value="&quot;402, 413   540, 413&quot;" />
+              <PropertyDescription Name="Pen" Value="$'ev::evLinePen'" />
+              <PropertyDescription Name="StartCap" Value="Triangle" />
+              <PropertyDescription Name="EndCap" Value="Flat" />
+              <PropertyDescription Name="StartSymbol" Value="None" />
+              <PropertyDescription Name="EndSymbol" Value="Arrow" />
+              <PropertyDescription Name="SymbolSize" Value="8." />
+              <PropertyDescription Name="SnapsToDevicePixels" Value="False" />
+              <PropertyDescription Name="XStart" Value="402." />
+              <PropertyDescription Name="YStart" Value="413." />
+              <PropertyDescription Name="XEnd" Value="540." />
+              <PropertyDescription Name="YEnd" Value="413." />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Polyline4</Name>
+            <TypeName>GraphicPrimitives:PolyLine</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Polyline4&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="FillColor" Value="Transparent()" />
+              <PropertyDescription Name="PointList" Value="&quot;152, 167   152, 24&quot;" />
+              <PropertyDescription Name="Pen" Value="$'ev::evLinePen'" />
+              <PropertyDescription Name="StartCap" Value="Triangle" />
+              <PropertyDescription Name="EndCap" Value="Flat" />
+              <PropertyDescription Name="StartSymbol" Value="None" />
+              <PropertyDescription Name="EndSymbol" Value="Arrow" />
+              <PropertyDescription Name="SymbolSize" Value="8." />
+              <PropertyDescription Name="SnapsToDevicePixels" Value="False" />
+              <PropertyDescription Name="XStart" Value="152." />
+              <PropertyDescription Name="YStart" Value="167." />
+              <PropertyDescription Name="XEnd" Value="152." />
+              <PropertyDescription Name="YEnd" Value="24." />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Polyline Out</Name>
+            <TypeName>GraphicPrimitives:PolyLine</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Polyline Out&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="FillColor" Value="Transparent()" />
+              <PropertyDescription Name="PointList" Value="&quot;13, 54   38, 54&quot;" />
+              <PropertyDescription Name="Pen" Value="Pen($'ev::evOut1Color', 2.)" />
+              <PropertyDescription Name="StartCap" Value="Flat" />
+              <PropertyDescription Name="EndCap" Value="Flat" />
+              <PropertyDescription Name="StartSymbol" Value="None" />
+              <PropertyDescription Name="EndSymbol" Value="None" />
+              <PropertyDescription Name="SymbolSize" Value="8." />
+              <PropertyDescription Name="SnapsToDevicePixels" Value="False" />
+              <PropertyDescription Name="XStart" Value="13." />
+              <PropertyDescription Name="YStart" Value="54." />
+              <PropertyDescription Name="XEnd" Value="38." />
+              <PropertyDescription Name="YEnd" Value="54." />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>In Ruler</Name>
+            <TypeName>GraphicPrimitives:PolyLine</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;In Ruler&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="FillColor" Value="Transparent()" />
+              <PropertyDescription Name="PointList" Value="PointList(Point($'ev::evRulerPos', 20.), Point($'ev::evRulerPos', 402.))" />
+              <PropertyDescription Name="Pen" Value="$'ev::evInRulerPen'" />
+              <PropertyDescription Name="StartCap" Value="Flat" />
+              <PropertyDescription Name="EndCap" Value="Flat" />
+              <PropertyDescription Name="StartSymbol" Value="None" />
+              <PropertyDescription Name="EndSymbol" Value="None" />
+              <PropertyDescription Name="SymbolSize" Value="8." />
+              <PropertyDescription Name="SnapsToDevicePixels" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_TextField1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="332." />
+              <PropertyDescription Name="YPos" Value="4." />
+              <PropertyDescription Name="Width" Value="40." />
+              <PropertyDescription Name="Height" Value="12." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Center" />
+              <PropertyDescription Name="InputText" Value="$'nt::LinearReal21Points_NLS:NLSID_ProcessLib_LinearReal21_ActuatorCurve'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_TextField2</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="28." />
+              <PropertyDescription Name="Width" Value="40." />
+              <PropertyDescription Name="Height" Value="12." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="&quot;In: &quot; + FormatReal($'pr::LinearReal21points:Function Block:In', $'pr::LinearReal21points:Function Block:InFraction') + &quot; &quot; + $'pr::LinearReal21points:Function Block:InUnit'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_TextField3</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField3&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="45." />
+              <PropertyDescription Name="YPos" Value="48." />
+              <PropertyDescription Name="Width" Value="40." />
+              <PropertyDescription Name="Height" Value="12." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="&quot;Out: &quot; + FormatReal($'pr::LinearReal21points:Function Block:Out', $'pr::LinearReal21points:Function Block:OutFraction') + &quot; &quot; + $'pr::LinearReal21points:Function Block:OutUnit'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_TextField4</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField4&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="144." />
+              <PropertyDescription Name="YPos" Value="248." />
+              <PropertyDescription Name="Width" Value="40." />
+              <PropertyDescription Name="Height" Value="12." />
+              <PropertyDescription Name="Rotation" Value="-90" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Center" />
+              <PropertyDescription Name="InputText" Value="$'nt::LinearReal21Points_NLS:NLSID_ProcessLib_LinearReal21_YAxisLabel' + FormatReal($'pr::LinearReal21points:Function Block:YMin', 0) + &quot; -- &quot; + FormatReal($'pr::LinearReal21points:Function Block:YMax', 0) + &quot; &quot; + $'pr::LinearReal21points:Function Block:OutUnit'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_TextField5</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField5&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="XPos" Value="314." />
+              <PropertyDescription Name="YPos" Value="408." />
+              <PropertyDescription Name="Width" Value="40." />
+              <PropertyDescription Name="Height" Value="12." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Center" />
+              <PropertyDescription Name="InputText" Value="$'nt::LinearReal21Points_NLS:NLSID_ProcessLib_LinearReal21_XAxisLabel' + FormatReal($'pr::LinearReal21points:Function Block:XMin', 0) + &quot; -- &quot; + FormatReal($'pr::LinearReal21points:Function Block:XMax', 0) + &quot; &quot; + $'pr::LinearReal21points:Function Block:OutUnit'" />
+              <PropertyDescription Name="TextColor" Value="11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Regular'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Polyline In</Name>
+            <TypeName>GraphicPrimitives:PolyLine</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Polyline In&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="AnchorStyle" Value="Custom" />
+              <PropertyDescription Name="FillColor" Value="Transparent()" />
+              <PropertyDescription Name="PointList" Value="&quot;13, 36   38, 36&quot;" />
+              <PropertyDescription Name="Pen" Value="$'ev::evInRulerPen'" />
+              <PropertyDescription Name="StartCap" Value="Flat" />
+              <PropertyDescription Name="EndCap" Value="Flat" />
+              <PropertyDescription Name="StartSymbol" Value="None" />
+              <PropertyDescription Name="EndSymbol" Value="None" />
+              <PropertyDescription Name="SymbolSize" Value="8." />
+              <PropertyDescription Name="SnapsToDevicePixels" Value="False" />
+              <PropertyDescription Name="XStart" Value="13." />
+              <PropertyDescription Name="YStart" Value="36." />
+              <PropertyDescription Name="XEnd" Value="38." />
+              <PropertyDescription Name="YEnd" Value="36." />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

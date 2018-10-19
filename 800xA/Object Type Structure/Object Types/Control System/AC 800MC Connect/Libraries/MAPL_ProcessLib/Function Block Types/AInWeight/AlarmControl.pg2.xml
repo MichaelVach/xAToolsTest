@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{a3451c9b-8eba-4bc3-90d1-03522e1d5a35}:{13c59dad-5a3b-4add-95c6-ee9433122712}</ElementId>
+  <ElementName>AInWeight:AlarmControl</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>0</PresentationMode>
+    <AnimationRate>10</AnimationRate>
+    <InhibitInput>All</InhibitInput>
+    <SubscriptionRate>ip::SubscriptionRate</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>SubscriptionRate</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"The update rate for all aspect object properties subscribed for"</Description>
+        <Category>Behaviour</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems>
+      <InputItem>
+        <Name>AL</Name>
+        <TypeName>InputItems:ViewInvoker0</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;AL&quot;" />
+          <PropertyDescription Name="Enabled" Value="True" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="ViewReference" Value="LateBoundViewRef(&quot;.&quot;, &quot;Alarm List&quot;, &quot;0&quot;, False)" />
+          <PropertyDescription Name="PresentationMode" Value="Overlap" />
+          <PropertyDescription Name="Trigger" Value="False" />
+          <PropertyDescription Name="Event" Value="OnDemand" />
+          <PropertyDescription Name="NumberOfNamedValues" Value="0" />
+          <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+          <PropertyDescription Name="ScreenID" Value="Tuple(0,0)" />
+        </PropertyDescriptions>
+      </InputItem>
+      <InputItem>
+        <Name>EL</Name>
+        <TypeName>InputItems:ViewInvoker0</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;EL&quot;" />
+          <PropertyDescription Name="Enabled" Value="True" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="ViewReference" Value="LateBoundViewRef(&quot;.&quot;, &quot;Event List&quot;, &quot;0&quot;, False)" />
+          <PropertyDescription Name="PresentationMode" Value="Overlap" />
+          <PropertyDescription Name="Trigger" Value="False" />
+          <PropertyDescription Name="Event" Value="OnDemand" />
+          <PropertyDescription Name="NumberOfNamedValues" Value="0" />
+          <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+          <PropertyDescription Name="ScreenID" Value="Tuple(0,0)" />
+        </PropertyDescriptions>
+      </InputItem>
+      <InputItem>
+        <Name>HAL</Name>
+        <TypeName>InputItems:ViewInvoker0</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;HAL&quot;" />
+          <PropertyDescription Name="Enabled" Value="True" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="ViewReference" Value="LateBoundViewRef(&quot;.&quot;, &quot;Hidden Alarm List&quot;, &quot;0&quot;, False)" />
+          <PropertyDescription Name="PresentationMode" Value="Overlap" />
+          <PropertyDescription Name="Trigger" Value="False" />
+          <PropertyDescription Name="Event" Value="OnDemand" />
+          <PropertyDescription Name="NumberOfNamedValues" Value="0" />
+          <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+          <PropertyDescription Name="ScreenID" Value="Tuple(0,0)" />
+        </PropertyDescriptions>
+      </InputItem>
+      <InputItem>
+        <Name>Popup Menu</Name>
+        <TypeName>InputItems:PopupMenu4</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;Popup Menu&quot;" />
+          <PropertyDescription Name="Enabled" Value="True" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Right" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="NoOfEntries" Value="4" />
+          <PropertyDescription Name="Font" Value="Font(&quot;Tahoma&quot;, 8, Regular, Normal)" />
+          <PropertyDescription Name="Style" Value="Classic" />
+          <PropertyDescription Name="NoOfVisibleEntries" Value="50" />
+          <PropertyDescription Name="Entry1Name" Value="ItemEntry(&quot;AL&quot;, &quot;Alarm List&quot;, True)" />
+          <PropertyDescription Name="Entry2Name" Value="ItemEntry(&quot;EL&quot;, &quot;Event List&quot;, True)" />
+          <PropertyDescription Name="Entry3Name" Value="ItemEntry(&quot;HAL&quot;, &quot;Hidden Alarm List&quot;, True)" />
+          <PropertyDescription Name="Entry4Name" Value="ItemEntry(&quot;SAL&quot;, &quot;Shelved Alarm List&quot;, True)" />
+        </PropertyDescriptions>
+      </InputItem>
+      <InputItem>
+        <Name>Property Writer</Name>
+        <TypeName>InputItems:PropertyWriter1</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;Property Writer&quot;" />
+          <PropertyDescription Name="Enabled" Value="if $'pr::AC 800M Alarm Control:Alarm Global Properties:IsAlarmUnack_Descendants' &amp;&amp; $'pr::AC 800M Alarm Control:Alarm Global Properties:IsAlarmUnack_Descendants'#IsWritable then True else False" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="Action" Value="SystemDefault" />
+          <PropertyDescription Name="Event" Value="OnMouseUp" />
+          <PropertyDescription Name="Trigger" Value="False" />
+          <PropertyDescription Name="GroupIndex" Value="-1" />
+          <PropertyDescription Name="Target" Value="$'pr::AC 800M Alarm Control:Alarm Global Properties:IsAlarmUnack_Descendants'" />
+          <PropertyDescription Name="Value" Value="False" />
+          <PropertyDescription Name="NoOfTargets" Value="1" />
+          <PropertyDescription Name="WriteSequence" Value="Async" />
+          <PropertyDescription Name="WriteDelay" Value="0" />
+        </PropertyDescriptions>
+      </InputItem>
+      <InputItem>
+        <Name>SAL</Name>
+        <TypeName>InputItems:ViewInvoker0</TypeName>
+        <ElementInstanceIndex>0</ElementInstanceIndex>
+        <PropertyDescriptions>
+          <PropertyDescription Name="Name" Value="&quot;SAL&quot;" />
+          <PropertyDescription Name="Enabled" Value="True" />
+          <PropertyDescription Name="EnableApply" Value="True" />
+          <PropertyDescription Name="MouseButton" Value="Left" />
+          <PropertyDescription Name="ModifierKeys" Value="None" />
+          <PropertyDescription Name="ViewReference" Value="LateBoundViewRef(&quot;.&quot;, &quot;Shelved Alarm List&quot;, &quot;0&quot;, False)" />
+          <PropertyDescription Name="PresentationMode" Value="Overlap" />
+          <PropertyDescription Name="Trigger" Value="False" />
+          <PropertyDescription Name="Event" Value="OnDemand" />
+          <PropertyDescription Name="NumberOfNamedValues" Value="0" />
+          <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+          <PropertyDescription Name="ScreenID" Value="Tuple(0,0)" />
+        </PropertyDescriptions>
+      </InputItem>
+    </ElementHostedInputItems>
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>eAEErrorRef</Name>
+        <TypeName>PropertyRef</TypeName>
+        <ExpressionText>LateBoundPropertyRef(".", "", "AEError", True, 0)</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>$'lc::Process Graphics Colors:FaceplateBg'</BackColor>
+        <DefaultSize>
+          <Width>38</Width>
+          <Height>38</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>Rectangle</Name>
+            <TypeName>GraphicPrimitives:Rectangle</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Rectangle&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'pr::AC 800M Alarm Control:Alarm Global Properties:IsAlarmUnack_Descendants' then True else False" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="38." />
+              <PropertyDescription Name="Height" Value="38." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Line" Value="Pen(DarkGray, 0.)" />
+              <PropertyDescription Name="FillColor" Value="Transparent" />
+              <PropertyDescription Name="FrameColor" Value="RGB(200, 200, 200)" />
+              <PropertyDescription Name="FrameWidth" Value="if !$'pr::AC 800M Alarm Control:Alarm Global Properties:IsAlarmUnack_Descendants'#IsWritable then 0. else 2." />
+              <PropertyDescription Name="Frame3dEffect" Value="if !$'pr::AC 800M Alarm Control:Alarm Global Properties:IsAlarmUnack_Descendants' || !$'pr::AC 800M Alarm Control:Alarm Global Properties:IsAlarmUnack_Descendants'#IsWritable then Flat else if $'lv::_ButtonState' = Left then Sunken else Raised" />
+              <PropertyDescription Name="SelectFrameLine" Value="Pen(White, 1.)" />
+              <PropertyDescription Name="SelectFrameVisible" Value="False" />
+              <PropertyDescription Name="Round" Value="0" />
+              <PropertyDescription Name="Content" Value="Empty" />
+              <PropertyDescription Name="SnapsToDevicePixels" Value="True" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AlarmSymbol</Name>
+            <TypeName>GraphicPrimitives:AlarmSymbol</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AlarmSymbol&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="3." />
+              <PropertyDescription Name="YPos" Value="3." />
+              <PropertyDescription Name="Width" Value="32." />
+              <PropertyDescription Name="Height" Value="32." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmState" Value="$'pr::AC 800M Alarm Control:Alarm Global Properties:AlarmConditionState_Descendants'" />
+              <PropertyDescription Name="FillColor" Value="LogicalColorFromName($'pr::AC 800M Alarm Control:Alarm Global Properties:AlarmForegroundColor_Descendants', &quot;&quot;, White)" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>PriorityLevel</Name>
+            <TypeName>GraphicPrimitives:Text</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;PriorityLevel&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="23." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="14." />
+              <PropertyDescription Name="Height" Value="20." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Line" Value="Pen(DarkGray, 0.)" />
+              <PropertyDescription Name="FillColor" Value="Transparent()" />
+              <PropertyDescription Name="FrameColor" Value="RGB(200, 200, 200)" />
+              <PropertyDescription Name="FrameWidth" Value="0." />
+              <PropertyDescription Name="Frame3dEffect" Value="Raised" />
+              <PropertyDescription Name="SelectFrameLine" Value="Pen(White, 1.)" />
+              <PropertyDescription Name="SelectFrameVisible" Value="False" />
+              <PropertyDescription Name="TextColor" Value="Black" />
+              <PropertyDescription Name="Text" Value="if $'pr::AC 800M Alarm Control:Alarm Global Properties:AlarmPriorityLevel_Descendants' &gt; 0 then String($'pr::AC 800M Alarm Control:Alarm Global Properties:AlarmPriorityLevel_Descendants') else &quot;&quot;" />
+              <PropertyDescription Name="Font" Value="Font(&quot;Tahoma&quot;, 11, Regular, Normal)" />
+              <PropertyDescription Name="HAlign" Value="Center" />
+              <PropertyDescription Name="VAlign" Value="Middle" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="TextMode" Value="False" />
+              <PropertyDescription Name="TextPath" Value="horizontal" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>AEErrorInd</Name>
+            <TypeName>GraphicPrimitives:Text</TypeName>
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;AEErrorInd&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="if $'ev::eAEErrorRef'#ReferenceSet then Boolean($'ev::eAEErrorRef'#Value) else False" />
+              <PropertyDescription Name="XPos" Value="9." />
+              <PropertyDescription Name="YPos" Value="14." />
+              <PropertyDescription Name="Width" Value="20." />
+              <PropertyDescription Name="Height" Value="20." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="Line" Value="Pen(DarkGray, 0.)" />
+              <PropertyDescription Name="FillColor" Value="Transparent" />
+              <PropertyDescription Name="FrameColor" Value="RGB(200, 200, 200)" />
+              <PropertyDescription Name="FrameWidth" Value="0." />
+              <PropertyDescription Name="Frame3dEffect" Value="Raised" />
+              <PropertyDescription Name="SelectFrameLine" Value="Pen(White, 1.)" />
+              <PropertyDescription Name="SelectFrameVisible" Value="False" />
+              <PropertyDescription Name="TextColor" Value="Black" />
+              <PropertyDescription Name="Text" Value="&quot;?&quot;" />
+              <PropertyDescription Name="Font" Value="Font(&quot;Tahoma&quot;, 11, Regular, Normal)" />
+              <PropertyDescription Name="HAlign" Value="Center" />
+              <PropertyDescription Name="VAlign" Value="Middle" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="TextMode" Value="False" />
+              <PropertyDescription Name="TextPath" Value="horizontal" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>

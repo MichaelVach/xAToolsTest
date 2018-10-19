@@ -1,0 +1,506 @@
+<?xml version="1.0"?>
+<ElementData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.abb.com/800xA/Graphics">
+  <FileVersion>1.0.0.3</FileVersion>
+  <SystemVersion>6.0.0.103.271</SystemVersion>
+  <ElementId>{4939f33b-9d78-4315-8d21-691f4a6c2695}:{dec341c6-fc3e-4c28-bdb2-a2a28aba7101}</ElementId>
+  <ElementName>GroupCtrl2:MAPL Group Member Element</ElementName>
+  <ElementTypeId>{f7f28945-c8ea-4023-a35f-4153f8f4bb85}</ElementTypeId>
+  <ElementTypeName>Graphic Element PG2</ElementTypeName>
+  <GraphicElement>
+    <ObjectAware>true</ObjectAware>
+    <UpdateInterval>0</UpdateInterval>
+    <NumberOfViews>1</NumberOfViews>
+    <BindMethod>0</BindMethod>
+    <PresentationMode>0</PresentationMode>
+    <AnimationRate>100</AnimationRate>
+    <InhibitInput>LeftMouseClick</InhibitInput>
+    <SubscriptionRate>1000</SubscriptionRate>
+    <CustomViewSelection>-1</CustomViewSelection>
+    <InputProperties>
+      <InputProperty>
+        <PropertyName>MemberIndex</PropertyName>
+        <DataType>Integer</DataType>
+        <DefaultValue>0</DefaultValue>
+        <Description>"MemberIndex"</Description>
+        <Category>Behavior</Category>
+        <Dynamicity>Dynamic</Dynamicity>
+      </InputProperty>
+    </InputProperties>
+    <ElementHostedInputItems />
+    <UserEnumerations />
+    <ExpressionVariables>
+      <ExpressionVariable>
+        <Name>evNames</Name>
+        <TypeName>StringArray</TypeName>
+        <ExpressionText>{$'pr::GroupCtrl2:Control Module:FPIntPar.Name.String0', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String1', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String2', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String3', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String4', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String5', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String6', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String7', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String8', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String9', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String10', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String11', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String12', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String13', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String14', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String15', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String16', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String17', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String18', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String19', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String20', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String21', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String22', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String23', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String24', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String25', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String26', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String27', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String28', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String29', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String30', $'pr::GroupCtrl2:Control Module:FPIntPar.Name.String31'}</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evStartOrder</Name>
+        <TypeName>IntegerArray</TypeName>
+        <ExpressionText>{$'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint0', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint1', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint2', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint3', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint4', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint5', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint6', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint7', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint8', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint9', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint10', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint11', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint12', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint13', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint14', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint15', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint16', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint17', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint18', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint19', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint20', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint21', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint22', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint23', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint24', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint25', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint26', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint27', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint28', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint29', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint30', $'pr::GroupCtrl2:Control Module:FPIntPar.StartOrder.Dint31'}</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evStartSteps</Name>
+        <TypeName>IntegerArray</TypeName>
+        <ExpressionText>{$'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint0', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint1', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint2', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint3', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint4', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint5', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint6', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint7', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint8', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint9', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint10', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint11', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint12', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint13', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint14', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint15', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint16', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint17', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint18', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint19', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint20', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint21', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint22', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint23', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint24', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint25', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint26', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint27', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint28', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint29', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint30', $'pr::GroupCtrl2:Control Module:FPIntPar.StartStep.Dint31'}</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evstopSteps</Name>
+        <TypeName>IntegerArray</TypeName>
+        <ExpressionText>{$'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint0', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint1', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint2', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint3', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint4', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint5', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint6', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint7', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint8', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint9', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint10', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint11', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint12', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint13', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint14', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint15', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint16', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint17', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint18', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint19', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint20', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint21', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint22', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint23', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint24', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint25', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint26', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint27', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint28', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint29', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint30', $'pr::GroupCtrl2:Control Module:FPIntPar.StopStep.Dint31'}</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evVisible</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>$'ip::MemberIndex' != -1</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evInactive</Name>
+        <TypeName>Boolean</TypeName>
+        <ExpressionText>!$'pr::GroupCtrl2:Control Module:FPIntPar.Enabled'[$'ip::MemberIndex']</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+      <ExpressionVariable>
+        <Name>evScale</Name>
+        <TypeName>Transform</TypeName>
+        <ExpressionText>if $'lv::_MouseOver' then ScaleAt(1. + 2. / $'lv::_Width', 1. + 2. / $'lv::_Height', $'lv::_Width' / 2., $'lv::_Height' / 2.) else Empty</ExpressionText>
+        <ElementStateVariable>false</ElementStateVariable>
+        <Persistent>false</Persistent>
+        <Global>false</Global>
+      </ExpressionVariable>
+    </ExpressionVariables>
+    <Views>
+      <Views>
+        <HotSpot>
+          <X>NaN</X>
+          <Y>NaN</Y>
+        </HotSpot>
+        <BackColor>Transparent()</BackColor>
+        <DefaultSize>
+          <Width>615</Width>
+          <Height>25</Height>
+        </DefaultSize>
+        <GraphicItems>
+          <GraphicItem>
+            <Name>MAPL_Rectangle1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_Rectangle1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="200." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="FillStatus_Color" Value="0" />
+              <PropertyDescription Name="FillStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="FillStatus_Transparency" Value="4" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="OutlineStatus_Color" Value="15" />
+              <PropertyDescription Name="OutlineStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenStyle" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenThickness" Value="0" />
+              <PropertyDescription Name="OutlineStatus_Transparency" Value="0" />
+              <PropertyDescription Name="Roundness" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_Rectangle2</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_Rectangle2&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="200." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="75." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="FillStatus_Color" Value="0" />
+              <PropertyDescription Name="FillStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="FillStatus_Transparency" Value="4" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="OutlineStatus_Color" Value="15" />
+              <PropertyDescription Name="OutlineStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenStyle" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenThickness" Value="0" />
+              <PropertyDescription Name="OutlineStatus_Transparency" Value="0" />
+              <PropertyDescription Name="Roundness" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_Rectangle3</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_Rectangle3&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="275." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="170." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="FillStatus_Color" Value="0" />
+              <PropertyDescription Name="FillStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="FillStatus_Transparency" Value="4" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="OutlineStatus_Color" Value="15" />
+              <PropertyDescription Name="OutlineStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenStyle" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenThickness" Value="0" />
+              <PropertyDescription Name="OutlineStatus_Transparency" Value="0" />
+              <PropertyDescription Name="Roundness" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_Rectangle4</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_Rectangle4&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="True" />
+              <PropertyDescription Name="XPos" Value="445." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="170." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="FillStatus_Color" Value="0" />
+              <PropertyDescription Name="FillStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="FillStatus_Transparency" Value="4" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="True" />
+              <PropertyDescription Name="OutlineStatus_Color" Value="15" />
+              <PropertyDescription Name="OutlineStatus_Enhancement" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenStyle" Value="0" />
+              <PropertyDescription Name="OutlineStatus_PenThickness" Value="0" />
+              <PropertyDescription Name="OutlineStatus_Transparency" Value="0" />
+              <PropertyDescription Name="Roundness" Value="0" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>VitalMember</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;VitalMember&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'ev::evVisible'" />
+              <PropertyDescription Name="XPos" Value="228." />
+              <PropertyDescription Name="YPos" Value="3." />
+              <PropertyDescription Name="Width" Value="19." />
+              <PropertyDescription Name="Height" Value="19." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="0" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="ItemInactive" Value="$'ev::evInactive'" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.VitalMember'#Bit($'ip::MemberIndex') then 2 else 1" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>StartFB</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;StartFB&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'ev::evVisible' &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.StartStepEn'[$'ip::MemberIndex']" />
+              <PropertyDescription Name="XPos" Value="405." />
+              <PropertyDescription Name="YPos" Value="3." />
+              <PropertyDescription Name="Width" Value="19." />
+              <PropertyDescription Name="Height" Value="19." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.FBFault'[$'ip::MemberIndex'] &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.FBFaultFromState' = 5 then $'pr::GroupCtrl2:Alarm Global Properties:AlarmConditionState_Descendants' else 0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="$'pr::GroupCtrl2:Alarm Global Properties:AlarmPriorityLevel_Descendants'" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="ItemInactive" Value="$'ev::evInactive'" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.StartFB'#Bit($'ip::MemberIndex') then 2 else 1" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>StartStep</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;StartStep&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'ev::evVisible' &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.StartStepEn'[$'ip::MemberIndex']" />
+              <PropertyDescription Name="XPos" Value="285." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="20." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Far" />
+              <PropertyDescription Name="InputText" Value="String($'ev::evStartSteps'[$'ip::MemberIndex'])" />
+              <PropertyDescription Name="TextColor" Value="if $'ev::evInactive' then 12 else if $'ev::evStartSteps'[$'ip::MemberIndex'] = $'pr::GroupCtrl2:Control Module:FPIntPar.StartNro' then 6 else 11" />
+              <PropertyDescription Name="TextEnhancement" Value="if !$'ev::evInactive' &amp;&amp; $'ev::evStartSteps'[$'ip::MemberIndex'] = $'pr::GroupCtrl2:Control Module:FPIntPar.StartNro' then 2 else 0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>StopFB</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;StopFB&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'ev::evVisible' &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.StopStepEn'[$'ip::MemberIndex']" />
+              <PropertyDescription Name="XPos" Value="575." />
+              <PropertyDescription Name="YPos" Value="3." />
+              <PropertyDescription Name="Width" Value="19." />
+              <PropertyDescription Name="Height" Value="19." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="AlarmConditionState" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.FBFault'[$'ip::MemberIndex'] &amp;&amp; ($'pr::GroupCtrl2:Control Module:FPIntPar.FBFaultFromState' = 1 || $'pr::GroupCtrl2:Control Module:FPIntPar.FBFaultFromState' = 4) then $'pr::GroupCtrl2:Alarm Global Properties:AlarmConditionState_Descendants' else 0" />
+              <PropertyDescription Name="AlarmPriorityLevel" Value="$'pr::GroupCtrl2:Alarm Global Properties:AlarmPriorityLevel_Descendants'" />
+              <PropertyDescription Name="AlarmsInhibited" Value="False" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="DataQuality" Value="Good" />
+              <PropertyDescription Name="InhibitAlarmAccent" Value="False" />
+              <PropertyDescription Name="ItemInactive" Value="$'ev::evInactive'" />
+              <PropertyDescription Name="MouseOver" Value="False" />
+              <PropertyDescription Name="Status" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.StopFB'#Bit($'ip::MemberIndex') then 2 else 1" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Name</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Name&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'ev::evVisible'" />
+              <PropertyDescription Name="XPos" Value="5." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="190." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Near" />
+              <PropertyDescription Name="InputText" Value="$'ev::evNames'[$'ip::MemberIndex']" />
+              <PropertyDescription Name="TextColor" Value="if $'ev::evInactive' then 12 else 11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems>
+              <InputItem>
+                <Name>Aspect View Invoker2</Name>
+                <TypeName>InputItems:ViewInvoker0</TypeName>
+                <ElementInstanceIndex>0</ElementInstanceIndex>
+                <PropertyDescriptions>
+                  <PropertyDescription Name="Name" Value="&quot;Aspect View Invoker2&quot;" />
+                  <PropertyDescription Name="Enabled" Value="True" />
+                  <PropertyDescription Name="EnableApply" Value="True" />
+                  <PropertyDescription Name="MouseButton" Value="Left" />
+                  <PropertyDescription Name="ModifierKeys" Value="None" />
+                  <PropertyDescription Name="ViewReference" Value="LateBoundViewRef($'ev::evNames'[$'ip::MemberIndex'], &quot;MAPL Faceplate&quot;, &quot;Faceplate&quot;, True)" />
+                  <PropertyDescription Name="PresentationMode" Value="Overlap" />
+                  <PropertyDescription Name="Trigger" Value="False" />
+                  <PropertyDescription Name="Event" Value="OnMouseUp" />
+                  <PropertyDescription Name="NumberOfNamedValues" Value="0" />
+                  <PropertyDescription Name="TargetID" Value="&quot;&quot;" />
+                  <PropertyDescription Name="ScreenID" Value="Tuple(0,0)" />
+                </PropertyDescriptions>
+              </InputItem>
+            </InputItems>
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Start Ready</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Start Ready&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'ev::evVisible' &amp;&amp; !$'pr::GroupCtrl2:Control Module:FPIntPar.StartFB'[$'ip::MemberIndex'] &amp;&amp; !$'ev::evInactive' &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.StartStepEn'[$'ip::MemberIndex']" />
+              <PropertyDescription Name="XPos" Value="315." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="85." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Center" />
+              <PropertyDescription Name="InputText" Value="&quot;READY&quot;" />
+              <PropertyDescription Name="TextColor" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.StartEn'[$'ip::MemberIndex'] &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.ModeFB'[$'ip::MemberIndex'] then 6 else 11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>StopStep</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;StopStep&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'ev::evVisible' &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.StopStepEn'[$'ip::MemberIndex']" />
+              <PropertyDescription Name="XPos" Value="455." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="20." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Far" />
+              <PropertyDescription Name="InputText" Value="String($'ev::evstopSteps'[$'ip::MemberIndex'])" />
+              <PropertyDescription Name="TextColor" Value="if $'ev::evInactive' then 12 else if $'ev::evstopSteps'[$'ip::MemberIndex'] = $'pr::GroupCtrl2:Control Module:FPIntPar.StopNro' then 6 else 11" />
+              <PropertyDescription Name="TextEnhancement" Value="if !$'ev::evInactive' &amp;&amp; $'ev::evstopSteps'[$'ip::MemberIndex'] = $'pr::GroupCtrl2:Control Module:FPIntPar.StopNro' then 2 else 0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>Stop Ready</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;Stop Ready&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'ev::evVisible' &amp;&amp; !$'pr::GroupCtrl2:Control Module:FPIntPar.StopFB'[$'ip::MemberIndex'] &amp;&amp; !$'ev::evInactive' &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.StopStepEn'[$'ip::MemberIndex']" />
+              <PropertyDescription Name="XPos" Value="485." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="85." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Center" />
+              <PropertyDescription Name="InputText" Value="&quot;READY&quot;" />
+              <PropertyDescription Name="TextColor" Value="if $'pr::GroupCtrl2:Control Module:FPIntPar.StopEn'[$'ip::MemberIndex'] &amp;&amp; $'pr::GroupCtrl2:Control Module:FPIntPar.ModeFB'[$'ip::MemberIndex'] then 6 else 11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_TextField1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_TextField1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'ev::evVisible'" />
+              <PropertyDescription Name="XPos" Value="150." />
+              <PropertyDescription Name="YPos" Value="0." />
+              <PropertyDescription Name="Width" Value="45." />
+              <PropertyDescription Name="Height" Value="25." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="EnableClip" Value="False" />
+              <PropertyDescription Name="HorizonalAlign" Value="Center" />
+              <PropertyDescription Name="InputText" Value="&quot;SEQ&quot;" />
+              <PropertyDescription Name="TextColor" Value="if $'ev::evInactive' then 12 else if $'pr::GroupCtrl2:Control Module:FPIntPar.ModeFB'[$'ip::MemberIndex'] then 6 else 11" />
+              <PropertyDescription Name="TextEnhancement" Value="0" />
+              <PropertyDescription Name="TextFont" Value="$'ft::ABB Marine Customization:Arial_11pt_Bold'" />
+              <PropertyDescription Name="TextTransparency" Value="0" />
+              <PropertyDescription Name="VerticalAlign" Value="Middle" />
+              <PropertyDescription Name="WrapText" Value="False" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+          <GraphicItem>
+            <Name>MAPL_InteractionIndicator1</Name>
+            <TypeName />
+            <ElementInstanceIndex>0</ElementInstanceIndex>
+            <PropertyDescriptions>
+              <PropertyDescription Name="Name" Value="&quot;MAPL_InteractionIndicator1&quot;" />
+              <PropertyDescription Name="Transform" Value="Empty" />
+              <PropertyDescription Name="Visible" Value="$'ev::evNames'[$'ip::MemberIndex']#Length != 0" />
+              <PropertyDescription Name="XPos" Value="0." />
+              <PropertyDescription Name="YPos" Value="15." />
+              <PropertyDescription Name="Width" Value="10." />
+              <PropertyDescription Name="Height" Value="10." />
+              <PropertyDescription Name="Rotation" Value="0" />
+              <PropertyDescription Name="ColorSchemeSelection" Value="0" />
+              <PropertyDescription Name="IndicatorTypes" Value="1" />
+              <PropertyDescription Name="ItemActive" Value="True" />
+              <PropertyDescription Name="ParentObjectName" Value="&quot;&amp;;&quot;" />
+            </PropertyDescriptions>
+            <InputItems />
+            <ObjectAware>false</ObjectAware>
+          </GraphicItem>
+        </GraphicItems>
+      </Views>
+    </Views>
+  </GraphicElement>
+</ElementData>
